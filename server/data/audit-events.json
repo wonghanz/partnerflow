@@ -1,0 +1,5937 @@
+[
+  {
+    "event_id": "EVT-20261011-00001-6786",
+    "created_at": "2026-10-11T15:40:29.829Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "pa-form-2026-q3-kl-launch.pdf",
+        "vendor-quotation-kl-launch-venue.pdf",
+        "programme-agenda-kl-launch.pdf",
+        "tax-invoice-proforma-mts-2026-0588.pdf",
+        "event-venue-setup-photos-2025-edition.jpg",
+        "attendee-registration-export-2025.csv",
+        "bank-transfer-proof-deposit-2025.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00002-49f9",
+    "created_at": "2026-10-11T15:40:29.836Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_97932cff",
+        "filename": "pa-form-2026-q3-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_932252d8",
+        "filename": "vendor-quotation-kl-launch-venue.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_42eb8632",
+        "filename": "programme-agenda-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_c3f9edb7",
+        "filename": "tax-invoice-proforma-mts-2026-0588.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_74ba88d9",
+        "filename": "event-venue-setup-photos-2025-edition.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_feaa2714",
+        "filename": "attendee-registration-export-2025.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_0c66f52a",
+        "filename": "bank-transfer-proof-deposit-2025.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 7,
+      "amount_confidence": 0.96,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA",
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00003-76c8",
+    "created_at": "2026-10-11T15:40:29.837Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00004-1a79",
+    "created_at": "2026-10-11T15:40:29.839Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00005-a315",
+    "created_at": "2026-10-11T15:40:29.852Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_97932cff",
+        "filename": "pa-form-2026-q3-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_932252d8",
+        "filename": "vendor-quotation-kl-launch-venue.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_42eb8632",
+        "filename": "programme-agenda-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_c3f9edb7",
+        "filename": "tax-invoice-proforma-mts-2026-0588.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_74ba88d9",
+        "filename": "event-venue-setup-photos-2025-edition.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_feaa2714",
+        "filename": "attendee-registration-export-2025.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_0c66f52a",
+        "filename": "bank-transfer-proof-deposit-2025.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00006-728c",
+    "created_at": "2026-10-11T15:40:29.855Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "88955aee-8e11-4029-bb9c-c21edff4a4a7",
+      "new_available": 290000,
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 860000,
+        "approved_amount": 150000,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:29.853Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00007-6912",
+    "created_at": "2026-10-11T15:40:29.857Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_97932cff",
+        "filename": "pa-form-2026-q3-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_932252d8",
+        "filename": "vendor-quotation-kl-launch-venue.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_42eb8632",
+        "filename": "programme-agenda-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_c3f9edb7",
+        "filename": "tax-invoice-proforma-mts-2026-0588.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_74ba88d9",
+        "filename": "event-venue-setup-photos-2025-edition.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_feaa2714",
+        "filename": "attendee-registration-export-2025.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_0c66f52a",
+        "filename": "bank-transfer-proof-deposit-2025.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00008-9841",
+    "created_at": "2026-10-11T15:40:29.858Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_97932cff",
+        "filename": "pa-form-2026-q3-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_932252d8",
+        "filename": "vendor-quotation-kl-launch-venue.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_42eb8632",
+        "filename": "programme-agenda-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_c3f9edb7",
+        "filename": "tax-invoice-proforma-mts-2026-0588.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_74ba88d9",
+        "filename": "event-venue-setup-photos-2025-edition.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_feaa2714",
+        "filename": "attendee-registration-export-2025.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_0c66f52a",
+        "filename": "bank-transfer-proof-deposit-2025.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00009-2bea",
+    "created_at": "2026-10-11T15:40:29.860Z",
+    "submission_id": "SUB-2026-MY-0001",
+    "run_id": "run_20261011_868c1874",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_97932cff",
+        "filename": "pa-form-2026-q3-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_932252d8",
+        "filename": "vendor-quotation-kl-launch-venue.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_42eb8632",
+        "filename": "programme-agenda-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_c3f9edb7",
+        "filename": "tax-invoice-proforma-mts-2026-0588.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_74ba88d9",
+        "filename": "event-venue-setup-photos-2025-edition.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_feaa2714",
+        "filename": "attendee-registration-export-2025.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_0c66f52a",
+        "filename": "bank-transfer-proof-deposit-2025.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 10000,
+      "reduction": 0,
+      "reason": "All configured gates passed on the planned budget lines and the vendor quotation; pre-approval granted at the full requested ceiling for Q3 KL Launch.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00010-c726",
+    "created_at": "2026-10-11T15:40:29.863Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "preapproval-form-pa-2026-q1-007.pdf",
+        "vendor-quotation-jb-popup.pdf",
+        "agenda-rundown-jb-popup.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00011-3632",
+    "created_at": "2026-10-11T15:40:29.868Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_47c3be1b",
+        "filename": "preapproval-form-pa-2026-q1-007.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_fd320bc9",
+        "filename": "vendor-quotation-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_b24e4ae4",
+        "filename": "agenda-rundown-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.95,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00012-0867",
+    "created_at": "2026-10-11T15:40:29.870Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00013-593b",
+    "created_at": "2026-10-11T15:40:29.870Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00014-0c8c",
+    "created_at": "2026-10-11T15:40:29.871Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_47c3be1b",
+        "filename": "preapproval-form-pa-2026-q1-007.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_fd320bc9",
+        "filename": "vendor-quotation-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_b24e4ae4",
+        "filename": "agenda-rundown-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "rule_engine_version": "SOP_2025_V2",
+      "summary": {
+        "total": 4,
+        "passed": 3,
+        "failed": 1,
+        "blockers": 0,
+        "warnings": 1,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00015-bae7",
+    "created_at": "2026-10-11T15:40:29.875Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "f193d2ff-f707-4069-89d5-c969f3a8a41c",
+      "new_available": 282000,
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 868000,
+        "approved_amount": 150000,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:29.873Z"
+      }
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00016-0a85",
+    "created_at": "2026-10-11T15:40:29.877Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_INFO_REQUEST",
+    "error_code": "MISSING_SUPPORTING_DOCUMENT",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_47c3be1b",
+        "filename": "preapproval-form-pa-2026-q1-007.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_fd320bc9",
+        "filename": "vendor-quotation-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_b24e4ae4",
+        "filename": "agenda-rundown-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "items": [
+        "BIZ-R-DOC-PA-014",
+        "BIZ-MISSING-DOCS"
+      ],
+      "missing": [
+        null,
+        [
+          "TAX_INVOICE",
+          "EVENT_PHOTOS",
+          "ATTENDEE_SIGNIN",
+          "PROOF_OF_PAYMENT"
+        ]
+      ]
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00017-debb",
+    "created_at": "2026-10-11T15:40:29.879Z",
+    "submission_id": "SUB-2026-MY-0002",
+    "run_id": "run_20261011_e1eaf222",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_INFO_REQUEST",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_47c3be1b",
+        "filename": "preapproval-form-pa-2026-q1-007.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_fd320bc9",
+        "filename": "vendor-quotation-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_b24e4ae4",
+        "filename": "agenda-rundown-jb-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 8000,
+      "reduction": 0,
+      "reason": "Pre-approval granted at RM 8,000.00 under the ceiling in force at submission time; the record's rule version anchor must not be rewritten retroactively.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00018-92ab",
+    "created_at": "2026-10-11T15:40:29.882Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "ap@marinabaymarketing.sg",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "pre-approval-form-mbm-2026-q4-031.pdf",
+        "media-owner-quotation-flight-plan.pdf",
+        "campaign-programme-schedule.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00019-5cc3",
+    "created_at": "2026-10-11T15:40:29.885Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_61031f4c",
+        "filename": "pre-approval-form-mbm-2026-q4-031.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_4f37966d",
+        "filename": "media-owner-quotation-flight-plan.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_f888005a",
+        "filename": "campaign-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.94,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00020-8d10",
+    "created_at": "2026-10-11T15:40:29.886Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00021-b6bc",
+    "created_at": "2026-10-11T15:40:29.888Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00022-76be",
+    "created_at": "2026-10-11T15:40:29.889Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_61031f4c",
+        "filename": "pre-approval-form-mbm-2026-q4-031.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_4f37966d",
+        "filename": "media-owner-quotation-flight-plan.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_f888005a",
+        "filename": "campaign-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 4,
+        "passed": 3,
+        "failed": 1,
+        "blockers": 0,
+        "warnings": 1,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00023-8103",
+    "created_at": "2026-10-11T15:40:29.891Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "76f4b3cd-d102-4d36-aec0-fce626729a0e",
+      "new_available": 75000,
+      "ledger_row": {
+        "partner_id": "PTR-GLD-745",
+        "fiscal_year": 2026,
+        "allocated_amount": 930000,
+        "committed_amount": 435000,
+        "approved_amount": 70000,
+        "paid_amount": 350000,
+        "updated_at": "2026-10-11T15:40:29.890Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00024-28f3",
+    "created_at": "2026-10-11T15:40:29.892Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_INFO_REQUEST",
+    "error_code": "MISSING_SUPPORTING_DOCUMENT",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_61031f4c",
+        "filename": "pre-approval-form-mbm-2026-q4-031.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_4f37966d",
+        "filename": "media-owner-quotation-flight-plan.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_f888005a",
+        "filename": "campaign-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "items": [
+        "BIZ-R-DOC-PA-014",
+        "BIZ-MISSING-DOCS"
+      ],
+      "missing": [
+        null,
+        [
+          "TAX_INVOICE",
+          "EVENT_PHOTOS",
+          "ATTENDEE_SIGNIN",
+          "PROOF_OF_PAYMENT"
+        ]
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00025-c2d7",
+    "created_at": "2026-10-11T15:40:29.893Z",
+    "submission_id": "SUB-2026-MY-0003",
+    "run_id": "run_20261011_253db520",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_INFO_REQUEST",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_61031f4c",
+        "filename": "pre-approval-form-mbm-2026-q4-031.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_4f37966d",
+        "filename": "media-owner-quotation-flight-plan.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_f888005a",
+        "filename": "campaign-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 55000,
+      "reduction": 0,
+      "reason": "Approved on the media owner quotation; outstanding execution evidence stays tracked as an information request and does not change the approved ceiling.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00026-bd20",
+    "created_at": "2026-10-11T15:40:29.896Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "finance@ppretailgroup.com.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "pa-form-penang-consumer-fair.pdf",
+        "organiser-quotation-booth-24a.pdf",
+        "exhibition-programme-dates.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00027-0a4e",
+    "created_at": "2026-10-11T15:40:29.899Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_69435f89",
+        "filename": "pa-form-penang-consumer-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_3df28385",
+        "filename": "organiser-quotation-booth-24a.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_d877cd94",
+        "filename": "exhibition-programme-dates.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.97,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00028-a0e4",
+    "created_at": "2026-10-11T15:40:29.900Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00029-bb6d",
+    "created_at": "2026-10-11T15:40:29.901Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00030-30a1",
+    "created_at": "2026-10-11T15:40:29.902Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_69435f89",
+        "filename": "pa-form-penang-consumer-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_3df28385",
+        "filename": "organiser-quotation-booth-24a.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_d877cd94",
+        "filename": "exhibition-programme-dates.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 4,
+        "passed": 3,
+        "failed": 1,
+        "blockers": 0,
+        "warnings": 1,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00031-5603",
+    "created_at": "2026-10-11T15:40:29.905Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "387d2957-1889-4fd6-9599-a95757f7f639",
+      "new_available": 144000,
+      "ledger_row": {
+        "partner_id": "PTR-GLD-233",
+        "fiscal_year": 2026,
+        "allocated_amount": 1260000,
+        "committed_amount": 606000,
+        "approved_amount": 110000,
+        "paid_amount": 400000,
+        "updated_at": "2026-10-11T15:40:29.903Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00032-ad1d",
+    "created_at": "2026-10-11T15:40:29.906Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_INFO_REQUEST",
+    "error_code": "MISSING_SUPPORTING_DOCUMENT",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_69435f89",
+        "filename": "pa-form-penang-consumer-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_3df28385",
+        "filename": "organiser-quotation-booth-24a.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_d877cd94",
+        "filename": "exhibition-programme-dates.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "items": [
+        "BIZ-R-DOC-PA-014",
+        "BIZ-MISSING-DOCS"
+      ],
+      "missing": [
+        null,
+        [
+          "TAX_INVOICE",
+          "EVENT_PHOTOS",
+          "ATTENDEE_SIGNIN",
+          "PROOF_OF_PAYMENT"
+        ]
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00033-58ef",
+    "created_at": "2026-10-11T15:40:29.907Z",
+    "submission_id": "SUB-2026-MY-0004",
+    "run_id": "run_20261011_c6734b08",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_INFO_REQUEST",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_69435f89",
+        "filename": "pa-form-penang-consumer-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_3df28385",
+        "filename": "organiser-quotation-booth-24a.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_d877cd94",
+        "filename": "exhibition-programme-dates.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 6000,
+      "reduction": 0,
+      "reason": "Approved at RM 6,000.00 against the organiser quotation; this ceiling is the linkage base for the partner's fair claims.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00034-a036",
+    "created_at": "2026-10-11T15:40:29.910Z",
+    "submission_id": "SUB-2026-MY-0005",
+    "run_id": "run_20261011_a4a3e560",
+    "actor": "finance@ppretailgroup.com.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "pa-form-north-region-roadshow.pdf",
+        "agency-quotation-budget-summary.pdf",
+        "roadshow-programme-schedule.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00035-417b",
+    "created_at": "2026-10-11T15:40:29.913Z",
+    "submission_id": "SUB-2026-MY-0005",
+    "run_id": "run_20261011_a4a3e560",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_753b44cc",
+        "filename": "pa-form-north-region-roadshow.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_b6cc1ff2",
+        "filename": "agency-quotation-budget-summary.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_c7930fff",
+        "filename": "roadshow-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.93,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00036-218f",
+    "created_at": "2026-10-11T15:40:29.915Z",
+    "submission_id": "SUB-2026-MY-0005",
+    "run_id": "run_20261011_a4a3e560",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00037-a52c",
+    "created_at": "2026-10-11T15:40:29.918Z",
+    "submission_id": "SUB-2026-MY-0005",
+    "run_id": "run_20261011_a4a3e560",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00038-35e7",
+    "created_at": "2026-10-11T15:40:29.919Z",
+    "submission_id": "SUB-2026-MY-0005",
+    "run_id": "run_20261011_a4a3e560",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "POLICY_BLOCKED",
+    "error_code": "INSUFFICIENT_BUDGET",
+    "rule_id": "R-BUD-002",
+    "evidence_refs": [
+      {
+        "doc_id": "doc_753b44cc",
+        "filename": "pa-form-north-region-roadshow.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_b6cc1ff2",
+        "filename": "agency-quotation-budget-summary.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_c7930fff",
+        "filename": "roadshow-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "requested": 880000,
+      "available": 144000
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00039-2482",
+    "created_at": "2026-10-11T15:40:29.920Z",
+    "submission_id": "SUB-2026-MY-0005",
+    "run_id": "run_20261011_a4a3e560",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "POLICY_BLOCKED",
+    "new_state": "REJECTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_753b44cc",
+        "filename": "pa-form-north-region-roadshow.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_b6cc1ff2",
+        "filename": "agency-quotation-budget-summary.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_c7930fff",
+        "filename": "roadshow-programme-schedule.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "event": "HUMAN_REJECTION",
+      "reason": "The aggregated annual request exceeds PTR-GLD-233 remaining FY2026 availability. Director denies the lump-sum request; partner to re-submit per-event pre-approvals."
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00040-ed40",
+    "created_at": "2026-10-11T15:40:29.923Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "partnership@cakraprima.co.id",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "preapproval-form-cpn-2026-008.pdf",
+        "pavilion-quotation-jakarta-fair.pdf",
+        "fair-agenda-programme.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00041-2fba",
+    "created_at": "2026-10-11T15:40:29.925Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b19fd012",
+        "filename": "preapproval-form-cpn-2026-008.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_7168da27",
+        "filename": "pavilion-quotation-jakarta-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_ea353e61",
+        "filename": "fair-agenda-programme.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.93,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00042-7fb5",
+    "created_at": "2026-10-11T15:40:29.927Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00043-68d8",
+    "created_at": "2026-10-11T15:40:29.928Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00044-3dbb",
+    "created_at": "2026-10-11T15:40:29.928Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b19fd012",
+        "filename": "preapproval-form-cpn-2026-008.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_7168da27",
+        "filename": "pavilion-quotation-jakarta-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_ea353e61",
+        "filename": "fair-agenda-programme.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00045-d0de",
+    "created_at": "2026-10-11T15:40:29.932Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "452d3c59-012f-4ac9-a23c-9afb0ca965a1",
+      "new_available": 160000,
+      "ledger_row": {
+        "partner_id": "PTR-ELT-055",
+        "fiscal_year": 2026,
+        "allocated_amount": 1540000,
+        "committed_amount": 730000,
+        "approved_amount": 100000,
+        "paid_amount": 550000,
+        "updated_at": "2026-10-11T15:40:29.930Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00046-288c",
+    "created_at": "2026-10-11T15:40:29.934Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b19fd012",
+        "filename": "preapproval-form-cpn-2026-008.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_7168da27",
+        "filename": "pavilion-quotation-jakarta-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_ea353e61",
+        "filename": "fair-agenda-programme.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00047-1d78",
+    "created_at": "2026-10-11T15:40:29.936Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b19fd012",
+        "filename": "preapproval-form-cpn-2026-008.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_7168da27",
+        "filename": "pavilion-quotation-jakarta-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_ea353e61",
+        "filename": "fair-agenda-programme.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00048-c820",
+    "created_at": "2026-10-11T15:40:29.937Z",
+    "submission_id": "SUB-2026-MY-0006",
+    "run_id": "run_20261011_36001ea4",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b19fd012",
+        "filename": "preapproval-form-cpn-2026-008.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_7168da27",
+        "filename": "pavilion-quotation-jakarta-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_ea353e61",
+        "filename": "fair-agenda-programme.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 30000,
+      "reduction": 0,
+      "reason": "Policy owner adjudicates the Elite single-event limit manually for this submission (USD 30,000.00): the tier carries no published cap and the system must not invent one.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00049-8e3a",
+    "created_at": "2026-10-11T15:40:29.940Z",
+    "submission_id": "SUB-2026-MY-0007",
+    "run_id": "run_20261011_d98c2293",
+    "actor": "ops@nusantaraads.id",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "pre-approval-form-nai-2026-012.pdf",
+        "local-media-quotation-surabaya.pdf",
+        "campaign-agenda-surabaya.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00050-7384",
+    "created_at": "2026-10-11T15:40:29.942Z",
+    "submission_id": "SUB-2026-MY-0007",
+    "run_id": "run_20261011_d98c2293",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_82fc0aa1",
+        "filename": "pre-approval-form-nai-2026-012.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_495d7df7",
+        "filename": "local-media-quotation-surabaya.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_77d5d297",
+        "filename": "campaign-agenda-surabaya.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.92,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00051-7e15",
+    "created_at": "2026-10-11T15:40:29.943Z",
+    "submission_id": "SUB-2026-MY-0007",
+    "run_id": "run_20261011_d98c2293",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00052-1792",
+    "created_at": "2026-10-11T15:40:29.943Z",
+    "submission_id": "SUB-2026-MY-0007",
+    "run_id": "run_20261011_d98c2293",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00053-68a9",
+    "created_at": "2026-10-11T15:40:29.944Z",
+    "submission_id": "SUB-2026-MY-0007",
+    "run_id": "run_20261011_d98c2293",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "POLICY_BLOCKED",
+    "error_code": "INSUFFICIENT_BUDGET",
+    "rule_id": "R-BUD-002",
+    "evidence_refs": [
+      {
+        "doc_id": "doc_82fc0aa1",
+        "filename": "pre-approval-form-nai-2026-012.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_495d7df7",
+        "filename": "local-media-quotation-surabaya.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_77d5d297",
+        "filename": "campaign-agenda-surabaya.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "requested": 42000000,
+      "available": 80000
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00054-c940",
+    "created_at": "2026-10-11T15:40:29.949Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "hello@kelangdigital.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "preapproval-form-kdt-first-submission.pdf",
+        "organiser-quotation-klang-booth.pdf",
+        "exhibition-agenda-klang.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00055-6e11",
+    "created_at": "2026-10-11T15:40:29.952Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c4158da2",
+        "filename": "preapproval-form-kdt-first-submission.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.91
+      },
+      {
+        "doc_id": "doc_4071c595",
+        "filename": "organiser-quotation-klang-booth.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_3341d58b",
+        "filename": "exhibition-agenda-klang.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.91,
+      "document_types": [
+        "PRE_APPROVAL_FORM",
+        "QUOTATION",
+        "AGENDA"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00056-8942",
+    "created_at": "2026-10-11T15:40:29.952Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00057-f56d",
+    "created_at": "2026-10-11T15:40:29.953Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00058-1423",
+    "created_at": "2026-10-11T15:40:29.954Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c4158da2",
+        "filename": "preapproval-form-kdt-first-submission.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.91
+      },
+      {
+        "doc_id": "doc_4071c595",
+        "filename": "organiser-quotation-klang-booth.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_3341d58b",
+        "filename": "exhibition-agenda-klang.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 4,
+        "passed": 4,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00059-6d1c",
+    "created_at": "2026-10-11T15:40:29.956Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "e6c278c0-0a2e-4aa6-875a-0321316db1ca",
+      "new_available": 48000,
+      "ledger_row": {
+        "partner_id": "PTR-UNA-901",
+        "fiscal_year": 2026,
+        "allocated_amount": 280000,
+        "committed_amount": 102000,
+        "approved_amount": 30000,
+        "paid_amount": 100000,
+        "updated_at": "2026-10-11T15:40:29.955Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00060-5328",
+    "created_at": "2026-10-11T15:40:29.958Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c4158da2",
+        "filename": "preapproval-form-kdt-first-submission.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.91
+      },
+      {
+        "doc_id": "doc_4071c595",
+        "filename": "organiser-quotation-klang-booth.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_3341d58b",
+        "filename": "exhibition-agenda-klang.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00061-5f9b",
+    "created_at": "2026-10-11T15:40:29.959Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c4158da2",
+        "filename": "preapproval-form-kdt-first-submission.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.91
+      },
+      {
+        "doc_id": "doc_4071c595",
+        "filename": "organiser-quotation-klang-booth.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_3341d58b",
+        "filename": "exhibition-agenda-klang.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00062-10a9",
+    "created_at": "2026-10-11T15:40:29.960Z",
+    "submission_id": "SUB-2026-MY-0008",
+    "run_id": "run_20261011_0314fa42",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c4158da2",
+        "filename": "preapproval-form-kdt-first-submission.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.91
+      },
+      {
+        "doc_id": "doc_4071c595",
+        "filename": "organiser-quotation-klang-booth.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_3341d58b",
+        "filename": "exhibition-agenda-klang.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 12000,
+      "reduction": 0,
+      "reason": "Policy owner adjudicates RM 12,000.00 manually for the Unassigned cold-start partner; no default limit is assumed by the system.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00063-cf90",
+    "created_at": "2026-10-11T15:40:29.963Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-kl-launch-media-placement.pdf",
+        "event-photos-kl-launch-stage-01.jpg",
+        "attendee-signin-kl-launch.csv",
+        "proof-of-payment-maybank-kl-launch.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00064-159e",
+    "created_at": "2026-10-11T15:40:29.967Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_7b5984d0",
+        "filename": "tax-invoice-kl-launch-media-placement.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_1eb610d4",
+        "filename": "event-photos-kl-launch-stage-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_6a8e9342",
+        "filename": "attendee-signin-kl-launch.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_575545f0",
+        "filename": "proof-of-payment-maybank-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.96,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00065-26fb",
+    "created_at": "2026-10-11T15:40:29.969Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00066-6bab",
+    "created_at": "2026-10-11T15:40:29.970Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00067-0fc3",
+    "created_at": "2026-10-11T15:40:29.971Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_7b5984d0",
+        "filename": "tax-invoice-kl-launch-media-placement.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_1eb610d4",
+        "filename": "event-photos-kl-launch-stage-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_6a8e9342",
+        "filename": "attendee-signin-kl-launch.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_575545f0",
+        "filename": "proof-of-payment-maybank-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00068-5c07",
+    "created_at": "2026-10-11T15:40:29.973Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "05dc222a-a401-401d-82c6-8a2d29531369",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 853000,
+        "approved_amount": 165000,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:29.972Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00069-38f7",
+    "created_at": "2026-10-11T15:40:29.974Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_7b5984d0",
+        "filename": "tax-invoice-kl-launch-media-placement.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_1eb610d4",
+        "filename": "event-photos-kl-launch-stage-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_6a8e9342",
+        "filename": "attendee-signin-kl-launch.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_575545f0",
+        "filename": "proof-of-payment-maybank-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00070-82c8",
+    "created_at": "2026-10-11T15:40:29.975Z",
+    "submission_id": "SUB-2026-MY-0009",
+    "run_id": "run_20261011_62c99cea",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_7b5984d0",
+        "filename": "tax-invoice-kl-launch-media-placement.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.96
+      },
+      {
+        "doc_id": "doc_1eb610d4",
+        "filename": "event-photos-kl-launch-stage-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_6a8e9342",
+        "filename": "attendee-signin-kl-launch.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_575545f0",
+        "filename": "proof-of-payment-maybank-kl-launch.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00071-b228",
+    "created_at": "2026-10-11T15:40:29.980Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-mid-valley-popup-feb2026.pdf",
+        "event-photos-mid-valley-popup-booth.jpg",
+        "attendee-signin-mid-valley-popup.pdf",
+        "proof-of-payment-mbb-transfer-feb2026.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00072-ce93",
+    "created_at": "2026-10-11T15:40:29.984Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c2231e32",
+        "filename": "tax-invoice-mid-valley-popup-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_e6efc154",
+        "filename": "event-photos-mid-valley-popup-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e6cfd698",
+        "filename": "attendee-signin-mid-valley-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a63df97a",
+        "filename": "proof-of-payment-mbb-transfer-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.95,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00073-b818",
+    "created_at": "2026-10-11T15:40:29.986Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00074-eb6a",
+    "created_at": "2026-10-11T15:40:29.988Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00075-807a",
+    "created_at": "2026-10-11T15:40:29.989Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c2231e32",
+        "filename": "tax-invoice-mid-valley-popup-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_e6efc154",
+        "filename": "event-photos-mid-valley-popup-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e6cfd698",
+        "filename": "attendee-signin-mid-valley-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a63df97a",
+        "filename": "proof-of-payment-mbb-transfer-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "SOP_2025_V2",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00076-6b7f",
+    "created_at": "2026-10-11T15:40:29.992Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "13a4c974-c8a1-4461-aea2-20a67911c8df",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 845000,
+        "approved_amount": 173000,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:29.991Z"
+      }
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00077-f09d",
+    "created_at": "2026-10-11T15:40:29.994Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c2231e32",
+        "filename": "tax-invoice-mid-valley-popup-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_e6efc154",
+        "filename": "event-photos-mid-valley-popup-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e6cfd698",
+        "filename": "attendee-signin-mid-valley-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a63df97a",
+        "filename": "proof-of-payment-mbb-transfer-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00078-6109",
+    "created_at": "2026-10-11T15:40:29.996Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c2231e32",
+        "filename": "tax-invoice-mid-valley-popup-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_e6efc154",
+        "filename": "event-photos-mid-valley-popup-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e6cfd698",
+        "filename": "attendee-signin-mid-valley-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a63df97a",
+        "filename": "proof-of-payment-mbb-transfer-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00079-8565",
+    "created_at": "2026-10-11T15:40:29.999Z",
+    "submission_id": "SUB-2026-MY-0010",
+    "run_id": "run_20261011_8be21f58",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "APPROVED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c2231e32",
+        "filename": "tax-invoice-mid-valley-popup-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_e6efc154",
+        "filename": "event-photos-mid-valley-popup-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e6cfd698",
+        "filename": "attendee-signin-mid-valley-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a63df97a",
+        "filename": "proof-of-payment-mbb-transfer-feb2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "event": "HUMAN_APPROVAL",
+      "approved_amount": 8000,
+      "reduction": 0,
+      "reason": "Human approver confirms the legacy-era claim: RM 8,000.00 sits at the ceiling in force at submission time and is also within the current Gold cap, so the anchor is preserved without re-adjudicating history.",
+      "memo_status": "FINALISED"
+    },
+    "rule_version": "SOP_2025_V2"
+  },
+  {
+    "event_id": "EVT-20261011-00080-0980",
+    "created_at": "2026-10-11T15:40:30.003Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "ap@marinabaymarketing.sg",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-mbm-q4-digital-flight.pdf",
+        "event-photos-marina-bay-brand-activation.jpg",
+        "attendee-registration-mbm-q4.csv",
+        "proof-of-payment-dbs-transfer-mbm.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00081-9445",
+    "created_at": "2026-10-11T15:40:30.006Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b73241e6",
+        "filename": "tax-invoice-mbm-q4-digital-flight.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_dec67754",
+        "filename": "event-photos-marina-bay-brand-activation.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_43426540",
+        "filename": "attendee-registration-mbm-q4.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_7444a7fe",
+        "filename": "proof-of-payment-dbs-transfer-mbm.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.95,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00082-9bc9",
+    "created_at": "2026-10-11T15:40:30.008Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00083-baac",
+    "created_at": "2026-10-11T15:40:30.009Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00084-7f04",
+    "created_at": "2026-10-11T15:40:30.011Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b73241e6",
+        "filename": "tax-invoice-mbm-q4-digital-flight.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_dec67754",
+        "filename": "event-photos-marina-bay-brand-activation.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_43426540",
+        "filename": "attendee-registration-mbm-q4.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_7444a7fe",
+        "filename": "proof-of-payment-dbs-transfer-mbm.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00085-8906",
+    "created_at": "2026-10-11T15:40:30.013Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "96adbe5b-5542-4073-b63a-773007134a03",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-745",
+        "fiscal_year": 2026,
+        "allocated_amount": 930000,
+        "committed_amount": 425400,
+        "approved_amount": 79600,
+        "paid_amount": 350000,
+        "updated_at": "2026-10-11T15:40:30.011Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00086-15a7",
+    "created_at": "2026-10-11T15:40:30.016Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b73241e6",
+        "filename": "tax-invoice-mbm-q4-digital-flight.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_dec67754",
+        "filename": "event-photos-marina-bay-brand-activation.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_43426540",
+        "filename": "attendee-registration-mbm-q4.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_7444a7fe",
+        "filename": "proof-of-payment-dbs-transfer-mbm.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00087-8ec6",
+    "created_at": "2026-10-11T15:40:30.018Z",
+    "submission_id": "SUB-2026-MY-0011",
+    "run_id": "run_20261011_72d6782a",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_b73241e6",
+        "filename": "tax-invoice-mbm-q4-digital-flight.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_dec67754",
+        "filename": "event-photos-marina-bay-brand-activation.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_43426540",
+        "filename": "attendee-registration-mbm-q4.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_7444a7fe",
+        "filename": "proof-of-payment-dbs-transfer-mbm.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00088-9e24",
+    "created_at": "2026-10-11T15:40:30.022Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "scanned-invoice-mts-sampling-day-jun2026.pdf",
+        "event-photos-sampling-day-01.jpg",
+        "attendee-signin-sampling-day.pdf",
+        "proof-of-payment-mbb-sampling-day.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00089-f743",
+    "created_at": "2026-10-11T15:40:30.025Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_356b1499",
+        "filename": "scanned-invoice-mts-sampling-day-jun2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_d2520644",
+        "filename": "event-photos-sampling-day-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e4d9c65c",
+        "filename": "attendee-signin-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f3e2e403",
+        "filename": "proof-of-payment-mbb-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.94,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00090-d92b",
+    "created_at": "2026-10-11T15:40:30.027Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00091-7fbd",
+    "created_at": "2026-10-11T15:40:30.029Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": false
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00092-d759",
+    "created_at": "2026-10-11T15:40:30.032Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_356b1499",
+        "filename": "scanned-invoice-mts-sampling-day-jun2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_d2520644",
+        "filename": "event-photos-sampling-day-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e4d9c65c",
+        "filename": "attendee-signin-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f3e2e403",
+        "filename": "proof-of-payment-mbb-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00093-b256",
+    "created_at": "2026-10-11T15:40:30.035Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "a3dccc3d-4053-4d1c-a652-5f9c55606407",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 839600,
+        "approved_amount": 178400,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:30.033Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00094-33b4",
+    "created_at": "2026-10-11T15:40:30.036Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_356b1499",
+        "filename": "scanned-invoice-mts-sampling-day-jun2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_d2520644",
+        "filename": "event-photos-sampling-day-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e4d9c65c",
+        "filename": "attendee-signin-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f3e2e403",
+        "filename": "proof-of-payment-mbb-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00095-f6ec",
+    "created_at": "2026-10-11T15:40:30.037Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_356b1499",
+        "filename": "scanned-invoice-mts-sampling-day-jun2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_d2520644",
+        "filename": "event-photos-sampling-day-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e4d9c65c",
+        "filename": "attendee-signin-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f3e2e403",
+        "filename": "proof-of-payment-mbb-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00096-3fb2",
+    "created_at": "2026-10-11T15:40:30.041Z",
+    "submission_id": "SUB-2026-MY-0012",
+    "run_id": "run_20261011_29796420",
+    "actor": "alyssa.woe@company.com",
+    "actor_type": "HUMAN_APPROVER",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "REJECTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_356b1499",
+        "filename": "scanned-invoice-mts-sampling-day-jun2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_d2520644",
+        "filename": "event-photos-sampling-day-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_e4d9c65c",
+        "filename": "attendee-signin-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f3e2e403",
+        "filename": "proof-of-payment-mbb-sampling-day.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "event": "HUMAN_REJECTION",
+      "reason": "Reject: INV-MTS-2026-0771 was already reimbursed on SUB-2026-MY-0009 and the claim arrived 42 days after the activity date, beyond the 30-day window; no second payment on the same invoice."
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00097-810b",
+    "created_at": "2026-10-11T15:40:30.045Z",
+    "submission_id": "SUB-2026-MY-0013",
+    "run_id": "run_20261011_cf934745",
+    "actor": "ap@marinabaymarketing.sg",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "receipt-photo-creator-workshop-lowres.jpg",
+        "bank-transfer-screenshot-mbm-workshop.png"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00098-5a7b",
+    "created_at": "2026-10-11T15:40:30.048Z",
+    "submission_id": "SUB-2026-MY-0013",
+    "run_id": "run_20261011_cf934745",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "NEEDS_INTAKE_CORRECTION",
+    "error_code": "FAILED_PARSING",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_6c7aa9b4",
+        "filename": "receipt-photo-creator-workshop-lowres.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.74
+      },
+      {
+        "doc_id": "doc_211778a4",
+        "filename": "bank-transfer-screenshot-mbm-workshop.png",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "amount_confidence": 0.74,
+      "threshold": 0.85
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00099-c9eb",
+    "created_at": "2026-10-11T15:40:30.053Z",
+    "submission_id": "SUB-2026-MY-0014",
+    "run_id": "run_20261011_95444fe6",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "scanned-invoice-mts-sampling-second-half.pdf",
+        "event-photos-sampling-day-02.jpg",
+        "attendee-signin-sampling-day-second-half.pdf",
+        "proof-of-payment-mbb-sampling-second-half.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00100-e7a4",
+    "created_at": "2026-10-11T15:40:30.056Z",
+    "submission_id": "SUB-2026-MY-0014",
+    "run_id": "run_20261011_95444fe6",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_035ca158",
+        "filename": "scanned-invoice-mts-sampling-second-half.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.88
+      },
+      {
+        "doc_id": "doc_c7e3667a",
+        "filename": "event-photos-sampling-day-02.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_26e58c5c",
+        "filename": "attendee-signin-sampling-day-second-half.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_17517947",
+        "filename": "proof-of-payment-mbb-sampling-second-half.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.88,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00101-700b",
+    "created_at": "2026-10-11T15:40:30.058Z",
+    "submission_id": "SUB-2026-MY-0014",
+    "run_id": "run_20261011_95444fe6",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00102-06f2",
+    "created_at": "2026-10-11T15:40:30.059Z",
+    "submission_id": "SUB-2026-MY-0014",
+    "run_id": "run_20261011_95444fe6",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": false
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00103-140f",
+    "created_at": "2026-10-11T15:40:30.060Z",
+    "submission_id": "SUB-2026-MY-0014",
+    "run_id": "run_20261011_95444fe6",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "NEEDS_HUMAN_CONFIRMATION",
+    "error_code": "CONFIDENCE_TOO_LOW",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_035ca158",
+        "filename": "scanned-invoice-mts-sampling-second-half.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.88
+      },
+      {
+        "doc_id": "doc_c7e3667a",
+        "filename": "event-photos-sampling-day-02.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_26e58c5c",
+        "filename": "attendee-signin-sampling-day-second-half.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_17517947",
+        "filename": "proof-of-payment-mbb-sampling-second-half.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "amount_confidence": 0.88,
+      "threshold": 0.9
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00104-8e1b",
+    "created_at": "2026-10-11T15:40:30.065Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "ap@marinabaymarketing.sg",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-mbm-retail-screen-aug2026.pdf",
+        "attendee-registration-retail-screen.csv",
+        "proof-of-payment-dbs-retail-screen.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00105-e1f6",
+    "created_at": "2026-10-11T15:40:30.068Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c8c123b2",
+        "filename": "tax-invoice-mbm-retail-screen-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_d322dfba",
+        "filename": "attendee-registration-retail-screen.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_31839cf8",
+        "filename": "proof-of-payment-dbs-retail-screen.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.93,
+      "document_types": [
+        "TAX_INVOICE",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00106-b7b8",
+    "created_at": "2026-10-11T15:40:30.069Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00107-f2d0",
+    "created_at": "2026-10-11T15:40:30.070Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00108-15f2",
+    "created_at": "2026-10-11T15:40:30.071Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c8c123b2",
+        "filename": "tax-invoice-mbm-retail-screen-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_d322dfba",
+        "filename": "attendee-registration-retail-screen.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_31839cf8",
+        "filename": "proof-of-payment-dbs-retail-screen.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 5,
+        "failed": 1,
+        "blockers": 0,
+        "warnings": 1,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00109-cfb0",
+    "created_at": "2026-10-11T15:40:30.074Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "2aba7123-def3-405b-bb23-7037b574ff54",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-745",
+        "fiscal_year": 2026,
+        "allocated_amount": 930000,
+        "committed_amount": 421200,
+        "approved_amount": 83800,
+        "paid_amount": 350000,
+        "updated_at": "2026-10-11T15:40:30.072Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00110-36a9",
+    "created_at": "2026-10-11T15:40:30.076Z",
+    "submission_id": "SUB-2026-MY-0015",
+    "run_id": "run_20261011_7ab61a57",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_INFO_REQUEST",
+    "error_code": "MISSING_SUPPORTING_DOCUMENT",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_c8c123b2",
+        "filename": "tax-invoice-mbm-retail-screen-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_d322dfba",
+        "filename": "attendee-registration-retail-screen.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_31839cf8",
+        "filename": "proof-of-payment-dbs-retail-screen.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "items": [
+        "BIZ-R-DOC-005",
+        "BIZ-MISSING-DOCS"
+      ],
+      "missing": [
+        null,
+        [
+          "EVENT_PHOTOS"
+        ]
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00111-8d7a",
+    "created_at": "2026-10-11T15:40:30.082Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-mts-brand-film-jul2026.pdf",
+        "event-stage-backdrop-photo-01.jpg",
+        "attendee-signin-brand-film-set.pdf",
+        "proof-of-payment-mbb-brand-film.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00112-fe32",
+    "created_at": "2026-10-11T15:40:30.086Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_71cb147e",
+        "filename": "tax-invoice-mts-brand-film-jul2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_e48e80a2",
+        "filename": "event-stage-backdrop-photo-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f0a2ea8d",
+        "filename": "attendee-signin-brand-film-set.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_12972c8a",
+        "filename": "proof-of-payment-mbb-brand-film.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.94,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00113-1a91",
+    "created_at": "2026-10-11T15:40:30.087Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00114-fc83",
+    "created_at": "2026-10-11T15:40:30.088Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00115-2583",
+    "created_at": "2026-10-11T15:40:30.089Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_71cb147e",
+        "filename": "tax-invoice-mts-brand-film-jul2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.94
+      },
+      {
+        "doc_id": "doc_e48e80a2",
+        "filename": "event-stage-backdrop-photo-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_f0a2ea8d",
+        "filename": "attendee-signin-brand-film-set.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_12972c8a",
+        "filename": "proof-of-payment-mbb-brand-film.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00116-9efe",
+    "created_at": "2026-10-11T15:40:30.092Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "98834b04-fc46-4ff3-afa4-c8f7ef69d042",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 827900,
+        "approved_amount": 184700,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:30.090Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00117-e5f0",
+    "created_at": "2026-10-11T15:40:30.093Z",
+    "submission_id": "SUB-2026-MY-0016",
+    "run_id": "run_20261011_01604b86",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "SECURITY_QUARANTINE",
+    "error_code": "PROMPT_INJECTION_ATTEMPT",
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "findings": [
+        "SEC-INJ-642B",
+        "SEC-INJ-020F",
+        "SEC-INJ-C0BF",
+        "SEC-INJ-B37E",
+        "SEC-INJ-721B"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00118-df36",
+    "created_at": "2026-10-11T15:40:30.098Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "ap@marinabaymarketing.sg",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-mbm-partner-briefing-jul2026.pdf",
+        "q3-attendee-registration_macro-enabled.xlsm",
+        "proof-of-payment-dbs-partner-briefing.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00119-df44",
+    "created_at": "2026-10-11T15:40:30.102Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_d2b10078",
+        "filename": "tax-invoice-mbm-partner-briefing-jul2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_c74a7553",
+        "filename": "q3-attendee-registration_macro-enabled.xlsm",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_ad70a1bc",
+        "filename": "proof-of-payment-dbs-partner-briefing.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.92,
+      "document_types": [
+        "TAX_INVOICE",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00120-b3e6",
+    "created_at": "2026-10-11T15:40:30.103Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00121-ee7c",
+    "created_at": "2026-10-11T15:40:30.104Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00122-a86e",
+    "created_at": "2026-10-11T15:40:30.106Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_d2b10078",
+        "filename": "tax-invoice-mbm-partner-briefing-jul2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_c74a7553",
+        "filename": "q3-attendee-registration_macro-enabled.xlsm",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_ad70a1bc",
+        "filename": "proof-of-payment-dbs-partner-briefing.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 5,
+        "failed": 1,
+        "blockers": 0,
+        "warnings": 1,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00123-c1c8",
+    "created_at": "2026-10-11T15:40:30.108Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "1db17b77-1154-4c31-91d0-e1d8a4dae155",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-745",
+        "fiscal_year": 2026,
+        "allocated_amount": 930000,
+        "committed_amount": 414800,
+        "approved_amount": 90200,
+        "paid_amount": 350000,
+        "updated_at": "2026-10-11T15:40:30.107Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00124-c974",
+    "created_at": "2026-10-11T15:40:30.109Z",
+    "submission_id": "SUB-2026-MY-0017",
+    "run_id": "run_20261011_301180e8",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "SECURITY_QUARANTINE",
+    "error_code": "MACRO_ENABLED_ATTACHMENT",
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "findings": [
+        "SEC-MACRO-C48B"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00125-a43f",
+    "created_at": "2026-10-11T15:40:30.115Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "finance@ppretailgroup.com.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-ppr-booth-build-final.pdf",
+        "tax-invoice-ppr-deposit-voucher-void.pdf",
+        "event-photos-penang-fair-booth.jpg",
+        "attendee-signin-penang-fair.csv",
+        "proof-of-payment-cimb-penang-fair.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00126-f5a8",
+    "created_at": "2026-10-11T15:40:30.119Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_1ff8d9b3",
+        "filename": "tax-invoice-ppr-booth-build-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_117937ae",
+        "filename": "tax-invoice-ppr-deposit-voucher-void.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.89
+      },
+      {
+        "doc_id": "doc_28d96e7c",
+        "filename": "event-photos-penang-fair-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_9053fbf8",
+        "filename": "attendee-signin-penang-fair.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a6814871",
+        "filename": "proof-of-payment-cimb-penang-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 5,
+      "amount_confidence": 0.91,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00127-c4bc",
+    "created_at": "2026-10-11T15:40:30.120Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00128-42c8",
+    "created_at": "2026-10-11T15:40:30.122Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "NEEDS_CLARIFICATION",
+    "error_code": "NEEDS_CLARIFICATION",
+    "rule_id": "GRILL_ME",
+    "evidence_refs": [
+      {
+        "doc_id": "doc_1ff8d9b3",
+        "filename": "tax-invoice-ppr-booth-build-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_117937ae",
+        "filename": "tax-invoice-ppr-deposit-voucher-void.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.89
+      },
+      {
+        "doc_id": "doc_28d96e7c",
+        "filename": "event-photos-penang-fair-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_9053fbf8",
+        "filename": "attendee-signin-penang-fair.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a6814871",
+        "filename": "proof-of-payment-cimb-penang-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "questions": [
+        "CLR-Q1"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00129-551e",
+    "created_at": "2026-10-11T15:40:30.124Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "NEEDS_CLARIFICATION",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_1ff8d9b3",
+        "filename": "tax-invoice-ppr-booth-build-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_117937ae",
+        "filename": "tax-invoice-ppr-deposit-voucher-void.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.89
+      },
+      {
+        "doc_id": "doc_28d96e7c",
+        "filename": "event-photos-penang-fair-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_9053fbf8",
+        "filename": "attendee-signin-penang-fair.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a6814871",
+        "filename": "proof-of-payment-cimb-penang-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 5,
+      "amount_confidence": 0.91,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00130-73a3",
+    "created_at": "2026-10-11T15:40:30.125Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00131-2bad",
+    "created_at": "2026-10-11T15:40:30.127Z",
+    "submission_id": "SUB-2026-MY-0018",
+    "run_id": "run_20261011_522741bd",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "NEEDS_CLARIFICATION",
+    "error_code": "NEEDS_CLARIFICATION",
+    "rule_id": "GRILL_ME",
+    "evidence_refs": [
+      {
+        "doc_id": "doc_1ff8d9b3",
+        "filename": "tax-invoice-ppr-booth-build-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.93
+      },
+      {
+        "doc_id": "doc_117937ae",
+        "filename": "tax-invoice-ppr-deposit-voucher-void.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.89
+      },
+      {
+        "doc_id": "doc_28d96e7c",
+        "filename": "event-photos-penang-fair-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_9053fbf8",
+        "filename": "attendee-signin-penang-fair.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_a6814871",
+        "filename": "proof-of-payment-cimb-penang-fair.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "questions": [
+        "CLR-Q1"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00132-e397",
+    "created_at": "2026-10-11T15:40:30.132Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "finance@ppretailgroup.com.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-ppr-booth-stripping-final.pdf",
+        "event-photos-penang-fair-stripping.jpg",
+        "attendee-signin-penang-fair-day2.csv",
+        "proof-of-payment-cimb-stripping-final.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00133-0dfa",
+    "created_at": "2026-10-11T15:40:30.136Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5218028d",
+        "filename": "tax-invoice-ppr-booth-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_14ff554c",
+        "filename": "event-photos-penang-fair-stripping.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_8874762d",
+        "filename": "attendee-signin-penang-fair-day2.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_49a9c9a5",
+        "filename": "proof-of-payment-cimb-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.95,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00134-0324",
+    "created_at": "2026-10-11T15:40:30.139Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00135-7ed1",
+    "created_at": "2026-10-11T15:40:30.141Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00136-b236",
+    "created_at": "2026-10-11T15:40:30.142Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5218028d",
+        "filename": "tax-invoice-ppr-booth-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_14ff554c",
+        "filename": "event-photos-penang-fair-stripping.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_8874762d",
+        "filename": "attendee-signin-penang-fair-day2.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_49a9c9a5",
+        "filename": "proof-of-payment-cimb-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00137-0f58",
+    "created_at": "2026-10-11T15:40:30.145Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "c4af036f-14c6-4776-b3d5-823c9d7deb40",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-233",
+        "fiscal_year": 2026,
+        "allocated_amount": 1260000,
+        "committed_amount": 600400,
+        "approved_amount": 115600,
+        "paid_amount": 400000,
+        "updated_at": "2026-10-11T15:40:30.143Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00138-5214",
+    "created_at": "2026-10-11T15:40:30.147Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5218028d",
+        "filename": "tax-invoice-ppr-booth-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_14ff554c",
+        "filename": "event-photos-penang-fair-stripping.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_8874762d",
+        "filename": "attendee-signin-penang-fair-day2.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_49a9c9a5",
+        "filename": "proof-of-payment-cimb-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00139-6cbe",
+    "created_at": "2026-10-11T15:40:30.149Z",
+    "submission_id": "SUB-2026-MY-0019",
+    "run_id": "run_20261011_8675f59f",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5218028d",
+        "filename": "tax-invoice-ppr-booth-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      },
+      {
+        "doc_id": "doc_14ff554c",
+        "filename": "event-photos-penang-fair-stripping.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_8874762d",
+        "filename": "attendee-signin-penang-fair-day2.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_49a9c9a5",
+        "filename": "proof-of-payment-cimb-stripping-final.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00140-f19b",
+    "created_at": "2026-10-11T15:40:30.155Z",
+    "submission_id": "SUB-2026-MY-0020",
+    "run_id": "run_20261011_5291145a",
+    "actor": "admin@bandarmedia.com.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-bmr-johor-expo.pdf",
+        "event-photos-johor-expo-stand.jpg",
+        "attendee-signin-johor-expo.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00141-774c",
+    "created_at": "2026-10-11T15:40:30.159Z",
+    "submission_id": "SUB-2026-MY-0020",
+    "run_id": "run_20261011_5291145a",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_3ef04709",
+        "filename": "tax-invoice-bmr-johor-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_fe7a00a4",
+        "filename": "event-photos-johor-expo-stand.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_91a67352",
+        "filename": "attendee-signin-johor-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "attachments_count": 3,
+      "amount_confidence": 0.92,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00142-c792",
+    "created_at": "2026-10-11T15:40:30.161Z",
+    "submission_id": "SUB-2026-MY-0020",
+    "run_id": "run_20261011_5291145a",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00143-edba",
+    "created_at": "2026-10-11T15:40:30.162Z",
+    "submission_id": "SUB-2026-MY-0020",
+    "run_id": "run_20261011_5291145a",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "POLICY_BLOCKED",
+    "error_code": "PARTNER_NOT_ACTIVE",
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_3ef04709",
+        "filename": "tax-invoice-bmr-johor-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_fe7a00a4",
+        "filename": "event-photos-johor-expo-stand.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_91a67352",
+        "filename": "attendee-signin-johor-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      }
+    ],
+    "details": {
+      "gap": {
+        "field": "partner_id",
+        "error_code": "PARTNER_NOT_ACTIVE",
+        "detail": "suspended"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00144-5579",
+    "created_at": "2026-10-11T15:40:30.169Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "hello@kelangdigital.my",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-kdt-klang-expo.pdf",
+        "event-photos-klang-expo-booth.jpg",
+        "attendee-signin-klang-expo.pdf",
+        "proof-of-payment-pb-klang-expo.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00145-890e",
+    "created_at": "2026-10-11T15:40:30.173Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5bfbf259",
+        "filename": "tax-invoice-kdt-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_0f37b6a0",
+        "filename": "event-photos-klang-expo-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_dee953a9",
+        "filename": "attendee-signin-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_d5e2a33d",
+        "filename": "proof-of-payment-pb-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.92,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00146-dc14",
+    "created_at": "2026-10-11T15:40:30.175Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00147-4af7",
+    "created_at": "2026-10-11T15:40:30.177Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00148-de5a",
+    "created_at": "2026-10-11T15:40:30.179Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5bfbf259",
+        "filename": "tax-invoice-kdt-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_0f37b6a0",
+        "filename": "event-photos-klang-expo-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_dee953a9",
+        "filename": "attendee-signin-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_d5e2a33d",
+        "filename": "proof-of-payment-pb-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00149-051d",
+    "created_at": "2026-10-11T15:40:30.184Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "7b5826d2-7985-413d-8186-90502277e51b",
+      "ledger_row": {
+        "partner_id": "PTR-UNA-901",
+        "fiscal_year": 2026,
+        "allocated_amount": 280000,
+        "committed_amount": 92600,
+        "approved_amount": 39400,
+        "paid_amount": 100000,
+        "updated_at": "2026-10-11T15:40:30.182Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00150-3108",
+    "created_at": "2026-10-11T15:40:30.186Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5bfbf259",
+        "filename": "tax-invoice-kdt-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_0f37b6a0",
+        "filename": "event-photos-klang-expo-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_dee953a9",
+        "filename": "attendee-signin-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_d5e2a33d",
+        "filename": "proof-of-payment-pb-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00151-6ff4",
+    "created_at": "2026-10-11T15:40:30.188Z",
+    "submission_id": "SUB-2026-MY-0021",
+    "run_id": "run_20261011_64a5ca22",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_5bfbf259",
+        "filename": "tax-invoice-kdt-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.92
+      },
+      {
+        "doc_id": "doc_0f37b6a0",
+        "filename": "event-photos-klang-expo-booth.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_dee953a9",
+        "filename": "attendee-signin-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_d5e2a33d",
+        "filename": "proof-of-payment-pb-klang-expo.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00152-41f0",
+    "created_at": "2026-10-11T15:40:30.194Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "alyssa.woe@megatech.com",
+    "actor_type": "EXTERNAL_PARTNER",
+    "previous_state": null,
+    "new_state": "SUBMITTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "rule_version": null,
+    "details": {
+      "event": "SUBMISSION_CREATED",
+      "channel": "seed_corpus",
+      "attachments": [
+        "tax-invoice-mts-bangsar-popup-aug2026.pdf",
+        "event-photos-bangsar-popup-01.jpg",
+        "attendee-signin-bangsar-popup.csv",
+        "proof-of-payment-mbb-bangsar-popup.pdf"
+      ]
+    }
+  },
+  {
+    "event_id": "EVT-20261011-00153-6248",
+    "created_at": "2026-10-11T15:40:30.199Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_intake",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "SUBMITTED",
+    "new_state": "INTAKE_EXTRACTED",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_efa75b1b",
+        "filename": "tax-invoice-mts-bangsar-popup-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_f28ddfa3",
+        "filename": "event-photos-bangsar-popup-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_02edbfbf",
+        "filename": "attendee-signin-bangsar-popup.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_3a44c314",
+        "filename": "proof-of-payment-mbb-bangsar-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "attachments_count": 4,
+      "amount_confidence": 0.97,
+      "document_types": [
+        "TAX_INVOICE",
+        "EVENT_PHOTOS",
+        "ATTENDEE_SIGNIN",
+        "PROOF_OF_PAYMENT"
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00154-c2c0",
+    "created_at": "2026-10-11T15:40:30.201Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "INTAKE_EXTRACTED",
+    "new_state": "VALIDATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {},
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00155-9f1e",
+    "created_at": "2026-10-11T15:40:30.202Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_validation",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "VALIDATING",
+    "new_state": "RULES_EVALUATING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "checks": [
+        {
+          "id": "COMPLETENESS",
+          "label": "Required field completeness",
+          "passed": true
+        },
+        {
+          "id": "PARTNER_IDENTITY",
+          "label": "Partner identity & tier check",
+          "passed": true
+        },
+        {
+          "id": "LINKAGE",
+          "label": "Claim-to-pre-approval linkage",
+          "passed": true
+        },
+        {
+          "id": "DEDUP",
+          "label": "Invoice & submission deduplication",
+          "passed": true
+        }
+      ]
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00156-6d8b",
+    "created_at": "2026-10-11T15:40:30.204Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_rules_engine",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "RULES_EVALUATING",
+    "new_state": "BUDGET_RESERVING",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_efa75b1b",
+        "filename": "tax-invoice-mts-bangsar-popup-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_f28ddfa3",
+        "filename": "event-photos-bangsar-popup-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_02edbfbf",
+        "filename": "attendee-signin-bangsar-popup.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_3a44c314",
+        "filename": "proof-of-payment-mbb-bangsar-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "rule_engine_version": "v2026.3.0",
+      "summary": {
+        "total": 6,
+        "passed": 6,
+        "failed": 0,
+        "blockers": 0,
+        "warnings": 0,
+        "needs_interpretation": 0,
+        "not_evaluated": 0,
+        "not_applicable": 0
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00157-6897",
+    "created_at": "2026-10-11T15:40:30.208Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_budget",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "BUDGET_RESERVING",
+    "new_state": "EXCEPTION_TRIAGE",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [],
+    "details": {
+      "status": "SUCCESS",
+      "tx_id": "bc9b1ab6-b5dd-4902-93a7-ff11faf98f22",
+      "ledger_row": {
+        "partner_id": "PTR-GLD-882",
+        "fiscal_year": 2026,
+        "allocated_amount": 2000000,
+        "committed_amount": 818700,
+        "approved_amount": 193900,
+        "paid_amount": 700000,
+        "updated_at": "2026-10-11T15:40:30.206Z"
+      }
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00158-602b",
+    "created_at": "2026-10-11T15:40:30.209Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_exception",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "EXCEPTION_TRIAGE",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_efa75b1b",
+        "filename": "tax-invoice-mts-bangsar-popup-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_f28ddfa3",
+        "filename": "event-photos-bangsar-popup-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_02edbfbf",
+        "filename": "attendee-signin-bangsar-popup.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_3a44c314",
+        "filename": "proof-of-payment-mbb-bangsar-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "exception_type": "NONE",
+      "business_items": []
+    },
+    "rule_version": "v2026.3.0"
+  },
+  {
+    "event_id": "EVT-20261011-00159-434a",
+    "created_at": "2026-10-11T15:40:30.210Z",
+    "submission_id": "SUB-2026-MY-0022",
+    "run_id": "run_20261011_905349cc",
+    "actor": "agent_human_review",
+    "actor_type": "SYSTEM_AGENT",
+    "previous_state": "PENDING_HUMAN_REVIEW",
+    "new_state": "PENDING_HUMAN_REVIEW",
+    "error_code": null,
+    "rule_id": null,
+    "evidence_refs": [
+      {
+        "doc_id": "doc_efa75b1b",
+        "filename": "tax-invoice-mts-bangsar-popup-aug2026.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.97
+      },
+      {
+        "doc_id": "doc_f28ddfa3",
+        "filename": "event-photos-bangsar-popup-01.jpg",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_02edbfbf",
+        "filename": "attendee-signin-bangsar-popup.csv",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 1
+      },
+      {
+        "doc_id": "doc_3a44c314",
+        "filename": "proof-of-payment-mbb-bangsar-popup.pdf",
+        "page": 1,
+        "bounding_box": null,
+        "confidence": 0.95
+      }
+    ],
+    "details": {
+      "memo_status": "DRAFT_PENDING_REVIEW",
+      "commitment_filter_clean": true
+    },
+    "rule_version": "v2026.3.0"
+  }
+]

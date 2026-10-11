@@ -1,0 +1,53 @@
+{
+  "brand": {
+    "name": "UMochi Squad",
+    "product": "PartnerFlow",
+    "tagline": "Enterprise partner pre-approval & claim reimbursement automation — deterministic rules, a four-state budget ledger, and human final authority that is never delegated.",
+    "gradient": ["#72CDFF", "#BFFFCC"]
+  },
+  "org": {
+    "name": "UMochi Technologies Sdn. Bhd.",
+    "environment": "Programme Operations Console (Admin Console, desktop-first)",
+    "fiscal_year": 2026,
+    "base_currency": "MYR",
+    "region": "Asia-Pacific — Malaysia, Singapore, Indonesia"
+  },
+  "rule_engine_version": "v2026.3.0",
+  "confidence_thresholds": {
+    "amount_hard_block": 0.90,
+    "parsing_suspend": 0.85
+  },
+  "claim_window_days": 30,
+  "sla_hours": {
+    "ops_initial_review": 48
+  },
+  "operator": {
+    "name": "Alyssa Woe",
+    "email": "alyssa.woe@company.com",
+    "role": "Programme Operations Administrator"
+  },
+  "approvers": [
+    {
+      "name": "Dato' Sri Marcus Tan",
+      "email": "marcus.tan@umochi.com",
+      "role": "VP Global Channel Operations & Finance",
+      "approval_limit": 500000,
+      "can_final_approve": true
+    },
+    {
+      "name": "Agent 7: Executive Briefing AI (Boss Skill)",
+      "email": "boss.ai@umochi.com",
+      "role": "Executive AI Approver (Boss Skill)",
+      "approval_limit": 1000000,
+      "can_final_approve": true
+    },
+    {
+      "name": "Alyssa Woe",
+      "email": "alyssa.woe@company.com",
+      "role": "Programme Operations Administrator",
+      "approval_limit": 50000,
+      "can_final_approve": true
+    }
+  ],
+  "provenance": "derived"
+}

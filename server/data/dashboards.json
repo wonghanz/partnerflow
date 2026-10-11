@@ -1,0 +1,156 @@
+{
+  "operations": {
+    "title": "Operations Dashboard — Task Flow & Bottlenecks",
+    "widgets": [
+      {
+        "id": "worklist",
+        "type": "table",
+        "title": "Actionable Worklist",
+        "description": "Tasks sorted by SLA urgency, highlighting submissions exceeding 48 hours; columns include submission_id, partner, state, owner, and ageing.",
+        "data_source": "submissions"
+      },
+      {
+        "id": "ownership_ageing",
+        "type": "table",
+        "title": "Ownership & Ageing Matrix",
+        "description": "Average dwell days grouped by current owner: Partner Clarification (5d), Ops Review (1d), Director Escalation (3d).",
+        "data_source": "submissions"
+      },
+      {
+        "id": "bottleneck_heatmap",
+        "type": "heatmap",
+        "title": "Bottleneck Heatmap",
+        "description": "Identifies primary friction drivers (e.g. MISSING_SUPPORTING_DOCUMENTS, ATTENDEE_SIGNIN, FLAG_LOW_CONFIDENCE) across partner tiers.",
+        "data_source": "submissions"
+      },
+      {
+        "id": "sla_breach",
+        "type": "metric",
+        "title": "SLA Overdue Count (Ops Initial Review > 48h)",
+        "description": "Submissions in human pending state where ageing exceeds ops initial review SLA threshold (48 hours).",
+        "data_source": "submissions"
+      },
+      {
+        "id": "clarification_queue",
+        "type": "table",
+        "title": "Clarification & Follow-Up Queue",
+        "description": "Grill-Me single-round aggregated questions and Agent 6 information request response tracking (clarification_records).",
+        "data_source": "clarifications"
+      }
+    ]
+  },
+  "finance": {
+    "title": "Finance Dashboard — Fund Occupation & Ledger Compliance",
+    "widgets": [
+      {
+        "id": "four_state_pool",
+        "type": "metric",
+        "title": "Four-State Budget Pool Watermark",
+        "description": "Allocated: RM 10,000,000 | Committed: RM 4,200,000 | Approved: RM 800,000 | Paid: RM 3,500,000 | Available: RM 1,500,000.",
+        "data_source": "ledger"
+      },
+      {
+        "id": "cashflow_14d",
+        "type": "bar",
+        "title": "14-Day Payout Forecast & Cashflow Matching",
+        "description": "Expected payout schedule over next 14 days; daily cumulative payouts stay within Approved pool headroom.",
+        "data_source": "ledger"
+      },
+      {
+        "id": "invoice_dedup",
+        "type": "table",
+        "title": "Duplicate Invoice & Tax Compliance",
+        "description": "Invoice alert stream: global duplicate invoice numbers (DUPLICATE_INVOICE_NUMBER), 90-day collision checks, and amount circuit breakers.",
+        "data_source": "submissions"
+      },
+      {
+        "id": "ledger_transfers",
+        "type": "table",
+        "title": "Four-State Ledger Transactions",
+        "description": "Immutable ledger mutations (RESERVE_COMMIT, COMMIT_TO_APPROVE, RELEASE_COMMIT, PAY) with idempotency keys and timestamps.",
+        "data_source": "budget_transactions"
+      },
+      {
+        "id": "reconcile_drift",
+        "type": "metric",
+        "title": "Ledger Invariant Conservation Check",
+        "description": "Reconciliation formula: Available = Allocated - (Committed + Approved + Paid) >= 0; delta divergence triggers immediate alert.",
+        "data_source": "ledger"
+      }
+    ]
+  },
+  "management": {
+    "title": "Management Executive View — ROI & Strategic Performance",
+    "widgets": [
+      {
+        "id": "throughput",
+        "type": "metric",
+        "title": "Monthly Processing Throughput",
+        "description": "Total monthly application volume and straight-through processing (STP) rate; average turnaround cycle reduced from 14d to 2d.",
+        "data_source": "submissions"
+      },
+      {
+        "id": "status_mix",
+        "type": "bar",
+        "title": "Approval, Rejection & Special Approval Trends",
+        "description": "Outcome mix breakdown: APPROVED, REJECTED, POLICY_BLOCKED, and manual exception escalation percentages.",
+        "data_source": "submissions"
+      },
+      {
+        "id": "budget_burn",
+        "type": "bar",
+        "title": "Budget Burn vs Programme ROI",
+        "description": "Budget consumption velocity by region and programme benchmarked against partner event outputs.",
+        "data_source": "ledger"
+      },
+      {
+        "id": "drilldown",
+        "type": "table",
+        "title": "Multi-Dimensional Drilldown Matrix",
+        "description": "Five-dimensional breakdown across Partner, Region, Tier, Programme, and Status with declared amount, approved amount, and payout ratio.",
+        "data_source": "submissions"
+      },
+      {
+        "id": "exception_digest",
+        "type": "table",
+        "title": "Critical Exceptions & Security Digest",
+        "description": "Executive risk summary: SECURITY_QUARANTINE items, open policy conflicts, and items awaiting VP sign-off.",
+        "data_source": "audit_events"
+      }
+    ]
+  },
+  "dimensions": [
+    {
+      "id": "by_partner",
+      "label_zh": "By Partner",
+      "label_en": "By Partner",
+      "metric": "Top 10 claiming partners and settlement ratio"
+    },
+    {
+      "id": "by_region",
+      "label_zh": "By Region",
+      "label_en": "By Region",
+      "metric": "Malaysia, Singapore & Indonesia budget burn comparison"
+    },
+    {
+      "id": "by_tier",
+      "label_zh": "By Tier",
+      "label_en": "By Tier",
+      "metric": "Elite, Gold, Silver partner participation activity"
+    },
+    {
+      "id": "by_programme",
+      "label_zh": "By Programme",
+      "label_en": "By Programme",
+      "metric": "Q3 Joint Marketing, Exhibition Subsidy & Digital Advertising Incentive effectiveness"
+    },
+    {
+      "id": "by_status",
+      "label_zh": "By Status",
+      "label_en": "By Status",
+      "metric": "Approval, rejection and special-approval rate trends"
+    }
+  ],
+  "provenance": "derived",
+  "provenance_notes": "Operations, Finance, and Management executive dashboards with 5-dimensional drill-downs and real-time SLA metrics."
+}

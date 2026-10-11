@@ -1,0 +1,77 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+      /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<< /Length 1286 >>
+stream
+BT
+/F2 16 Tf
+50 740 Td
+(TAX INVOICE INV-DUP-2026-9901) Tj
+/F1 11 Tf
+0 -22 Td
+(Cyberjaya Exhibition Pavilion - Venue Staging) Tj
+/F1 10 Tf
+0 -20 Td
+(--------------------------------------------------------------------------------) Tj
+0 -18 Td
+(Supplier: Cyberjaya Exhibition Pavilion Sdn Bhd) Tj
+0 -16 Td
+(SST Registration No: W10-9999-00000000 \(FLAGGED: UNREGISTERED / INVALID\)) Tj
+0 -16 Td
+(Billed to: InnoSoft Regional Distribution Ltd \(Partner ID: PTR-REG-305\)) Tj
+0 -16 Td
+(Invoice Number: INV-DUP-2026-9901) Tj
+0 -16 Td
+(Invoice Date: 2026-09-10) Tj
+0 -16 Td
+(Item 1: Virtualization Showcase Main Exhibition Hall - RM 16,000.00) Tj
+0 -16 Td
+(Item 2: High-Density Rack Power Staging & AV Displays - RM 8,000.00) Tj
+0 -16 Td
+(Total Amount Payable: RM 24,000.00) Tj
+0 -16 Td
+(--------------------------------------------------------------------------------) Tj
+0 -16 Td
+([AGENT 5 SECURITY SENTINEL AUDIT REPORT]) Tj
+0 -16 Td
+(THREAT LEVEL: CRITICAL \(Tampering Flagged\)) Tj
+0 -16 Td
+(1. DUPLICATE INVOICE: Number INV-DUP-2026-9901 previously claimed under PTR-GLD-882.) Tj
+0 -16 Td
+(2. TIMESTAMP TAMPERING: PDF XMP creation timestamp does not match filesystem metadata.) Tj
+0 -16 Td
+(3. SECURITY ACTION: Automatic quarantine applied. Pipeline halted \(Iron Invariant 5\).) Tj
+ET
+endstream
+endobj
+xref
+0 5
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000386 00000 n 
+trailer
+<< /Size 5 /Root 1 0 R >>
+startxref
+1723
+%%EOF

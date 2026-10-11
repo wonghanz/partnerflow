@@ -1,0 +1,36 @@
+[
+  {
+    "conflict_id": "CF-001",
+    "rule_a": "R-CAP-003",
+    "rule_b": "R-CAP-LEGACY-2025",
+    "field": "single_event_cap",
+    "value_a": 10000,
+    "value_b": 8000,
+    "source_a": "Partner_Incentive_2026_Q1.pdf#p2",
+    "source_b": "SOP_2025_V2.pdf#p4",
+    "status": "resolved",
+    "resolution": "ADR-003",
+    "resolved_by": "APAC Business VP & Finance Director",
+    "resolved_at": "2026-03-01",
+    "affected_submissions": [],
+    "notes": "Grill-With-Docs identified policy conflict (RM 8,000 vs RM 10,000). Both sources presented to leadership. ADR-003 ratified RM 10,000 cap from Partner_Incentive_2026_Q1 effective 2026-03-01.",
+    "provenance": "documented"
+  },
+  {
+    "conflict_id": "CF-002",
+    "rule_a": "R-CAP-003",
+    "rule_b": "XLSX-Q3-ALLOCATIONS",
+    "field": "single_event_cap",
+    "value_a": 10000,
+    "value_b": 8000,
+    "source_a": "policies/budget-calculation.md#rule-4",
+    "source_b": "04-partner-master-and-budget-tracker.xlsx#Q3_Allocations!F14",
+    "status": "open",
+    "resolution": null,
+    "resolved_by": null,
+    "resolved_at": null,
+    "affected_submissions": [],
+    "notes": "Q3_Allocations worksheet retains legacy RM 8,000 column value with external VLOOKUP formula. Maintained open pending administrator sign-off in Step 3.",
+    "provenance": "derived"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "partner_id": "PTR-GLD-882",
+    "name": "MegaTech Solutions (M) Sdn Bhd",
+    "tier": "Gold",
+    "status": "active",
+    "region": "Malaysia",
+    "contact_email": "alyssa.woe@megatech.com",
+    "programmes": ["Q3 Joint Marketing"],
+    "since": "2024-02-01",
+    "provenance": "documented"
+  },
+  {
+    "partner_id": "PTR-ELT-101",
+    "name": "Sentosa Digital Partners (Pte) Ltd",
+    "tier": "Elite",
+    "status": "active",
+    "region": "Singapore",
+    "contact_email": "claims@sentosadigital.sg",
+    "programmes": ["Q3 Joint Marketing", "Digital Advertising Incentive"],
+    "since": "2022-07-15",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-ELT-055",
+    "name": "Cakra Prima Nusantara PT",
+    "tier": "Elite",
+    "status": "active",
+    "region": "Indonesia",
+    "contact_email": "partnership@cakraprima.co.id",
+    "programmes": ["Exhibition Subsidy", "Q3 Joint Marketing"],
+    "since": "2021-11-02",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-GLD-233",
+    "name": "Pulau Pinang Retail Group Sdn Bhd",
+    "tier": "Gold",
+    "status": "active",
+    "region": "Malaysia",
+    "contact_email": "finance@ppretailgroup.com.my",
+    "programmes": ["Exhibition Subsidy"],
+    "since": "2023-04-18",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-GLD-745",
+    "name": "Marina Bay Marketing Pte Ltd",
+    "tier": "Gold",
+    "status": "active",
+    "region": "Singapore",
+    "contact_email": "ap@marinabaymarketing.sg",
+    "programmes": ["Digital Advertising Incentive", "Q3 Joint Marketing"],
+    "since": "2023-09-01",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-SLV-456",
+    "name": "Lumen Media Sdn Bhd",
+    "tier": "Silver",
+    "status": "active",
+    "region": "Singapore",
+    "contact_email": "billing@lumenmedia.sg",
+    "programmes": ["Digital Advertising Incentive"],
+    "since": "2025-01-20",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-SLV-611",
+    "name": "Bandar Media Sdn Bhd",
+    "tier": "Silver",
+    "status": "suspended",
+    "region": "Malaysia",
+    "contact_email": "admin@bandarmedia.com.my",
+    "programmes": ["Exhibition Subsidy"],
+    "since": "2024-06-30",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-REG-770",
+    "name": "Nusantara Ads Indonesia PT",
+    "tier": "Registered",
+    "status": "active",
+    "region": "Indonesia",
+    "contact_email": "ops@nusantaraads.id",
+    "programmes": ["Digital Advertising Incentive"],
+    "since": "2026-02-11",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-REG-318",
+    "name": "Cyberjaya Cloud Services Sdn Bhd",
+    "tier": "Registered",
+    "status": "active",
+    "region": "Malaysia",
+    "contact_email": "accounts@cjcloud.my",
+    "programmes": ["Q3 Joint Marketing"],
+    "since": "2026-05-06",
+    "provenance": "derived"
+  },
+  {
+    "partner_id": "PTR-UNA-901",
+    "name": "Kelang Digital Trading Sdn Bhd",
+    "tier": "Unassigned",
+    "status": "active",
+    "region": "Malaysia",
+    "contact_email": "hello@kelangdigital.my",
+    "programmes": ["Exhibition Subsidy"],
+    "since": "2026-08-19",
+    "provenance": "derived"
+  }
+]

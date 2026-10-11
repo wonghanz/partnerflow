@@ -1,0 +1,39 @@
+{
+  "fiscal_year": 2026,
+  "base_currency": "MYR",
+  "total_programme_pool": 10000000,
+  "ledger_summary": {
+    "allocated": 5960000,
+    "committed": 2344950,
+    "approved": 437650,
+    "paid": 1940000,
+    "available": 1237400,
+    "reserve_buffer": 4040000
+  },
+  "tier_allocations": [
+    {
+      "tier": "Elite",
+      "allocated": 2660000,
+      "ratio": 0.7,
+      "partners_count": 3
+    },
+    {
+      "tier": "Gold",
+      "allocated": 2000000,
+      "ratio": 0.5,
+      "partners_count": 4
+    },
+    {
+      "tier": "Silver",
+      "allocated": 900000,
+      "ratio": 0.4,
+      "partners_count": 2
+    },
+    {
+      "tier": "Registered",
+      "allocated": 400000,
+      "ratio": 0.3,
+      "partners_count": 1
+    }
+  ]
+}

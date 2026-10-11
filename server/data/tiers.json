@@ -1,0 +1,97 @@
+[
+  {
+    "tier_id": "TIER-ELITE",
+    "name": "Elite",
+    "level": 3,
+    "status": "active",
+    "eligibility_criteria": "Top-tier strategic partners (Registered < Silver < Gold < Elite): signed annual framework agreements, joint marketing primary host responsibilities, approved by APAC VP.",
+    "programme_limits": {
+      "single_event_cap": null,
+      "cap_currency": "MYR",
+      "coop_reimbursement_ratio": 0.70,
+      "cap_configured": false
+    },
+    "required_documents": ["TAX_INVOICE", "EVENT_PHOTOS", "PROOF_OF_PAYMENT"],
+    "effective_date": "2026-03-01",
+    "source_ref": "policies/tier-benefits.md#table-1",
+    "approved_by": "Published with Rule Matrix v2026.3.0",
+    "notes": "Co-op reimbursement ratio 70% is formally documented policy (Gold 50%, Elite 70%). Single-event cap is not explicitly mandated in corporate documents; per Iron Invariant 3 (zero guessing), cap_configured = false and single_event_cap = null until confirmed by administrator.",
+    "provenance": "documented"
+  },
+  {
+    "tier_id": "TIER-GOLD",
+    "name": "Gold",
+    "level": 2,
+    "status": "active",
+    "eligibility_criteria": "Certified joint marketing partners meeting procurement threshold, entitled to 50% co-op reimbursement and RM 10,000 single-event cap.",
+    "programme_limits": {
+      "single_event_cap": 10000.00,
+      "cap_currency": "MYR",
+      "coop_reimbursement_ratio": 0.50,
+      "cap_configured": true
+    },
+    "required_documents": ["TAX_INVOICE", "EVENT_PHOTOS", "ATTENDEE_SIGNIN", "PROOF_OF_PAYMENT"],
+    "effective_date": "2026-03-01",
+    "source_ref": "policies/tier-benefits.md#table-2",
+    "approved_by": "APAC Business VP & Finance Director (ADR-003)",
+    "notes": "Single-event cap RM 10,000 and 50% co-op matching ratio are official policy values under ADR-003 effective 2026-03-01.",
+    "provenance": "documented"
+  },
+  {
+    "tier_id": "TIER-SLVR",
+    "name": "Silver",
+    "level": 1,
+    "status": "not_configured",
+    "eligibility_criteria": "Documented member of 4-tier ladder (Registered < Silver < Gold < Elite); specific tier policy criteria awaiting administrative confirmation.",
+    "programme_limits": {
+      "single_event_cap": null,
+      "cap_currency": "MYR",
+      "coop_reimbursement_ratio": null,
+      "cap_configured": false
+    },
+    "required_documents": [],
+    "effective_date": null,
+    "source_ref": "policies/tier-benefits.md#table-1",
+    "approved_by": null,
+    "notes": "Unconfigured tier: displays 'No active policy configured'. All limits show 'Not configured / Needs confirmation'. Policy rules yield NOT_EVALUATED and route to human reviewer.",
+    "provenance": "documented"
+  },
+  {
+    "tier_id": "TIER-REG",
+    "name": "Registered",
+    "level": 0,
+    "status": "draft",
+    "eligibility_criteria": "Baseline tier (level 0): registered in partner master but pending annual procurement or accreditation review.",
+    "programme_limits": {
+      "single_event_cap": null,
+      "cap_currency": "MYR",
+      "coop_reimbursement_ratio": null,
+      "cap_configured": false
+    },
+    "required_documents": [],
+    "effective_date": null,
+    "source_ref": "policies/tier-benefits.md#table-1",
+    "approved_by": null,
+    "notes": "Draft status: Tier exists in terminology glossary, but co-op limits require individual administrator sign-off.",
+    "provenance": "derived"
+  },
+  {
+    "tier_id": "TIER-OTHER",
+    "name": "Other / Unassigned",
+    "level": null,
+    "status": "fallback",
+    "eligibility_criteria": "Fallback tier: applies to partners without confirmed tier assignment or during system cold-start.",
+    "programme_limits": {
+      "single_event_cap": null,
+      "cap_currency": "MYR",
+      "coop_reimbursement_ratio": null,
+      "cap_configured": false
+    },
+    "required_documents": [],
+    "effective_date": null,
+    "source_ref": "policies/tier-benefits.md#table-1",
+    "approved_by": null,
+    "notes": "Fallback state: default rules applied. Tier-dependent limit rules bypass automated evaluation and route to manual review.",
+    "provenance": "documented"
+  }
+]

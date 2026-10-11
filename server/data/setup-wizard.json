@@ -1,0 +1,10 @@
+{
+  "step": 4,
+  "pathway": "A",
+  "status": "COMPLETED",
+  "completed_steps": [1, 2, 3, 4],
+  "ingested_documents_count": 10,
+  "compiled_rules_count": 52,
+  "saved_at": "2026-10-11T12:00:00.000Z",
+  "notes": "All 10 client documents ingested and classified. 8 deterministic policy rules published under rule matrix v2026.3.0. Programme is live and active."
+}

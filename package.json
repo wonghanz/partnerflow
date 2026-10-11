@@ -1,0 +1,18 @@
+{
+  "name": "umochi-partnerflow-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PartnerFlow — UMochi Squad partner pre-approval & claim console. Zero-dependency Node http server + vanilla ES-module SPA over an AI-authored Company Brain corpus.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "seed": "node server/seed-submissions.js",
+    "sql": "node server/run-sql.js",
+    "test": "node test-rules.js",
+    "css-gaps": "node _tools/css-gaps.js",
+    "lint-views": "node _tools/lint-modules.js public/js/app.js public/js/views/*.js"
+  }
+}

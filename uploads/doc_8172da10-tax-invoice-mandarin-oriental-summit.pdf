@@ -1,0 +1,73 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+      /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<< /Length 1056 >>
+stream
+BT
+/F2 16 Tf
+50 740 Td
+(TAX INVOICE INV-APX-2026-0914) Tj
+/F1 11 Tf
+0 -22 Td
+(Mandarin Oriental Hotel Kuala Lumpur) Tj
+/F1 10 Tf
+0 -20 Td
+(--------------------------------------------------------------------------------) Tj
+0 -18 Td
+(Supplier: Mandarin Oriental Hotel Kuala Lumpur) Tj
+0 -16 Td
+(SST Registration No: W10-1808-32000018 \(Verified via MyInvois\)) Tj
+0 -16 Td
+(Billed to: Apex Data Systems Pte Ltd \(Partner ID: PTR-ELT-101\)) Tj
+0 -16 Td
+(Invoice Number: INV-APX-2026-0914) Tj
+0 -16 Td
+(Invoice Date: 2026-09-15) Tj
+0 -16 Td
+(Pre-Approval Reference: SUB-2026-MY-0001) Tj
+0 -16 Td
+(Programme: Cloud Pioneer MDF Initiative) Tj
+0 -16 Td
+(Item 1: Grand Ballroom Staging, Backdrop & High-Def LED Wall - RM 11,250.00) Tj
+0 -16 Td
+(Item 2: Interactive Live Demo Lab Workstations & AV Cabling - RM 4,500.00) Tj
+0 -16 Td
+(Item 3: Executive Buffet Luncheon for 85 Enterprise Attendees - RM 3,000.00) Tj
+0 -16 Td
+(Total Payable: RM 18,750.00 \(Inclusive of 8% SST RM 1,388.89\)) Tj
+0 -16 Td
+(Payment Status: Fully Paid via Swift Remittance MT103) Tj
+ET
+endstream
+endobj
+xref
+0 5
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000386 00000 n 
+trailer
+<< /Size 5 /Root 1 0 R >>
+startxref
+1493
+%%EOF

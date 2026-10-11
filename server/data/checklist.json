@@ -1,0 +1,69 @@
+{
+  "CLAIM": [
+    {
+      "item_id": "TAX_INVOICE",
+      "order": 1,
+      "label_zh": "Official Tax Invoice",
+      "label_en": "Official Tax Invoice",
+      "required": true,
+      "match_keywords": ["invoice", "tax", "faktur", "resit", "billing", "inv"],
+      "policy_ref": "policies/claim-eligibility.md#sec-2"
+    },
+    {
+      "item_id": "EVENT_PHOTOS",
+      "order": 2,
+      "label_zh": "Event Photos / Proof of Execution",
+      "label_en": "Event Photos / Proof of Execution",
+      "required": true,
+      "match_keywords": ["photo", "photos", "event", "gambar", "execution", "img"],
+      "policy_ref": "policies/claim-eligibility.md#sec-proofs"
+    },
+    {
+      "item_id": "ATTENDEE_SIGNIN",
+      "order": 3,
+      "label_zh": "Attendee Sign-in Sheet",
+      "label_en": "Attendee Sign-in Sheet",
+      "required": true,
+      "match_keywords": ["signin", "sign-in", "attendee", "attendance", "registration"],
+      "policy_ref": "policies/claim-eligibility.md#sec-proofs"
+    },
+    {
+      "item_id": "PROOF_OF_PAYMENT",
+      "order": 4,
+      "label_zh": "Proof of Payment",
+      "label_en": "Proof of Payment",
+      "required": true,
+      "match_keywords": ["payment", "bank", "statement", "receipt", "transfer"],
+      "policy_ref": "policies/claim-eligibility.md#sec-2"
+    }
+  ],
+  "PRE_APPROVAL": [
+    {
+      "item_id": "PRE_APPROVAL_FORM",
+      "order": 1,
+      "label_zh": "Pre-Approval Application Form",
+      "label_en": "Pre-Approval Application Form (applicant details & planned budget lines)",
+      "required": true,
+      "match_keywords": ["pre-approval", "preapproval", "approval-form", "pa-form"],
+      "policy_ref": "policies/pre-approval.md#sec-1.1"
+    },
+    {
+      "item_id": "QUOTATION",
+      "order": 2,
+      "label_zh": "Vendor Quotation / Cost Estimate",
+      "label_en": "Vendor Quotation / Cost Estimate",
+      "required": true,
+      "match_keywords": ["quote", "quotation", "proposal", "offer"],
+      "policy_ref": "policies/pre-approval.md#sec-3"
+    },
+    {
+      "item_id": "AGENDA",
+      "order": 3,
+      "label_zh": "Programme Plan / Event Agenda",
+      "label_en": "Programme Plan / Event Agenda",
+      "required": true,
+      "match_keywords": ["agenda", "programme", "program", "schedule", "rundown"],
+      "policy_ref": "policies/pre-approval.md#sec-1.3"
+    }
+  ]
+}

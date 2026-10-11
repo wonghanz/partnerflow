@@ -1,0 +1,86 @@
+{
+  "company": {
+    "legal_name": "UMochi Technologies Sdn. Bhd.",
+    "trade_name": "UMochi Squad / PartnerFlow",
+    "registration_number": "202401088219-X",
+    "tax_identification_number": "W10-2401-32000881",
+    "incorporation_date": "2024-03-15",
+    "headquarters_address": "Level 28, Menara Ilham, No. 8, Jalan Binjai, 50450 Kuala Lumpur, Malaysia",
+    "operating_region": "Asia-Pacific (Malaysia, Singapore, Indonesia, Thailand)",
+    "base_currency": "MYR",
+    "fiscal_year": 2026
+  },
+  "executive_leadership": [
+    {
+      "name": "Dato' Sri Marcus Tan",
+      "title": "VP Global Channel Operations & Finance",
+      "email": "marcus.tan@umochi.com",
+      "approval_limit": 500000
+    },
+    {
+      "name": "Alyssa Woe",
+      "title": "Lead Operations Administrator",
+      "email": "alyssa.woe@company.com",
+      "approval_limit": 50000
+    }
+  ],
+  "brands": [
+    {
+      "brand_id": "BRD-CORE",
+      "name": "UMochi Core™",
+      "tagline": "Enterprise Partner Lifecycle & Channel Workflow Engine",
+      "description": "Orchestrates partner onboarding, tier contracts, credential verification, and audit trail synchronization.",
+      "active_partners": 48
+    },
+    {
+      "brand_id": "BRD-CLOUD",
+      "name": "UMochi Cloud™",
+      "tagline": "Hybrid Cloud Infrastructure & AI Compute Acceleration",
+      "description": "Powers regional enterprise multi-cloud migrations, sovereign AI clusters, and co-branded developer solutions.",
+      "active_partners": 32
+    },
+    {
+      "brand_id": "BRD-AI",
+      "name": "UMochi AI Suite™",
+      "tagline": "Deterministic Multi-Agent Governance & Anomaly Triage Mesh",
+      "description": "Enforces 7-agent verification, document fraud forensics, zero-hallucination math, and executive briefing synthesis.",
+      "active_partners": 19
+    }
+  ],
+  "programmes": [
+    {
+      "programme_id": "PRG-CLOUD-MDF",
+      "name": "Cloud Pioneer MDF Initiative FY26",
+      "annual_pool_myr": 4500000,
+      "coop_reimbursement_ratio": 0.5,
+      "eligible_expense_categories": [
+        "Partner Summits",
+        "Hands-on Technical Labs",
+        "Cloud Hackathons",
+        "Ballroom Staging"
+      ]
+    },
+    {
+      "programme_id": "PRG-COOP-APAC",
+      "name": "APAC Co-op Marketing Fund FY26",
+      "annual_pool_myr": 3500000,
+      "coop_reimbursement_ratio": 0.5,
+      "eligible_expense_categories": [
+        "Joint Marketing Collateral",
+        "Exhibitions & Industry Expos",
+        "Launch Banquets"
+      ]
+    },
+    {
+      "programme_id": "PRG-RETAIL-POS",
+      "name": "Retail Merchandising & POS Rebate",
+      "annual_pool_myr": 2000000,
+      "coop_reimbursement_ratio": 0.5,
+      "eligible_expense_categories": [
+        "Channel Merchandising",
+        "B2B Digital Lead Generation",
+        "Retail POS Collaterals"
+      ]
+    }
+  ]
+}

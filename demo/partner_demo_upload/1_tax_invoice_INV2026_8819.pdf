@@ -1,0 +1,75 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+      /F2 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<< /Length 1126 >>
+stream
+BT
+/F2 16 Tf
+50 740 Td
+(TAX INVOICE INV-APX-2026-8819) Tj
+/F1 11 Tf
+0 -22 Td
+(Grand Hyatt Kuala Lumpur Venue Services) Tj
+/F1 10 Tf
+0 -20 Td
+(--------------------------------------------------------------------------------) Tj
+0 -18 Td
+(Supplier: Grand Hyatt Kuala Lumpur Venue Services) Tj
+0 -16 Td
+(SST Registration No: W10-1808-11223344 \(Verified Active via MyInvois\)) Tj
+0 -16 Td
+(Billed to: MegaTech Solutions \(M\) Sdn Bhd \(Partner ID: PTR-GLD-882\)) Tj
+0 -16 Td
+(Invoice Number: INV-APX-2026-8819) Tj
+0 -16 Td
+(Invoice Date: 2026-09-15) Tj
+0 -16 Td
+(Linked Pre-Approval Requisition: SUB-2026-MY-0001) Tj
+0 -16 Td
+(Activity Title: FY2026 Q3 Enterprise Cloud Launch Event) Tj
+0 -16 Td
+(Programme: APAC Co-op Marketing Fund FY26) Tj
+0 -16 Td
+(Line Item 1: Grand Ballroom Staging & Rigging - RM 4,200.00) Tj
+0 -16 Td
+(Line Item 2: High-Definition LED Wall & AV System - RM 3,100.00) Tj
+0 -16 Td
+(Line Item 3: Promotional Signage & Keynote Collateral - RM 2,700.00) Tj
+0 -16 Td
+(Total Amount Payable: RM 10,000.00 \(Inclusive of 8% SST\)) Tj
+0 -16 Td
+(Payment Status: Fully Settled via Bank Transfer on 2026-09-18) Tj
+ET
+endstream
+endobj
+xref
+0 5
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000386 00000 n 
+trailer
+<< /Size 5 /Root 1 0 R >>
+startxref
+1563
+%%EOF

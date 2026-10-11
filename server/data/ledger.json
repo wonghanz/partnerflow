@@ -1,0 +1,156 @@
+{
+  "fiscal_year": 2026,
+  "currency": "MYR",
+  "company_totals": {
+    "allocated": 10000000,
+    "committed": 4236500,
+    "approved": 879100,
+    "paid": 3500000,
+    "available": 1384400
+  },
+  "rows": [
+    {
+      "partner_id": "PTR-GLD-882",
+      "fiscal_year": 2026,
+      "allocated_amount": 2000000,
+      "committed_amount": 818700,
+      "approved_amount": 193900,
+      "paid_amount": 700000,
+      "updated_at": "2026-10-11T15:40:30.206Z"
+    },
+    {
+      "partner_id": "PTR-ELT-101",
+      "fiscal_year": 2026,
+      "allocated_amount": 1760000,
+      "committed_amount": 780000,
+      "approved_amount": 130000,
+      "paid_amount": 600000,
+      "updated_at": "2026-10-10T09:05:00Z"
+    },
+    {
+      "partner_id": "PTR-ELT-055",
+      "fiscal_year": 2026,
+      "allocated_amount": 1540000,
+      "committed_amount": 730000,
+      "approved_amount": 100000,
+      "paid_amount": 550000,
+      "updated_at": "2026-10-11T15:40:29.930Z"
+    },
+    {
+      "partner_id": "PTR-GLD-233",
+      "fiscal_year": 2026,
+      "allocated_amount": 1260000,
+      "committed_amount": 600400,
+      "approved_amount": 115600,
+      "paid_amount": 400000,
+      "updated_at": "2026-10-11T15:40:30.143Z"
+    },
+    {
+      "partner_id": "PTR-GLD-745",
+      "fiscal_year": 2026,
+      "allocated_amount": 930000,
+      "committed_amount": 414800,
+      "approved_amount": 90200,
+      "paid_amount": 350000,
+      "updated_at": "2026-10-11T15:40:30.107Z"
+    },
+    {
+      "partner_id": "PTR-SLV-456",
+      "fiscal_year": 2026,
+      "allocated_amount": 900000,
+      "committed_amount": 390000,
+      "approved_amount": 80000,
+      "paid_amount": 300000,
+      "updated_at": "2026-10-10T09:25:00Z"
+    },
+    {
+      "partner_id": "PTR-SLV-611",
+      "fiscal_year": 2026,
+      "allocated_amount": 470000,
+      "committed_amount": 160000,
+      "approved_amount": 40000,
+      "paid_amount": 150000,
+      "updated_at": "2026-10-10T09:30:00Z"
+    },
+    {
+      "partner_id": "PTR-REG-770",
+      "fiscal_year": 2026,
+      "allocated_amount": 450000,
+      "committed_amount": 120000,
+      "approved_amount": 50000,
+      "paid_amount": 200000,
+      "updated_at": "2026-10-10T09:35:00Z"
+    },
+    {
+      "partner_id": "PTR-REG-318",
+      "fiscal_year": 2026,
+      "allocated_amount": 410000,
+      "committed_amount": 130000,
+      "approved_amount": 40000,
+      "paid_amount": 150000,
+      "updated_at": "2026-10-10T09:40:00Z"
+    },
+    {
+      "partner_id": "PTR-UNA-901",
+      "fiscal_year": 2026,
+      "allocated_amount": 280000,
+      "committed_amount": 92600,
+      "approved_amount": 39400,
+      "paid_amount": 100000,
+      "updated_at": "2026-10-11T15:40:30.182Z"
+    }
+  ],
+  "invariant": "Available = Allocated - (Committed + Approved + Paid); must be >= 0",
+  "cashflow_forecast_14d": [
+    {
+      "date": "2026-10-12",
+      "expected_payout": 150000,
+      "partner_id": "PTR-GLD-882",
+      "basis": "Approved pool pending disbursement (COMMIT_TO_APPROVE complete, awaiting cashier payout)"
+    },
+    {
+      "date": "2026-10-13",
+      "expected_payout": 130000,
+      "partner_id": "PTR-ELT-101",
+      "basis": "Approved pool pending disbursement"
+    },
+    {
+      "date": "2026-10-15",
+      "expected_payout": 110000,
+      "partner_id": "PTR-GLD-233",
+      "basis": "Approved pool pending disbursement"
+    },
+    {
+      "date": "2026-10-16",
+      "expected_payout": 100000,
+      "partner_id": "PTR-ELT-055",
+      "basis": "Approved pool pending disbursement"
+    },
+    {
+      "date": "2026-10-19",
+      "expected_payout": 80000,
+      "partner_id": "PTR-SLV-456",
+      "basis": "Approved pool pending disbursement"
+    },
+    {
+      "date": "2026-10-21",
+      "expected_payout": 70000,
+      "partner_id": "PTR-GLD-745",
+      "basis": "Approved pool pending disbursement"
+    },
+    {
+      "date": "2026-10-22",
+      "expected_payout": 50000,
+      "partner_id": "PTR-REG-770",
+      "basis": "Approved pool pending disbursement"
+    },
+    {
+      "date": "2026-10-24",
+      "expected_payout": 40000,
+      "partner_id": "PTR-SLV-611",
+      "basis": "Approved pool pending disbursement; partner suspended, requires review prior to release"
+    }
+  ],
+  "notes": "Company four-state budget pool watermark: Allocated RM 10,000,000, Committed RM 4,200,000, Approved RM 800,000, Paid RM 3,500,000, Available RM 1,500,000. 14-day cashflow forecast reconciles with Approved pool limits.",
+  "provenance": "documented"
+}

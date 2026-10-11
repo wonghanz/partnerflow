@@ -1,0 +1,1043 @@
+{
+  "provenance": "derived",
+  "company_profile": {
+    "name": "UMochi Technologies Sdn. Bhd.",
+    "registration_number": "202401088219-X",
+    "tax_id": "W10-2401-32000881",
+    "incorporation_date": "2024-03-15",
+    "headquarters": "Level 28, Menara Ilham, No. 8, Jalan Binjai, 50450 Kuala Lumpur, Malaysia",
+    "base_currency": "MYR",
+    "fiscal_year": 2026,
+    "annual_budget_pool": 10000000,
+    "brands": [
+      {
+        "brand_id": "BRD-CORE",
+        "name": "UMochi Core™",
+        "tagline": "Enterprise Partner Lifecycle & Channel Workflow Engine",
+        "description": "Orchestrates partner onboarding, tier contracts, credential verification, and audit trail synchronization."
+      },
+      {
+        "brand_id": "BRD-CLOUD",
+        "name": "UMochi Cloud™",
+        "tagline": "Hybrid Cloud Infrastructure & AI Compute Acceleration",
+        "description": "Powers regional enterprise multi-cloud migrations, sovereign AI clusters, and co-branded developer solutions."
+      },
+      {
+        "brand_id": "BRD-AI",
+        "name": "UMochi AI Suite™",
+        "tagline": "Deterministic Multi-Agent Governance & Anomaly Triage Mesh",
+        "description": "Enforces 7-agent verification, document fraud forensics, zero-hallucination math, and executive briefing synthesis."
+      }
+    ],
+    "sop": {
+      "sop_id": "SOP_2026_V1",
+      "title": "Channel Partner Co-op Reimbursement & Pre-Approval Standard Operating Procedure",
+      "effective_date": "2026-03-01",
+      "governing_committee": "Global Channel Operations & Finance Governance Committee",
+      "core_invariants": [
+        "Strict 30-day post-activity filing deadline (R-DATE-001)",
+        "Zero auto-guessing on ambiguous figures < 0.90 confidence (Iron Invariant 3)",
+        "Four-state budget ledger conservation with atomic row locks (Iron Invariant 2)",
+        "Non-delegable human final disbursement sign-off (Iron Invariant 1)"
+      ]
+    },
+    "programmes": [
+      {
+        "programme_id": "PRG-CLOUD-MDF",
+        "name": "Cloud Pioneer MDF Initiative FY26",
+        "pool_allocation": 4500000,
+        "max_match_ratio": 0.5,
+        "eligible_activities": [
+          "Enterprise Hackathons",
+          "Partner Summits",
+          "Hands-on Technical Labs"
+        ]
+      },
+      {
+        "programme_id": "PRG-COOP-APAC",
+        "name": "APAC Co-op Marketing Fund FY26",
+        "pool_allocation": 3500000,
+        "max_match_ratio": 0.5,
+        "eligible_activities": [
+          "Joint Marketing Events",
+          "Exhibitions & Expos",
+          "Regional Launch Banquets"
+        ]
+      },
+      {
+        "programme_id": "PRG-RETAIL-POS",
+        "name": "Retail Merchandising & POS Rebate",
+        "pool_allocation": 2000000,
+        "max_match_ratio": 0.5,
+        "eligible_activities": [
+          "Channel Merchandising",
+          "Digital Ad Lead Generation",
+          "Retail POS Collaterals"
+        ]
+      }
+    ]
+  },
+  "provenance_notes": "l0_global_brief invariants, l1_skill_router, l4_mindset, onboarding pathways, and three-layer isolation derived from official enterprise documentation. All policy entries compiled from corporate manuals and operational SOPs.",
+  "setup_progress": {
+    "completed_sections": 5,
+    "total_sections": 5,
+    "percent": 100,
+    "save_and_return_later": true,
+    "sections": [
+      {
+        "id": "company_requirements",
+        "label": "Company Requirements",
+        "status": "complete",
+        "detail": "Compiled and published 8 deterministic enterprise rules (v2026.3.0). All policies active with zero ambiguous overrides.",
+        "next_action_label": "View Rules"
+      },
+      {
+        "id": "partner_tiers",
+        "label": "Partner Tiers",
+        "status": "complete",
+        "detail": "Elite, Gold, Silver, and Registered tier tiers established; Gold cap set at RM 10,000 with 50% co-op matching ratio signed under ADR-003.",
+        "next_action_label": "Review Tier Matrix"
+      },
+      {
+        "id": "knowledge_base",
+        "label": "Knowledge Base",
+        "status": "complete",
+        "detail": "All 10 corporate policy documents indexed and parsed; rules extracted and cross-referenced with zero syntax gaps.",
+        "next_action_label": "Inspect Knowledge Base"
+      },
+      {
+        "id": "company_mindset",
+        "label": "Company Mindset",
+        "status": "complete",
+        "detail": "MINDSET_001 and MINDSET_002 ratified by Operations Director and Sales VP; policy overrides strictly prohibited.",
+        "next_action_label": "Review Mindset Principles"
+      },
+      {
+        "id": "versions_audit",
+        "label": "Versions & Audit",
+        "status": "complete",
+        "detail": "Production rules matrix v2026.3.0 is live and locked. Immutable audit logging active across all submission transitions.",
+        "next_action_label": "Audit Logs"
+      }
+    ]
+  },
+  "l0_global_brief": {
+    "role": "Operational core of the Enterprise Partner Pre-Approval & Reimbursement Automation Engine. Keeps runtime metadata persistent across all 7 autonomous agents with strict guardrails: multi-source document ingestion, deterministic policy evaluation, four-state budget ledger conservation, dual-track anomaly routing, and immutable audit logging. Final disbursement authority is 100% retained by authorized human approvers; agents have no database write permissions to disburse funds.",
+    "invariants": [
+      {
+        "id": "INV-1",
+        "title": "Human Authority is Never Delegated",
+        "body": "AI agents only generate structured briefing memos (DRAFT_PENDING_REVIEW). Final payment and approval authority remains 100% with authorized human signers.",
+        "verification": "The database only accepts approval transitions with authenticated employee session tokens via /api/submissions/{id}/approve. No autonomous agent possesses write authority to disburse funds.",
+        "provenance": "documented"
+      },
+      {
+        "id": "INV-2",
+        "title": "Four-State Ledger Pool Conservation",
+        "body": "Available = Allocated - (Committed + Approved + Paid) >= 0. Budget balances are tracked via an atomic ledger as Single Source of Truth; AI does not perform ad-hoc arithmetic.",
+        "verification": "Database check constraints guarantee that if any calculation exceeds pool bounds, transactions rollback with a BUDGET_EXCEEDED error.",
+        "provenance": "documented"
+      },
+      {
+        "id": "INV-3",
+        "title": "Zero Guessing & Fact Verification",
+        "body": "When documents lack confidence (< 0.90) or tier limits are unconfigured, guessing is strictly banned. Unknowns are explicitly flagged as REQUIRES_POLICY_INTERPRETATION or NEEDS_CLARIFICATION.",
+        "verification": "Pydantic validator raises CONFIDENCE_TOO_LOW on ambiguous figures, routing claims directly to the Grill-Me human verification queue.",
+        "provenance": "documented"
+      },
+      {
+        "id": "INV-4",
+        "title": "Immutable Policy Versioning",
+        "body": "New policy updates never retroactively invalidate historical submissions. Every claim is permanently locked to the rule version active upon filing.",
+        "verification": "Submissions record rule_version in the immutable audit event log; rule updates spawn new records with future effective dates.",
+        "provenance": "documented"
+      },
+      {
+        "id": "INV-5",
+        "title": "Physical Security & Business Track Isolation",
+        "body": "Untrusted attachments are quarantined in sandboxes. Prompt injection attempts cannot escalate privileges, and operational errors are segregated from security breaches.",
+        "verification": "Strict sandbox pre-flight checks strip active script macros and sanitize PDF metadata prior to downstream evaluation.",
+        "provenance": "documented"
+      }
+    ]
+  },
+  "l1_skill_router": [
+    {
+      "trigger": "Need to clarify new policy rules or address ambiguous conditions (e.g. invoice conflicts)",
+      "skill": "grill-me",
+      "skill_path": "skills/grill-me/SKILL.md",
+      "used_by": "Agent 2",
+      "purpose": "Generates structured clarification questions, pausing submission for confirmation",
+      "provenance": "documented"
+    },
+    {
+      "trigger": "Authoring or modifying policies, adjudicating conflicting rules",
+      "skill": "grill-with-docs",
+      "skill_path": "skills/grill-with-docs/SKILL.md",
+      "used_by": "Agent 3",
+      "purpose": "Conducts deep interrogation of rule designs, compiling glossary and ADR records",
+      "provenance": "documented"
+    },
+    {
+      "trigger": "Developing, debugging, or refactoring underlying agent code",
+      "skill": "superpowers",
+      "skill_path": "skills/superpowers/SKILL.md",
+      "used_by": "Agent 7 (Engineering & QA)",
+      "purpose": "Enforces TDD, systematic root-cause debugging, task breakdowns, and pre-release verification",
+      "provenance": "documented"
+    },
+    {
+      "trigger": "Security risks detected (Prompt injection, malicious attachments)",
+      "skill": "security-audit",
+      "skill_path": "skills/security-audit/SKILL.md",
+      "used_by": "Agent 5",
+      "purpose": "Independent validator falsification and isolated sandbox forensics",
+      "provenance": "documented"
+    },
+    {
+      "trigger": "Synthesizing long-term lessons from human approver feedback",
+      "skill": "idea-refine",
+      "skill_path": "skills/idea-refine/SKILL.md",
+      "used_by": "Brain Layer L4 (Mindset Proposal Flow)",
+      "purpose": "Clusters historical decision patterns to extract candidate mindset principles",
+      "provenance": "derived"
+    },
+    {
+      "trigger": "Synthesizing review opinions, decision memos, or information requests",
+      "skill": "response-to-reviewers",
+      "skill_path": "skills/response-to-reviewers/SKILL.md",
+      "used_by": "Agent 6",
+      "purpose": "Ensures complete issue coverage, absolute traceability, zero hallucination, and no unauthorized commitments",
+      "provenance": "documented"
+    },
+    {
+      "trigger": "Executive decision briefing, high-level risk assessment, and ROI synthesis",
+      "skill": "boss-communication",
+      "skill_path": "skills/boss-communication/SKILL.md",
+      "used_by": "Agent 7 (Executive Briefing & Decision Desk)",
+      "purpose": "Generates BLUF executive summary, financial impact rating, and strategic sign-off guidance",
+      "provenance": "documented"
+    }
+  ],
+  "l2_policy_wiki": [
+    {
+      "doc_id": "POL-PRE-APPROVAL",
+      "title": "Pre-Approval Eligibility, Timeline & Delegation of Authority",
+      "path": "policies/pre-approval.md",
+      "version": "v2026.1",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-1.1",
+          "heading": "Pre-Approval Form & Mandatory Fields",
+          "body": "Every pre-approval request must be submitted using the standardized pre-approval template. Required fields comprise partner_id, event subject, applicant email, activity_date, programme budget line, and requested amount with currency. Any missing field triggers an immediate defect notice in Agent 2. The system never guesses or auto-completes fields.",
+          "source_file": "01-pre-approval-form.pdf",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-1.2",
+          "heading": "Claim Amount Ceiling Matched to Pre-Approval",
+          "body": "Reimbursement claim amounts must not exceed the pre-approval approved amount (claim_amount <= pre_approval_approved_amount), deterministically enforced by rule R-MATCH-004. If approved amount is RM 10,000 and claim is RM 15,000, excess RM 5,000 triggers an automated policy block with options to reduce to ceiling or escalate for special approval.",
+          "source_file": "policies/pre-approval.md",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-1.3",
+          "heading": "Pre-Approval Lineage & Status Prerequisites",
+          "body": "CLAIM submission types must reference a valid parent_pre_approval_id in APPROVED state. If the parent pre-approval is pending or rejected, rule R-LINK-007 blocks progression with PRE_APPROVAL_NOT_READY. No reimbursement may reserve or disburse funds without approved parental lineage.",
+          "source_file": "policies/pre-approval.md",
+          "source_page": 3
+        },
+        {
+          "anchor": "#sec-1.4",
+          "heading": "Committed Fund Reservation Upon Approval",
+          "body": "Upon human approval of a pre-approval, Agent 4 executes RESERVE_COMMIT to move corresponding funds from Available into Committed. Atomic ledger isolation prevents race conditions and over-commitment.",
+          "source_file": "04-partner-master-and-budget-tracker.xlsx",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-1.5",
+          "heading": "Vendor Quotation & Cost Estimates",
+          "body": "Pre-approvals require vendor quotations and event agendas to substantiate planned expenditure. Absence of quotations flags the item for review but does not reject outright, generating an information request draft.",
+          "source_file": "policies/pre-approval.md",
+          "source_page": 4
+        },
+        {
+          "anchor": "#sec-1.6",
+          "heading": "Delegation of Authority (DOA) Thresholds",
+          "body": "Approval authority thresholds govern sign-offs: Managers up to RM 10,000, Directors up to RM 50,000, and VPs above RM 50,000. All approvals require human credentials and are recorded in immutable audit logs.",
+          "source_file": "10-approval-authority-matrix.pdf",
+          "source_page": 1
+        }
+      ]
+    },
+    {
+      "doc_id": "POL-CLAIM-ELIG",
+      "title": "Claim Eligibility Scope, Evidence Requirements & Compliance Redlines",
+      "path": "policies/claim-eligibility.md",
+      "version": "v2026.2",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-2.1",
+          "heading": "Eligible Marketing Activities",
+          "body": "Eligible co-op marketing scopes are restricted to verified channel programs: Joint Marketing Events, Exhibition & Trade Show Subsidies, and Digital Advertising Lead Generation. All claims must correlate to approved pre-approvals.",
+          "source_file": "03-partner-incentive-and-coop-policy.pdf",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-2.2",
+          "heading": "Four Mandatory Supporting Documents",
+          "body": "Reimbursements require four core documents: Official Tax Invoice, Event Photos / Proof of Execution, Attendee Sign-in Sheet, and Proof of Payment (bank transfer / remittance). Deficiencies trigger business notices.",
+          "source_file": "07-supporting-document-checklist.pdf",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-2.3",
+          "heading": "Event Execution Evidence Standards",
+          "body": "Photos must demonstrate venue location and brand banners. Sign-in records must contain attendee identities. Missing items route to Agent 5 business exceptions, drafting partner notices.",
+          "source_file": "07-supporting-document-checklist.pdf",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-2.4",
+          "heading": "Filing Deadline (30-Day Window)",
+          "body": "Claims must be submitted within 30 calendar days following event completion (claim_date - activity_date <= 30), enforced by rule R-DATE-001. Overdue filings trigger a warning and require executive exception.",
+          "source_file": "policies/claim-eligibility.md",
+          "source_page": 3
+        },
+        {
+          "anchor": "#sec-2.5",
+          "heading": "Compliance Redlines & Non-Reimbursable Costs",
+          "body": "Cash gift vouchers, personal expenses, unrelated travel, and duplicate claims violate compliance. Identified redlines immediately pause straight-through processing for investigation.",
+          "source_file": "policies/claim-eligibility.md",
+          "source_page": 4
+        },
+        {
+          "anchor": "#sec-2.6",
+          "heading": "Invoice Deduplication & Collision Prevention",
+          "body": "Invoice numbers maintain a global unique index. Rule R-DUP-008 runs automated 90-day same-partner, same-date, same-amount collision scans to eliminate duplicate billing.",
+          "source_file": "policies/claim-eligibility.md",
+          "source_page": 5
+        }
+      ]
+    },
+    {
+      "doc_id": "POL-BUDGET-CALC",
+      "title": "Subsidy Caps, Matching Ratios & Four-State Ledger Accounting",
+      "path": "policies/budget-calculation.md",
+      "version": "v2026.3",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-3.1",
+          "heading": "Four-State Budget Pool Definitions",
+          "body": "Enterprise marketing budgets strictly differentiate four states: Allocated (annual allocation), Committed (frozen pre-approvals), Approved (verified claims awaiting payment), Paid (settled disbursements). Available = Allocated - (Committed + Approved + Paid).",
+          "source_file": "policies/budget-calculation.md",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-3.2",
+          "heading": "Financial Conservation Invariant",
+          "body": "Available headroom must remain >= 0 at all times. If any transaction produces negative available funds, the system triggers a hard rollback with INSUFFICIENT_BUDGET.",
+          "source_file": "policies/budget-calculation.md",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-3.3",
+          "heading": "Budget Allocation & Fiscal Year Management",
+          "body": "Allocated funds are recorded per partner and fiscal year. Adjustments are logged as audit rows rather than in-place overwrites to maintain historical integrity.",
+          "source_file": "04-partner-master-and-budget-tracker.xlsx",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-3.4",
+          "heading": "Four Atomic Ledger Transaction Types",
+          "body": "The ledger supports four atomic actions: RESERVE_COMMIT, COMMIT_TO_APPROVE, RELEASE_COMMIT, and PAY. Each write carries an idempotency key to prevent double posting.",
+          "source_file": "policies/budget-calculation.md",
+          "source_page": 3
+        },
+        {
+          "anchor": "#sec-3.5",
+          "heading": "Currency Whitelist & Tax Conversion",
+          "body": "Base operating currency is MYR, supporting SGD, USD, and IDR with standard exchange rate indexing. Calculations round to 2 decimal places.",
+          "source_file": "policies/budget-calculation.md",
+          "source_page": 4
+        },
+        {
+          "anchor": "#sec-3.6",
+          "heading": "Gold Tier RM 10,000 Cap & 50% Ratio",
+          "body": "Under ADR-003, Gold Tier partners are entitled to 50% co-op matching reimbursement capped at RM 10,000 per event. Claims exceeding caps trigger reduction options.",
+          "source_file": "Partner_Incentive_2026_Q1.pdf",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-3.7",
+          "heading": "Elite Tier 70% Ratio Policy",
+          "body": "Elite strategic partners receive 70% reimbursement matching ratios. Single-event caps are configured individually by executive committee sign-off.",
+          "source_file": "policies/tier-benefits.md",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-3.8",
+          "heading": "Pre-Approval Surplus De-commitment",
+          "body": "When a claim is approved below the pre-approval amount, the unutilized surplus executes RELEASE_COMMIT to return funds to Available.",
+          "source_file": "policies/budget-calculation.md",
+          "source_page": 5
+        },
+        {
+          "anchor": "#sec-3.9",
+          "heading": "Daily Balance Reconciliation",
+          "body": "Automated reconciliation checks ledger transactions against pool state watermarks, raising alerts if any drift occurs.",
+          "source_file": "policies/budget-calculation.md",
+          "source_page": 6
+        }
+      ]
+    },
+    {
+      "doc_id": "POL-TIER-BENEFITS",
+      "title": "Partner Tiers, Entitlements & Thresholds",
+      "path": "policies/tier-benefits.md",
+      "version": "v2026.1",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-4.1",
+          "heading": "Four-Tier Partner Ladder",
+          "body": "Partners are categorized as Registered (0), Silver (1), Gold (2), or Elite (3). Unassigned partners fall back to baseline rules.",
+          "source_file": "policies/tier-benefits.md",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-4.2",
+          "heading": "Tier Qualification & Re-certification",
+          "body": "Tiers are reviewed annually based on sales volume and compliance. Status changes apply to future submissions without retroactively invalidating history.",
+          "source_file": "policies/tier-benefits.md",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-4.3",
+          "heading": "Tier Documentation Exemptions",
+          "body": "Elite partners are exempted from physical attendee sign-in sheets when high-resolution event photo proof is provided.",
+          "source_file": "07-supporting-document-checklist.pdf",
+          "source_page": 3
+        },
+        {
+          "anchor": "#sec-4.4",
+          "heading": "Administrative Configuration Boundary",
+          "body": "Administrators configure tier caps and ratios via the Company Brain interface without requiring codebase changes.",
+          "source_file": "policies/tier-benefits.md",
+          "source_page": 4
+        }
+      ]
+    },
+    {
+      "doc_id": "WFS-LIFECYCLE",
+      "title": "Application Lifecycle State Machine",
+      "path": "policies/lifecycle.md",
+      "version": "v2026.1",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-5.1",
+          "heading": "Straight-Through Processing Path",
+          "body": "Submissions flow from SUBMITTED -> INTAKE_EXTRACTED -> VALIDATING -> RULES_EVALUATING -> BUDGET_RESERVING -> EXCEPTION_TRIAGE -> PENDING_HUMAN_REVIEW -> APPROVED -> PAID -> ARCHIVED.",
+          "source_file": "docs/00-architecture-and-pipeline.md",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-5.2",
+          "heading": "Human Decision Boundaries",
+          "body": "Final approval and payment authorization are strictly human operations. Autonomous agents generate recommendations only.",
+          "source_file": "docs/00-architecture-and-pipeline.md",
+          "source_page": 3
+        },
+        {
+          "anchor": "#sec-5.3",
+          "heading": "Exception Loop & Recovery",
+          "body": "Submissions flagged for clarification pause at NEEDS_CLARIFICATION. Once partner inputs are logged, processing resumes seamlessly.",
+          "source_file": "docs/00-architecture-and-pipeline.md",
+          "source_page": 4
+        },
+        {
+          "anchor": "#sec-5.4",
+          "heading": "Immutable Audit Logging",
+          "body": "Every state transition writes an immutable event row with timestamp, actor, and evidence references.",
+          "source_file": "docs/00-architecture-and-pipeline.md",
+          "source_page": 5
+        }
+      ]
+    },
+    {
+      "doc_id": "WFS-EXCEPTION",
+      "title": "Dual-Track Exception Triage Architecture",
+      "path": "policies/exception-triage.md",
+      "version": "v2026.1",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-6.1",
+          "heading": "Business Track vs Security Track Separation",
+          "body": "Business exceptions (missing documents, arithmetic variance) are segregated from security threats (prompt injections, tampered macros). Ordinary commercial mistakes are never treated as malicious.",
+          "source_file": "docs/05-agent-exception.md",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-6.2",
+          "heading": "Security Quarantine Isolation",
+          "body": "Files containing malicious payloads or prompt injection triggers route to SECURITY_QUARANTINE in an isolated sandbox.",
+          "source_file": "docs/05-agent-exception.md",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-6.3",
+          "heading": "Independent Validator Falsification",
+          "body": "A secondary red-team validator attempts to falsify security findings, ensuring authentic commercial files are not quarantined erroneously.",
+          "source_file": "docs/05-agent-exception.md",
+          "source_page": 3
+        },
+        {
+          "anchor": "#sec-6.4",
+          "heading": "Follow-Up Notification Generation",
+          "body": "Business exceptions automatically draft polite Information Request templates for partner follow-up.",
+          "source_file": "docs/05-agent-exception.md",
+          "source_page": 4
+        }
+      ]
+    },
+    {
+      "doc_id": "COM-TEMPLATES",
+      "title": "Review Memos, Information Requests & Rejection Templates",
+      "path": "policies/templates.md",
+      "version": "v2026.1",
+      "effective_date": "2026-03-01",
+      "sections": [
+        {
+          "anchor": "#sec-7.1",
+          "heading": "Structured 6-Section Review Memo",
+          "body": "Standard memo comprises: 1. Submission Summary, 2. Completed Verifications, 3. Outstanding Issues & Evidence, 4. Recommended Action, 5. Items Requiring Approver Sign-Off, 6. Policy Citations.",
+          "source_file": "docs/06-agent-human-review-workflow.md",
+          "source_page": 1
+        },
+        {
+          "anchor": "#sec-7.2",
+          "heading": "Information Request (RFI) Template",
+          "body": "Draft notification outlining missing documents, submission deadlines, and secure upload link for partner resubmission.",
+          "source_file": "docs/06-agent-human-review-workflow.md",
+          "source_page": 2
+        },
+        {
+          "anchor": "#sec-7.3",
+          "heading": "Rejection & Policy Block Notices",
+          "body": "Formal rejection notices provide unambiguous policy citations and escalation appeal pathways without contentious phrasing.",
+          "source_file": "docs/06-agent-human-review-workflow.md",
+          "source_page": 3
+        }
+      ]
+    }
+  ],
+  "l3_rag_sources": [
+    {
+      "doc_id": "SRC-01",
+      "filename": "01-pre-approval-form.pdf",
+      "category": "Forms",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 0.35,
+      "rules_extracted": 4,
+      "extraction_target": "Pre-approval form structure, mandatory fields, applicant details, planned budget lines",
+      "extract_summary": "Extracted form schema and 12 mandatory fields, applicant block, and budget line tables as Agent 1 validation basis.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-02",
+      "filename": "02-claim-reimbursement-form.pdf",
+      "category": "Forms",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 0.42,
+      "rules_extracted": 5,
+      "extraction_target": "Claim form structure, invoice line items, payout accounts, parent pre-approval lineage",
+      "extract_summary": "Extracted invoice line items table, recipient banking information, and parent_pre_approval_id lineage field.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-03",
+      "filename": "03-partner-incentive-and-coop-policy.pdf",
+      "category": "Policy",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 1.2,
+      "rules_extracted": 14,
+      "extraction_target": "Entry criteria, activity types, matching ratios, single-event caps, filing deadlines",
+      "extract_summary": "Extracted 4 tier benefits, 3 claim window rules, and 18 document requirements; Gold RM 10,000 cap resolved under ADR-003.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-04",
+      "filename": "04-partner-master-and-budget-tracker.xlsx",
+      "category": "Data",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 0.85,
+      "rules_extracted": 6,
+      "extraction_target": "Partner directory, annual budget pool, allocated funds, transaction ledger",
+      "extract_summary": "Extracted partner roster and budget pools; flagged worksheet Q3_Allocations cell F14 for administrator review under CF-002.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-05",
+      "filename": "05-sample-historical-cases.pdf",
+      "category": "Cases",
+      "importance": "Recommended",
+      "status": "active",
+      "size_mb": 0.95,
+      "rules_extracted": 5,
+      "extraction_target": "Historical case precedents (standard approval, missing items, variances, rejections)",
+      "extract_summary": "Ingested 5 benchmark precedent cases (case-01-normal to case-05-rejected-or-exception) as L3 evidence anchors.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-06",
+      "filename": "06-current-workflow-sop.pdf",
+      "category": "Process",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 0.65,
+      "rules_extracted": 8,
+      "extraction_target": "As-is approval workflow, reviewer roles, SLA timelines, escalation boundaries",
+      "extract_summary": "Extracted role assignments, escalations, and 48-hour ops review SLA for pipeline alignment.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-07",
+      "filename": "07-supporting-document-checklist.pdf",
+      "category": "Checklist",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 0.5,
+      "rules_extracted": 7,
+      "extraction_target": "Mandatory document checklist: invoices, sign-in sheets, event photos, payment proofs",
+      "extract_summary": "Extracted 4 required document types and verification standards for submission gating.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-08",
+      "filename": "08-reporting-templates.xlsx",
+      "category": "Templates",
+      "importance": "Recommended",
+      "status": "active",
+      "size_mb": 0.4,
+      "rules_extracted": 3,
+      "extraction_target": "Weekly and monthly dashboard report layouts for operations, finance, and executive views",
+      "extract_summary": "Archived and mapped reporting layout schemas for dashboard widgets.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-09",
+      "filename": "09-communication-templates.docx",
+      "category": "Templates",
+      "importance": "Recommended",
+      "status": "active",
+      "size_mb": 0.3,
+      "rules_extracted": 4,
+      "extraction_target": "Approval notices, partner information requests, and formal rejection correspondence",
+      "extract_summary": "Extracted communication rules and neutral tone templates for partner follow-ups.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    },
+    {
+      "doc_id": "SRC-10",
+      "filename": "10-approval-authority-matrix.pdf",
+      "category": "Governance",
+      "importance": "Mandatory",
+      "status": "active",
+      "size_mb": 0.25,
+      "rules_extracted": 3,
+      "extraction_target": "Delegation of authority (DOA) financial sign-off thresholds for Managers, Directors, VPs",
+      "extract_summary": "Extracted 3-tier financial DOA limits to validate approver limits against claim amounts.",
+      "refcheck": {
+        "valid": true,
+        "last_checked": "2026-10-10"
+      }
+    }
+  ],
+  "l4_mindset": [
+    {
+      "principle_id": "MINDSET_001",
+      "version": 1,
+      "status": "approved",
+      "effective_date": "2026-03-01",
+      "approved_by": "Operations Director",
+      "policy_override_allowed": false,
+      "principle": "For claims exceeding RM 10,000 lacking event execution evidence, flag as HIGH_ATTENTION, prioritize in senior review queue, and highlight reduction options in briefing memos.",
+      "scope": "Joint marketing claims > RM 10,000",
+      "basis": "Historical audit findings show 82% of high-value discrepancies involve missing attendee sign-in or execution photos.",
+      "authority": "Commercial Operations Committee Charter §4.2"
+    },
+    {
+      "principle_id": "MINDSET_002",
+      "version": 1,
+      "status": "proposed",
+      "effective_date": "2026-04-01",
+      "approved_by": null,
+      "policy_override_allowed": false,
+      "principle": "When a Gold partner hosts an inaugural webinar and exceeds pre-approval by < 10% (under RM 1,000) with complete recordings and registration logs, offer a 1-click reduction option to ceiling rather than full rejection.",
+      "scope": "Gold tier inaugural digital webinars",
+      "basis": "Fosters channel partner adoption during quarterly digital transformation campaigns.",
+      "authority": "Proposed by APAC Channel Growth Lead"
+    }
+  ],
+  "l5_communication": [
+    {
+      "audience": "external_partner",
+      "tone": "Courteous, professional, objective",
+      "rules": [
+        "Itemize missing documents and deadlines with actionable next steps",
+        "Never make unapproved payout promises; forbid 'Your claim is approved' or 'We guarantee payment'",
+        "Standardize on neutral terms like 'Pending final approval' and 'Subject to committee review'",
+        "Cite clause codes and policy links when explaining limits without exposing internal scoring"
+      ],
+      "template_id": "TPL-EXT-RFI",
+      "subject_template": "Action Required: Supporting Documents Requested for {{submission_id}}",
+      "body_template": "Dear {{partner_name}} Team, Our review of {{submission_id}} indicates that the following documents are pending: {{missing_items}}. Please provide these files by {{deadline}}. Final claim approval remains subject to authorized sign-off (Pending final approval). Policy reference: policies/claim-eligibility.md#sec-2."
+    },
+    {
+      "audience": "internal_operations",
+      "tone": "Efficient, structured, task-driven",
+      "rules": [
+        "Sort worklist by SLA urgency and ageing days, highlighting items dwell time > 48 hours",
+        "Itemize defect checklists, missing fields, and blocking rule codes per case",
+        "Batch clarification questions into single-round aggregates; ban repetitive back-and-forth",
+        "Flag conflicting rules clearly with direct links to configuration resolution"
+      ],
+      "template_id": "TPL-INT-OPS",
+      "subject_template": "Ops Queue Digest — {{count}} Pending, {{breached}} Exceeding 48h SLA",
+      "body_template": "Daily Worklist: {{worklist}}. Primary friction driver: {{bottleneck_type}} ({{share}}% of backlog). Prioritize {{oldest_submission_id}} (Ageing: {{ageing_days}}d, Owner: {{owner}})."
+    },
+    {
+      "audience": "internal_finance",
+      "tone": "Precise, conservative, audit-ready",
+      "rules": [
+        "Emphasize variance amounts, invoice compliance, and four-state pool movements with 2-decimal formatting",
+        "Reference transaction_type and idempotency_key for each ledger entry, traceable to audit logs",
+        "Report reconciliation delta (declared vs computed) and conservation invariant status",
+        "Prohibit AI summaries as formal policy evidence; cite source page coordinates"
+      ],
+      "template_id": "TPL-INT-FIN",
+      "subject_template": "Finance Ledger Settlement Digest — {{submission_id}}",
+      "body_template": "Four-State Pool: Allocated RM {{allocated}} | Committed RM {{committed}} | Approved RM {{approved}} | Paid RM {{paid}} | Available RM {{available}}. Conservation check passed under rule version {{rule_version}}."
+    },
+    {
+      "audience": "executive_management",
+      "tone": "Concise, strategic, decisive (BLUF)",
+      "rules": [
+        "Bottom Line Up Front (BLUF): opening lines state recommendation, financial impact, and decisions required",
+        "Highlight commercial risks and exception amounts, providing 1-click sign-off options and policy anchors",
+        "Never present exceptions as finalized; always use 'Pending formal executive sign-off'",
+        "Metrics share single source of truth with PostgreSQL database; no competing spreadsheet figures"
+      ],
+      "template_id": "TPL-EXEC-BRIEF",
+      "subject_template": "Executive Briefing — {{exception_count}} Exceptions Pending, Risk Exposure RM {{exposure}}",
+      "body_template": "Recommendation: {{recommendation}}. Financial Impact: RM {{impact}} ({{burn_pct}}% of annual allocation). Decision Required: {{options}}. Policy Reference: {{policy_refs}}; Pending formal executive sign-off."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Allocated",
+      "definition": "Annual or quarterly budget ceiling assigned to a partner or programme line.",
+      "path": "policies/budget-calculation.md#sec-3.1"
+    },
+    {
+      "term": "Committed",
+      "definition": "Approved pre-approval funds frozen in ledger to guarantee payout upon claim.",
+      "path": "policies/budget-calculation.md#sec-3.1"
+    },
+    {
+      "term": "Approved",
+      "definition": "Verified claim reimbursement amount awaiting disbursement release by cashier.",
+      "path": "policies/budget-calculation.md#sec-3.1"
+    },
+    {
+      "term": "Paid",
+      "definition": "Settled fund disbursement recorded in immutable ledger transaction logs.",
+      "path": "policies/budget-calculation.md#sec-3.1"
+    },
+    {
+      "term": "Available",
+      "definition": "Remaining headroom: Available = Allocated - (Committed + Approved + Paid) >= 0.",
+      "path": "policies/budget-calculation.md#sec-3.2"
+    },
+    {
+      "term": "Idempotency Key",
+      "definition": "Unique transaction key (submission_id:action:run_id) preventing duplicate ledger deductions.",
+      "path": "policies/budget-calculation.md#sec-3.4"
+    },
+    {
+      "term": "STP Rate",
+      "definition": "Straight-Through Processing rate: percentage of submissions evaluated without manual intervention.",
+      "path": "docs/07-agent-audit-reporting.md"
+    },
+    {
+      "term": "Ageing",
+      "definition": "Dwell time of a submission at the current owner relative to SLA thresholds.",
+      "path": "docs/07-agent-audit-reporting.md"
+    },
+    {
+      "term": "DOA Matrix",
+      "definition": "Delegation of Authority matrix defining approval limits for Managers, Directors, and VPs.",
+      "path": "10-approval-authority-matrix.pdf"
+    },
+    {
+      "term": "Zero Guessing",
+      "definition": "Iron Invariant 3: when documents or configs are uncertain, the system halts rather than fabricating data.",
+      "path": "docs/00-architecture-and-pipeline.md"
+    },
+    {
+      "term": "Security Quarantine",
+      "definition": "Isolated sandbox state for malicious attachments, preserving intact evidence for investigation.",
+      "path": "docs/05-agent-exception.md"
+    }
+  ],
+  "cases": [
+    {
+      "title": "Standard Full Approval Case (case-01-normal)",
+      "summary": "Gold tier partner submits RM 8,000 claim with all 4 required documents, filed 14 days post-activity under approved pre-approval.",
+      "outcome": "All rules PASSED. Ledger completes COMMIT_TO_APPROVE transfer. Approved by human reviewer into PAID -> ARCHIVED."
+    },
+    {
+      "title": "Missing Event Proof & Follow-up Notice",
+      "summary": "Attachment includes tax invoice and quote but lacks event photos and attendee sign-in. Classified as business exception.",
+      "outcome": "Rule R-DOC-005 flagged with WARNING. Agent 6 drafts Information Request notice in PENDING_INFO_REQUEST state."
+    },
+    {
+      "title": "Invoice Amount Discrepancy (case-03-amount-mismatch)",
+      "summary": "Two uploaded invoices total RM 15,000 but application declared amount is RM 10,000.",
+      "outcome": "Grill-Me generates aggregated clarification question (CLR-Q1) in NEEDS_CLARIFICATION state."
+    },
+    {
+      "title": "Excess Claim with Reduction Option",
+      "summary": "Claim filed for RM 15,000 under Gold tier with RM 10,000 single-event ceiling.",
+      "outcome": "Rules R-CAP-003 and R-MATCH-004 block auto-approval; Review memo offers 1-click reduction to RM 10,000 ceiling."
+    },
+    {
+      "title": "Overdue Submission with Director Special Approval",
+      "summary": "Claim filed 45 days after event (exceeding 30-day window) with suspended partner status.",
+      "outcome": "R-DATE-001 warning and R-PARTNER-006 policy block. Escalates to Director review for final determination."
+    },
+    {
+      "title": "Attachment Metadata Prompt Injection Quarantined",
+      "summary": "Event photo EXIF metadata contains prompt injection payload attempting to override approval status.",
+      "outcome": "Agent 5 isolates file into SECURITY_QUARANTINE sandbox; system prompt remains protected."
+    },
+    {
+      "title": "Cold-Start Graceful Degradation",
+      "summary": "Partner without configured tier submits claim during enterprise initialization.",
+      "outcome": "Tier rules yield NOT_EVALUATED and route cleanly to human reviewer without breaking workflow."
+    }
+  ],
+  "client_documents_manifest": [
+    {
+      "seq": "01",
+      "filename": "01-pre-approval-form.pdf",
+      "category": "Forms",
+      "importance": "Mandatory",
+      "extraction_target": "Pre-approval form structure, mandatory fields, applicant details, planned budget lines"
+    },
+    {
+      "seq": "02",
+      "filename": "02-claim-reimbursement-form.pdf",
+      "category": "Forms",
+      "importance": "Mandatory",
+      "extraction_target": "Claim form structure, invoice line items, bank payout accounts, parental lineage"
+    },
+    {
+      "seq": "03",
+      "filename": "03-partner-incentive-and-coop-policy.pdf",
+      "category": "Policy",
+      "importance": "Mandatory",
+      "extraction_target": "Partner tiers, eligible marketing activities, co-op ratios, event caps, claim deadlines"
+    },
+    {
+      "seq": "04",
+      "filename": "04-partner-master-and-budget-tracker.xlsx",
+      "category": "Data",
+      "importance": "Mandatory",
+      "extraction_target": "Partner directory, annual budget pool, allocated funds, transaction ledger"
+    },
+    {
+      "seq": "05",
+      "filename": "05-sample-historical-cases.pdf",
+      "category": "Cases",
+      "importance": "Recommended",
+      "extraction_target": "Benchmark cases covering standard approvals, missing items, variances, and rejections"
+    },
+    {
+      "seq": "06",
+      "filename": "06-current-workflow-sop.pdf",
+      "category": "Process",
+      "importance": "Mandatory",
+      "extraction_target": "Reviewer roles, SLAs, handoff rules, escalation pathways, delegation of authority"
+    },
+    {
+      "seq": "07",
+      "filename": "07-supporting-document-checklist.pdf",
+      "category": "Checklist",
+      "importance": "Mandatory",
+      "extraction_target": "Checklist of invoices, sign-in sheets, photo proofs, and payment confirmations"
+    },
+    {
+      "seq": "08",
+      "filename": "08-reporting-templates.xlsx",
+      "category": "Templates",
+      "importance": "Recommended",
+      "extraction_target": "Operations, finance, and executive weekly/monthly dashboard reporting structures"
+    },
+    {
+      "seq": "09",
+      "filename": "09-communication-templates.docx",
+      "category": "Templates",
+      "importance": "Recommended",
+      "extraction_target": "Internal approval notifications, partner reminders, and formal rejection emails"
+    },
+    {
+      "seq": "10",
+      "filename": "10-approval-authority-matrix.pdf",
+      "category": "Governance",
+      "importance": "Mandatory",
+      "extraction_target": "Approval limit matrix specifying Manager, Director, and VP financial caps"
+    }
+  ],
+  "adr": [
+    {
+      "adr_id": "ADR-003",
+      "title": "Gold Tier Single-Event Grant Cap Unified at RM 10,000",
+      "decision": "Effective 2026-03-01, RM 10,000 cap from Partner_Incentive_2026_Q1 applies to all Gold tier claims, superseding legacy SOP_2025_V2.",
+      "context": "Policy discrepancy discovered between SOP_2025_V2 (RM 8,000) and Partner_Incentive_2026_Q1 (RM 10,000).",
+      "rationale": "Grill-With-Docs identified discrepancy and escalated to leadership. Commercial objectives prioritize RM 10,000 incentive.",
+      "signed_by": [
+        "APAC Business VP",
+        "Finance Director"
+      ],
+      "date": "2026-03-01",
+      "status": "ratified"
+    },
+    {
+      "adr_id": "ADR-004",
+      "title": "Resolution of Budget Tracker Worksheet F14 (Pending)",
+      "decision": "Pending administrator confirmation in Setup Wizard Step 3.",
+      "context": "Worksheet Q3_Allocations retains legacy formula referencing RM 8,000.",
+      "rationale": "Iron Invariant 3 prohibits AI from guessing business policy without human authorization.",
+      "signed_by": [
+        "Pending Administrator Sign-Off"
+      ],
+      "date": "2026-03-10",
+      "status": "proposed"
+    }
+  ],
+  "versions": [
+    {
+      "version": "v2026.3.0",
+      "status": "published",
+      "published_at": "2026-03-01T00:00:00Z",
+      "effective_date": "2026-03-01",
+      "approved_by": "APAC Business VP & Finance Director (ADR-003)",
+      "change_summary": "Production rule matrix incorporating 14 deterministic rules (timing, matching ratio, event caps, checklist, partner status, lineage, invoice deduplication)."
+    },
+    {
+      "version": "v2026.4.0-draft",
+      "status": "draft",
+      "published_at": null,
+      "effective_date": "2026-11-01",
+      "approved_by": "Pending Administrator Sign-Off",
+      "change_summary": "Draft rule bundle incorporating CF-002 adjudication and Silver tier limits."
+    }
+  ],
+  "onboarding_pathways": [
+    {
+      "id": "A",
+      "title_en": "I Have Official Policy Documents",
+      "title_zh": "I Have Official Policy Documents",
+      "action_en": "Upload SOPs & spreadsheets to extract candidate rules",
+      "action_zh": "Upload SOPs & spreadsheets to extract candidate rules",
+      "fits_en": "Best for: Enterprises with documented policies",
+      "fits_zh": "Best for: Enterprises with documented policies",
+      "detail_en": "Upload existing PDF, Word, or Excel policies. System indexes with Docling and Grill-With-Docs.",
+      "detail_zh": "Upload existing PDF, Word, or Excel policies. System indexes with Docling and Grill-With-Docs."
+    },
+    {
+      "id": "B",
+      "title_en": "I Know The Rules But Need To Document Them",
+      "title_zh": "I Know The Rules But Need To Document Them",
+      "action_en": "Guided questionnaire for progressive configuration",
+      "action_zh": "Guided questionnaire for progressive configuration",
+      "fits_en": "Best for: Teams with operational knowledge in staff memory",
+      "fits_zh": "Best for: Teams with operational knowledge in staff memory",
+      "detail_en": "Step through lightweight wizard to define tiers, ratios, and checklists systematically.",
+      "detail_zh": "Step through lightweight wizard to define tiers, ratios, and checklists systematically."
+    },
+    {
+      "id": "C",
+      "title_en": "I Am Still Establishing Policy Rules",
+      "title_zh": "I Am Still Establishing Policy Rules",
+      "action_en": "Operate pipeline and crystallize rules gradually",
+      "action_zh": "Operate pipeline and crystallize rules gradually",
+      "fits_en": "Best for: Startups or evolving business programs",
+      "fits_zh": "Best for: Startups or evolving business programs",
+      "detail_en": "Enter basic company details and receive submissions immediately with graceful degradation.",
+      "detail_zh": "Enter basic company details and receive submissions immediately with graceful degradation."
+    }
+  ],
+  "three_layer_isolation": [
+    {
+      "layer": 1,
+      "binding": "hard",
+      "name": "Formal Policy & Requirements",
+      "role_en": "Formal Policy & Governance Center",
+      "role_zh": "Formal Policy & Governance Center",
+      "body": "Encapsulates deterministic policies, tier caps, and mandatory documents. Compiles into executable rule matrix v2026.3.0."
+    },
+    {
+      "layer": 2,
+      "binding": "soft",
+      "name": "Company Mindset & Communication",
+      "role_en": "Company Mindset & Experience Center",
+      "role_zh": "Company Mindset & Experience Center",
+      "body": "Executive preferences, historical precedents, and tone guidelines. Used for recommendation ranking; never overrides formal policy."
+    },
+    {
+      "layer": 3,
+      "binding": "state",
+      "name": "Live Operational Database",
+      "role_en": "Dynamic Operational Single Source of Truth",
+      "role_zh": "Dynamic Operational Single Source of Truth",
+      "body": "Four-state budget ledger, real-time submission states, and payment records. Deterministic arithmetic with zero hallucinations."
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "provenance": "documented",
+  "agents": [
+    {
+      "order": 1,
+      "id": "intake",
+      "name": "Intake Agent",
+      "name_en": "Document Ingestion & Structured Normalization",
+      "tech": ["Docling", "Pydantic V2", "SHA-256 Digest Caching"],
+      "skill": "skills/intake-sanitizer/SKILL.md",
+      "in_state": "SUBMITTED",
+      "out_state": "INTAKE_EXTRACTED",
+      "deterministic": false,
+      "token_profile": "0 cloud tokens (local document parsing)",
+      "responsibilities": [
+        "Ingests email attachments, PDFs/scanned PDFs (OCR), Excel/CSV, Word, and photographic receipts",
+        "Outputs strongly typed IntakeExtractedPayload: partner_id, submission_type, parent_pre_approval_id, amount, currency, activity_date, invoice_numbers, supporting_docs_manifest",
+        "Attaches physical provenance coordinates: doc_id + page_number + bounding_box and confidence score (0.0 to 1.0)",
+        "Performs Southeast Asian thousand/decimal delimiter normalization, eliminating German/Anglo-American digit conflicts",
+        "Streams compact 300-500 token JSON downstream, cropping 1-2 page bounding snippets only when visual human check is requested"
+      ],
+      "defenses": [
+        "Cross-Document Consistency Check: cross-verifies words and digits; resets confidence to 0 when Sum(Line Items) != Total Amount",
+        "Confidence Circuit Breaker: amount_confidence < 0.90 immediately flags FLAG_LOW_CONFIDENCE",
+        "Budget Block Invariant: amounts without validated confidence score or human confirmation are strictly prohibited from entering Agent 4 budget ledger",
+        "No LLM Auto-Completion: unrecognizable fields or schema conflicts return status: FAILED_PARSING with explicit error code"
+      ],
+      "failure_state": "NEEDS_INTAKE_CORRECTION",
+      "doc": "docs/01-agent-intake.md"
+    },
+    {
+      "order": 2,
+      "id": "validation",
+      "name": "Validation Agent",
+      "name_en": "Defect Discovery & Structured Clarification (Grill-Me)",
+      "tech": ["Pydantic V2", "Partner Master Lookup", "invoice_numbers Global Unique Index", "clarification_records Repository"],
+      "skill": "skills/grill-me/SKILL.md",
+      "in_state": "VALIDATING",
+      "out_state": "RULES_EVALUATING",
+      "deterministic": false,
+      "token_profile": "Single-round aggregated questions, max 1 clarification interaction (< 400 tokens/event)",
+      "responsibilities": [
+        "Mandatory field completeness check: applicant, partner ID, activity subject, amount, date, line-item invoices",
+        "Partner identity verification: validates partner_id status and current Tier (Elite / Gold / Silver / Registered)",
+        "Claim-to-PreApproval matching: CLAIM submissions must provide valid parent_pre_approval_id in APPROVED state",
+        "Duplicate prevention: invoice deduplication + 90-day same-partner same-activity same-amount collision check",
+        "Generates single-round open_questions bound to physical evidence_sources upon detecting gaps, pausing execution for human response"
+      ],
+      "defenses": [
+        "Zero auto-guessing: conflicting invoice amounts prompt questions rather than choosing sides",
+        "Single-Round Batching: scans all discrepancies and asks in one batch, eliminating tedious multi-round back-and-forth",
+        "Clarification Record persistence (record_id / answered_by / resolution / timestamp), preventing Agent 3 and Agent 6 from re-prompting",
+        "Pipeline freezes at NEEDS_CLARIFICATION while clarification is pending, blocking premature rule evaluation"
+      ],
+      "failure_state": "NEEDS_CLARIFICATION",
+      "doc": "docs/02-agent-validation.md"
+    },
+    {
+      "order": 3,
+      "id": "rules_engine",
+      "name": "Rules Engine",
+      "name_en": "Deterministic Policy Verification (Grill-With-Docs)",
+      "tech": ["Compiled Python/SQL Rule Matrix", "Versioned Rule Bundle v2026.3.0", "ADR Decision Records"],
+      "skill": "skills/grill-with-docs/SKILL.md",
+      "in_state": "RULES_EVALUATING",
+      "out_state": "BUDGET_RESERVING",
+      "deterministic": true,
+      "token_profile": "0 runtime tokens (deterministic rule execution, millisecond latency)",
+      "responsibilities": [
+        "Design time: unifies company glossary, compiles draft rule matrix, runs Grill-With-Docs interrogation, generates test vectors",
+        "Runtime: loads active versioned rule package, executes deterministically row-by-row, emits rule_id evaluation status",
+        "Enforces hard constraints: R-DATE-001 claim window, R-RATIO-002 co-op ratio, R-CAP-003 tier cap, R-MATCH-004 pre-approval match",
+        "Every finding carries error_code, metric, policy_ref, and evidence_refs physical anchors",
+        "Solidifies policy ambiguities into ADR records signed off by company policy authorities"
+      ],
+      "defenses": [
+        "Never uses LLM for runtime policy interpretation; eliminates LLM hallucination or autonomous policy invention",
+        "Un-enumerated situations immediately return REQUIRES_POLICY_INTERPRETATION and escalate to human policy owner",
+        "Submissions stay permanently bound to rule_version active at submission time; new rules apply only after effective_date",
+        "Policy conflicts never silently override; flags affected submissions and highlights conflicting rule codes"
+      ],
+      "failure_state": "POLICY_BLOCKED",
+      "doc": "docs/03-agent-rules-engine.md"
+    },
+    {
+      "order": 4,
+      "id": "budget",
+      "name": "Budget & Claim Verification",
+      "name_en": "Four-State Ledger & Invariant Guardian",
+      "tech": ["SQLite / PostgreSQL", "SELECT ... FOR UPDATE Row Locks", "idempotency_key", "Deterministic Ledger Engine"],
+      "skill": "skills/budget-ledger/SKILL.md",
+      "in_state": "BUDGET_RESERVING",
+      "out_state": "EXCEPTION_TRIAGE",
+      "deterministic": true,
+      "token_profile": "0 tokens (100% deterministic Python/SQL arithmetic)",
+      "responsibilities": [
+        "Maintains four-state budget pool: Allocated / Committed / Approved / Paid, deriving Available in real-time",
+        "Executes RESERVE_COMMIT to freeze pre-approval limits, and COMMIT_TO_APPROVE for atomic Committed to Approved transfers",
+        "Executes RELEASE_COMMIT to unfreeze reduced/rejected amounts, and PAY to record actual disbursement settlements",
+        "Enforces invariant Available >= 0; insufficient funds or cap overflows immediately trigger hard budget blocks",
+        "Writes immutable budget_transactions log entries with idempotency_key = submissionId:action:runId"
+      ],
+      "defenses": [
+        "Idempotency verification: retried requests matching existing idempotency_key return ALREADY_PROCESSED with zero double-deductions",
+        "Row-level locking: concurrent transactions queue sequentially, reading freshest available balance",
+        "Database-level CHECK (allocated_amount >= committed_amount + approved_amount + paid_amount) invariant conservation",
+        "Automated reconciliation audits four-state sums against physical transaction logs"
+      ],
+      "failure_state": "BUDGET_REJECTED",
+      "doc": "docs/04-agent-budget-claim-verification.md"
+    },
+    {
+      "order": 5,
+      "id": "exception",
+      "name": "Exception Agent",
+      "name_en": "Dual-Track Triage & Security Sentinel (Security Audit)",
+      "tech": ["Dual-Track Triage", "Independent Falsification Validator", "Isolated Sandbox", "Trust Boundary Filter"],
+      "skill": "skills/security-audit/SKILL.md",
+      "in_state": "EXCEPTION_TRIAGE",
+      "out_state": "PENDING_HUMAN_REVIEW",
+      "deterministic": false,
+      "token_profile": "99% business exceptions consume 0 tokens; targeted security audit only on trigger",
+      "responsibilities": [
+        "Strictly bifurcates exceptions into Business Track (missing docs, variance, rule conflict) and Security Track (injection, tampered files, unauthorized escalation)",
+        "Business Track: structures missing document checklists and factual evidence chains for Agent 6 memo generation",
+        "Security Track: executes trust boundary inspection (Untrusted Zone to Intermediate Processing to High-Trust Zone)",
+        "Classifies security findings into three states: confirmed / needs_validation / rejected",
+        "Emits finding_id, threat_type, trust_boundary_crossed, impact_assessment, and action_taken"
+      ],
+      "defenses": [
+        "Independent Validator Agent acts as red-team to falsify findings, preventing normal commercial terms from false-positive quarantine",
+        "Sandboxed inspection in isolated environment; non-conforming attachments rejected statically without host execution",
+        "Data passing from untrusted zone into high-trust zone undergoes sanitization and schema stripping",
+        "Only confirmed security hazards route to SECURITY_QUARANTINE; ordinary commercial errors route to business track"
+      ],
+      "failure_state": "SECURITY_QUARANTINE",
+      "doc": "docs/05-agent-exception.md"
+    },
+    {
+      "order": 6,
+      "id": "human_review",
+      "name": "Human Review & Workflow Agent",
+      "name_en": "Structured Review Memo & Communication Synthesis",
+      "tech": ["Structured Review Memo Generator", "Draft-Only State Machine", "Commitment Filter", "Policy Ref Existence Check"],
+      "skill": "skills/response-to-reviewers/SKILL.md",
+      "in_state": "PENDING_HUMAN_REVIEW",
+      "out_state": "APPROVED",
+      "deterministic": false,
+      "token_profile": "Strict context < 1,500 tokens (structured findings 400 + policy clauses 200 + templates 150)",
+      "responsibilities": [
+        "Aggregates Agents 1-5 findings into 6-section review memo: Summary, Verifications, Issues & Evidence, Actions, Sign-Off, Citations",
+        "Drafts partner Information Request notifications for external documentation follow-up",
+        "Calculates reduction alternatives for amounts exceeding pre-approvals for one-click approver selection",
+        "Applies Company Mindset principles and Communication Guidelines to adapt tone by audience",
+        "Retains 100% final authorization authority in human approver hands with digital audit sign-off"
+      ],
+      "defenses": [
+        "Issue completeness: every upstream exception has an unambiguous corresponding memo entry",
+        "Absolute citation traceability: every recommendation references policy_id and doc_id:page anchored in Policy Wiki",
+        "Commitment ban: intercepts unauthorized promises like 'We guarantee payment', enforcing neutral status wording",
+        "Draft isolation: all outbound text defaults to DRAFT_PENDING_REVIEW until human sign-off"
+      ],
+      "failure_state": "PENDING_INFO_REQUEST",
+      "doc": "docs/06-agent-human-review-workflow.md"
+    },
+    {
+      "order": 7,
+      "id": "audit",
+      "name": "Workflow, Audit & Reporting Agent",
+      "name_en": "Executive Briefing & SLA Sentinel (Boss Skill)",
+      "tech": ["Immutable Audit Events (submission_audit_events)", "DeepSeek Live LLM", "Ageing / SLA Calculator", "Multi-Role Dashboards"],
+      "skill": "skills/boss-communication/SKILL.md",
+      "in_state": "PAID",
+      "out_state": "ARCHIVED",
+      "deterministic": false,
+      "token_profile": "Live DeepSeek AI briefing generation (< 500 tokens) + event log SQL aggregates",
+      "responsibilities": [
+        "Executes Executive AI Briefing (Boss Skill) providing BLUF summary, financial risk rating, and decision guidance",
+        "Logs every workflow transition, rule evaluation, and human action as immutable audit events",
+        "Separates observed symptom from root cause, supporting deterministic single-step reprocess on RECOVERABLE_ERROR",
+        "Computes real-time case Ageing against SLA thresholds (Pending Partner: 5d / Ops Initial: 48h / Director Approval: 3d)",
+        "Outputs Operations, Finance, and Executive decision dashboards with multi-dimensional drill-downs"
+      ],
+      "defenses": [
+        "Append-only audit store; historical decisions and logs are immutable (Iron Invariant 4)",
+        "Engineering discipline: TDD red-green-refactor loop, systematic root cause debugging, sandbox pre-flight checks",
+        "Live LLM grounding: DeepSeek briefing synthesizes only verified evidence from pipeline stages",
+        "Tracks straight-through processing (STP) rate, AI model latency, and human intervention rates"
+      ],
+      "failure_state": "RECOVERABLE_ERROR",
+      "doc": "docs/07-agent-audit-reporting.md"
+    }
+  ],
+  "state_machine": [
+    { "from": "[*]", "to": "SUBMITTED", "trigger": "Receipt of application documents", "agent": null, "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "SUBMITTED", "to": "INTAKE_EXTRACTED", "trigger": "Agent 1 parsing complete", "agent": "intake", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "INTAKE_EXTRACTED", "to": "NEEDS_INTAKE_CORRECTION", "trigger": "Fatal format error / FAILED_PARSING", "agent": "intake", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "NEEDS_INTAKE_CORRECTION", "to": "SUBMITTED", "trigger": "Document re-uploaded", "agent": null, "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "INTAKE_EXTRACTED", "to": "VALIDATING", "trigger": "Routing to Agent 2", "agent": "validation", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "VALIDATING", "to": "NEEDS_CLARIFICATION", "trigger": "Discrepancy detected (Triggers Grill-Me)", "agent": "validation", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "NEEDS_CLARIFICATION", "to": "VALIDATING", "trigger": "Clarification record submitted", "agent": null, "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "VALIDATING", "to": "POLICY_BLOCKED", "trigger": "Hard partner check failure (PARTNER_NOT_ACTIVE / PRE_APPROVAL_NOT_READY)", "agent": "validation", "provenance": "derived", "source": "server/lib/pipeline.js (agent2Validate blocking gap)" },
+    { "from": "VALIDATING", "to": "RULES_EVALUATING", "trigger": "Agent 2 validation passed", "agent": "validation", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "RULES_EVALUATING", "to": "POLICY_BLOCKED", "trigger": "Agent 3 policy block / conflict triggered", "agent": "rules_engine", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "RULES_EVALUATING", "to": "NEEDS_HUMAN_CONFIRMATION", "trigger": "Amount confidence < 0.90 (CONFIDENCE_TOO_LOW)", "agent": "rules_engine", "provenance": "documented", "source": "docs/11-architecture-cross-check-report.md#invariant-3" },
+    { "from": "RULES_EVALUATING", "to": "REQUIRES_POLICY_INTERPRETATION", "trigger": "Un-enumerated rule or policy unconfigured (POLICY_UNDEFINED)", "agent": "rules_engine", "provenance": "documented", "source": "docs/03-agent-rules-engine.md#sec-4" },
+    { "from": "RULES_EVALUATING", "to": "BUDGET_RESERVING", "trigger": "Agent 3 rules passed", "agent": "rules_engine", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "BUDGET_RESERVING", "to": "BUDGET_REJECTED", "trigger": "Agent 4 insufficient balance / cap overflow (INSUFFICIENT_BUDGET)", "agent": "budget", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "BUDGET_RESERVING", "to": "PENDING_HUMAN_REVIEW", "trigger": "Ledger formula unconfirmed (LEDGER_NOT_CONFIGURED)", "agent": "budget", "provenance": "derived", "source": "docs/web.md#sec-4.8 graceful degradation" },
+    { "from": "BUDGET_RESERVING", "to": "EXCEPTION_TRIAGE", "trigger": "Budget reserved, proceeding to Agent 5", "agent": "budget", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "EXCEPTION_TRIAGE", "to": "SECURITY_QUARANTINE", "trigger": "Security hazard confirmed (injection / malicious payload)", "agent": "exception", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "EXCEPTION_TRIAGE", "to": "PENDING_INFO_REQUEST", "trigger": "Missing document classified, handoff to Agent 6 for notification draft", "agent": "exception", "provenance": "derived", "source": "server/lib/pipeline.js (agent5Triage business track)" },
+    { "from": "EXCEPTION_TRIAGE", "to": "PENDING_HUMAN_REVIEW", "trigger": "Standard business exception or normal processing", "agent": "exception", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "PENDING_HUMAN_REVIEW", "to": "APPROVED", "trigger": "Reviewer approves (authorizes payout release)", "agent": null, "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "PENDING_HUMAN_REVIEW", "to": "REJECTED", "trigger": "Reviewer rejects", "agent": null, "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "PENDING_HUMAN_REVIEW", "to": "PENDING_INFO_REQUEST", "trigger": "External information requested (Agent 6 draft)", "agent": "human_review", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "PENDING_INFO_REQUEST", "to": "SUBMITTED", "trigger": "Supplementary documents received", "agent": null, "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "NEEDS_CLARIFICATION", "to": "APPROVED", "trigger": "Direct approval by authorized approver after clarification review", "agent": null, "provenance": "derived", "source": "server/lib/pipeline.js APPROVABLE_STATES" },
+    { "from": "NEEDS_HUMAN_CONFIRMATION", "to": "APPROVED", "trigger": "Approved by finance/ops after manual amount verification", "agent": null, "provenance": "derived", "source": "server/lib/pipeline.js APPROVABLE_STATES" },
+    { "from": "REQUIRES_POLICY_INTERPRETATION", "to": "APPROVED", "trigger": "Approved following formal policy interpretation", "agent": null, "provenance": "derived", "source": "server/lib/pipeline.js APPROVABLE_STATES" },
+    { "from": "APPROVED", "to": "PAID", "trigger": "Agent 4 settlement recorded (Approved to Paid)", "agent": "budget", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "PAID", "to": "ARCHIVED", "trigger": "Agent 7 audit archiving and reconciliation closure", "agent": "audit", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "REJECTED", "to": "ARCHIVED", "trigger": "Rejection archived with complete audit trail", "agent": "audit", "provenance": "documented", "source": "docs/00-architecture-and-pipeline.md#sec-2" },
+    { "from": "RECOVERABLE_ERROR", "to": "SUBMITTED", "trigger": "Administrator repairs environment and triggers single-step replay", "agent": "audit", "provenance": "derived", "source": "docs/07-agent-audit-reporting.md#sec-3.2" }
+  ],
+  "event_contract_fields": ["run_id", "submission_id", "parent_pre_approval_id", "partner_id", "partner_tier", "timestamp", "source_agent", "target_agent", "status", "payload", "validation_result", "evidence_refs"]
+}

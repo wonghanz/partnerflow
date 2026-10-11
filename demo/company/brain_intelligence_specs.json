@@ -1,0 +1,45 @@
+{
+  "neural_mesh": "PartnerFlow 7-Agent Architecture",
+  "agents": [
+    {
+      "agent_id": "Agent 1",
+      "role": "Document Intake & Classifier",
+      "engine": "Docling-equivalent local extraction"
+    },
+    {
+      "agent_id": "Agent 2",
+      "role": "Cross-Document Consistency & Grill-Me Validation",
+      "engine": "Zero-guessing question generator"
+    },
+    {
+      "agent_id": "Agent 3",
+      "role": "Deterministic Rules Engine",
+      "engine": "0-token compiled rule evaluator"
+    },
+    {
+      "agent_id": "Agent 4",
+      "role": "Four-State Budget Ledger Officer",
+      "engine": "Atomic row-locked state transitions"
+    },
+    {
+      "agent_id": "Agent 5",
+      "role": "Security Sentinel & Anti-Tamper Triage",
+      "engine": "Dual-track threat sandbox"
+    },
+    {
+      "agent_id": "Agent 6",
+      "role": "Human Review Memo Synthesizer",
+      "engine": "Structured recommendation generator"
+    },
+    {
+      "agent_id": "Agent 7",
+      "role": "Executive Briefing & Audit Authority (Boss Skill)",
+      "engine": "Immutable audit chain recorder"
+    }
+  ],
+  "thresholds": {
+    "amount_hard_block": 0.9,
+    "parsing_suspend": 0.85,
+    "sla_initial_review_hours": 48
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "manifest_documents": [
+    {
+      "id": "01",
+      "filename": "01-pre-approval-form.pdf",
+      "category": "Forms & templates",
+      "status": "VERIFIED",
+      "rules_count": 6
+    },
+    {
+      "id": "02",
+      "filename": "02-claim-disbursement-form.pdf",
+      "category": "Forms & templates",
+      "status": "VERIFIED",
+      "rules_count": 8
+    },
+    {
+      "id": "03",
+      "filename": "03-programme-policy-and-sop.pdf",
+      "category": "Policies & SOPs",
+      "status": "VERIFIED",
+      "rules_count": 14
+    },
+    {
+      "id": "04",
+      "filename": "04-partner-master-and-budget-tracker.xlsx",
+      "category": "Partner & budget records",
+      "status": "VERIFIED",
+      "rules_count": 7
+    },
+    {
+      "id": "05",
+      "filename": "05-historical-cases/",
+      "category": "Historical cases & reports",
+      "status": "INDEXED",
+      "rules_count": 5
+    },
+    {
+      "id": "06",
+      "filename": "06-current-workflow-and-roles.pdf",
+      "category": "Historical cases & reports",
+      "status": "VERIFIED",
+      "rules_count": 3
+    },
+    {
+      "id": "07",
+      "filename": "07-supporting-document-checklist.pdf",
+      "category": "Policies & SOPs",
+      "status": "VERIFIED",
+      "rules_count": 18
+    },
+    {
+      "id": "08",
+      "filename": "08-existing-report-templates.pdf",
+      "category": "Historical cases & reports",
+      "status": "INDEXED",
+      "rules_count": 4
+    },
+    {
+      "id": "09",
+      "filename": "09-email-follow-up-examples.pdf",
+      "category": "Historical cases & reports",
+      "status": "INDEXED",
+      "rules_count": 2
+    },
+    {
+      "id": "10",
+      "filename": "10-approval-authority-matrix.pdf",
+      "category": "Policies & SOPs",
+      "status": "VERIFIED",
+      "rules_count": 4
+    }
+  ],
+  "compilation_target": {
+    "rule_engine_version": "v2026.3.0",
+    "status": "ACTIVE_IN_PRODUCTION",
+    "ingested_at": "2026-10-11T12:00:00.000Z",
+    "onboarding_pathway": "Pathway A (Existing Policy Documents)"
+  }
+}

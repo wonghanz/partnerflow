@@ -1,7 +1,7 @@
 'use strict';
 /* Isolated rule-matrix harness: exercises runRules against the real AI-authored corpus. */
-const store = require('./server/lib/store');
-const { runRules } = require('./server/lib/rules');
+const store = require('../server/lib/store');
+const { runRules } = require('../server/lib/rules');
 
 const config = store.read('config.json');
 const rules = store.read('rules.json');

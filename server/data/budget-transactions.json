@@ -1,173 +1,173 @@
 [
   {
-    "transaction_id": "88955aee-8e11-4029-bb9c-c21edff4a4a7",
-    "idempotency_key": "SUB-2026-MY-0001:RESERVE_COMMIT:run_20261011_868c1874",
+    "transaction_id": "71363467-ef4d-40ea-ab9d-e53452a00a24",
+    "idempotency_key": "SUB-2026-MY-0001:RESERVE_COMMIT:run_20261011_cce40fbd",
     "submission_id": "SUB-2026-MY-0001",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "RESERVE_COMMIT",
     "amount": 10000,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:29.854Z"
+    "created_at": "2026-10-11T15:56:47.638Z"
   },
   {
-    "transaction_id": "f193d2ff-f707-4069-89d5-c969f3a8a41c",
-    "idempotency_key": "SUB-2026-MY-0002:RESERVE_COMMIT:run_20261011_e1eaf222",
+    "transaction_id": "10b8a591-254c-4eef-979f-c0f500ed06cb",
+    "idempotency_key": "SUB-2026-MY-0002:RESERVE_COMMIT:run_20261011_9072d41d",
     "submission_id": "SUB-2026-MY-0002",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "RESERVE_COMMIT",
     "amount": 8000,
     "rule_version": "SOP_2025_V2",
-    "created_at": "2026-10-11T15:40:29.874Z"
+    "created_at": "2026-10-11T15:56:47.660Z"
   },
   {
-    "transaction_id": "76f4b3cd-d102-4d36-aec0-fce626729a0e",
-    "idempotency_key": "SUB-2026-MY-0003:RESERVE_COMMIT:run_20261011_253db520",
+    "transaction_id": "1f8a99d1-7066-45aa-8211-afd81b8fe0eb",
+    "idempotency_key": "SUB-2026-MY-0003:RESERVE_COMMIT:run_20261011_7c8020f6",
     "submission_id": "SUB-2026-MY-0003",
     "partner_id": "PTR-GLD-745",
     "transaction_type": "RESERVE_COMMIT",
     "amount": 55000,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:29.891Z"
+    "created_at": "2026-10-11T15:56:47.677Z"
   },
   {
-    "transaction_id": "387d2957-1889-4fd6-9599-a95757f7f639",
-    "idempotency_key": "SUB-2026-MY-0004:RESERVE_COMMIT:run_20261011_c6734b08",
+    "transaction_id": "a9a9d82d-e7f8-4aa4-aeef-61f38b22529b",
+    "idempotency_key": "SUB-2026-MY-0004:RESERVE_COMMIT:run_20261011_7691b3c4",
     "submission_id": "SUB-2026-MY-0004",
     "partner_id": "PTR-GLD-233",
     "transaction_type": "RESERVE_COMMIT",
     "amount": 6000,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:29.904Z"
+    "created_at": "2026-10-11T15:56:47.696Z"
   },
   {
-    "transaction_id": "452d3c59-012f-4ac9-a23c-9afb0ca965a1",
-    "idempotency_key": "SUB-2026-MY-0006:RESERVE_COMMIT:run_20261011_36001ea4",
+    "transaction_id": "972878d0-ae9e-4263-91ac-4b52feb348f6",
+    "idempotency_key": "SUB-2026-MY-0006:RESERVE_COMMIT:run_20261011_3ba3769c",
     "submission_id": "SUB-2026-MY-0006",
     "partner_id": "PTR-ELT-055",
     "transaction_type": "RESERVE_COMMIT",
     "amount": 30000,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:29.931Z"
+    "created_at": "2026-10-11T15:56:47.729Z"
   },
   {
-    "transaction_id": "e6c278c0-0a2e-4aa6-875a-0321316db1ca",
-    "idempotency_key": "SUB-2026-MY-0008:RESERVE_COMMIT:run_20261011_0314fa42",
+    "transaction_id": "8af1dfb8-29ef-4627-abd3-03b8270344ff",
+    "idempotency_key": "SUB-2026-MY-0008:RESERVE_COMMIT:run_20261011_c8f2079d",
     "submission_id": "SUB-2026-MY-0008",
     "partner_id": "PTR-UNA-901",
     "transaction_type": "RESERVE_COMMIT",
     "amount": 12000,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:29.956Z"
+    "created_at": "2026-10-11T15:56:47.765Z"
   },
   {
-    "transaction_id": "05dc222a-a401-401d-82c6-8a2d29531369",
-    "idempotency_key": "SUB-2026-MY-0009:COMMIT_TO_APPROVE:run_20261011_62c99cea",
+    "transaction_id": "04ed3cb2-945d-4656-8b14-5db6789ec99d",
+    "idempotency_key": "SUB-2026-MY-0009:COMMIT_TO_APPROVE:run_20261011_50beab69",
     "submission_id": "SUB-2026-MY-0009",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 15000,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:29.973Z"
+    "created_at": "2026-10-11T15:56:47.791Z"
   },
   {
-    "transaction_id": "13a4c974-c8a1-4461-aea2-20a67911c8df",
-    "idempotency_key": "SUB-2026-MY-0010:COMMIT_TO_APPROVE:run_20261011_8be21f58",
+    "transaction_id": "d9e0aff8-3ac6-4e98-9e3d-e981dfe44645",
+    "idempotency_key": "SUB-2026-MY-0010:COMMIT_TO_APPROVE:run_20261011_ce466427",
     "submission_id": "SUB-2026-MY-0010",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 8000,
     "rule_version": "SOP_2025_V2",
-    "created_at": "2026-10-11T15:40:29.991Z"
+    "created_at": "2026-10-11T15:56:47.809Z"
   },
   {
-    "transaction_id": "96adbe5b-5542-4073-b63a-773007134a03",
-    "idempotency_key": "SUB-2026-MY-0011:COMMIT_TO_APPROVE:run_20261011_72d6782a",
+    "transaction_id": "2ee158d8-c5a8-4ccd-b65a-1d2f0028e89a",
+    "idempotency_key": "SUB-2026-MY-0011:COMMIT_TO_APPROVE:run_20261011_50ec65e8",
     "submission_id": "SUB-2026-MY-0011",
     "partner_id": "PTR-GLD-745",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 9600,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.012Z"
+    "created_at": "2026-10-11T15:56:47.829Z"
   },
   {
-    "transaction_id": "a3dccc3d-4053-4d1c-a652-5f9c55606407",
-    "idempotency_key": "SUB-2026-MY-0012:COMMIT_TO_APPROVE:run_20261011_29796420",
+    "transaction_id": "7ba58903-6374-4d3d-93b8-81d8b2b4479e",
+    "idempotency_key": "SUB-2026-MY-0012:COMMIT_TO_APPROVE:run_20261011_61671880",
     "submission_id": "SUB-2026-MY-0012",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 5400,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.034Z"
+    "created_at": "2026-10-11T15:56:47.849Z"
   },
   {
-    "transaction_id": "aecea1f4-ee3c-477b-9501-f4a6a4c3f73d",
-    "idempotency_key": "SUB-2026-MY-0012:RELEASE_COMMIT:run_20261011_29796420:release",
+    "transaction_id": "69eb6567-143b-4580-8c3a-be53607f9748",
+    "idempotency_key": "SUB-2026-MY-0012:RELEASE_COMMIT:run_20261011_61671880:release",
     "submission_id": "SUB-2026-MY-0012",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "RELEASE_COMMIT",
     "amount": 5400,
     "rule_version": "v2026.3.0",
     "reason": "Reject: INV-MTS-2026-0771 was already reimbursed on SUB-2026-MY-0009 and the claim arrived 42 days after the activity date, beyond the 30-day window; no second payment on the same invoice.",
-    "created_at": "2026-10-11T15:40:30.040Z"
+    "created_at": "2026-10-11T15:56:47.857Z"
   },
   {
-    "transaction_id": "2aba7123-def3-405b-bb23-7037b574ff54",
-    "idempotency_key": "SUB-2026-MY-0015:COMMIT_TO_APPROVE:run_20261011_7ab61a57",
+    "transaction_id": "56e27ce2-32b1-419d-9e87-16d5ee2cc766",
+    "idempotency_key": "SUB-2026-MY-0015:COMMIT_TO_APPROVE:run_20261011_3d9422b2",
     "submission_id": "SUB-2026-MY-0015",
     "partner_id": "PTR-GLD-745",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 4200,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.073Z"
+    "created_at": "2026-10-11T15:56:47.898Z"
   },
   {
-    "transaction_id": "98834b04-fc46-4ff3-afa4-c8f7ef69d042",
-    "idempotency_key": "SUB-2026-MY-0016:COMMIT_TO_APPROVE:run_20261011_01604b86",
+    "transaction_id": "56994403-c640-4959-a0f9-c76b4954dde4",
+    "idempotency_key": "SUB-2026-MY-0016:COMMIT_TO_APPROVE:run_20261011_01087248",
     "submission_id": "SUB-2026-MY-0016",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 6300,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.091Z"
+    "created_at": "2026-10-11T15:56:47.919Z"
   },
   {
-    "transaction_id": "1db17b77-1154-4c31-91d0-e1d8a4dae155",
-    "idempotency_key": "SUB-2026-MY-0017:COMMIT_TO_APPROVE:run_20261011_301180e8",
+    "transaction_id": "c90c6a71-4601-439c-9bf2-29dcadfd40e0",
+    "idempotency_key": "SUB-2026-MY-0017:COMMIT_TO_APPROVE:run_20261011_4f2b0d6c",
     "submission_id": "SUB-2026-MY-0017",
     "partner_id": "PTR-GLD-745",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 6400,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.108Z"
+    "created_at": "2026-10-11T15:56:48.007Z"
   },
   {
-    "transaction_id": "c4af036f-14c6-4776-b3d5-823c9d7deb40",
-    "idempotency_key": "SUB-2026-MY-0019:COMMIT_TO_APPROVE:run_20261011_8675f59f",
+    "transaction_id": "1d0278d6-1771-450c-982f-ffd864b04dc6",
+    "idempotency_key": "SUB-2026-MY-0019:COMMIT_TO_APPROVE:run_20261011_1ac14632",
     "submission_id": "SUB-2026-MY-0019",
     "partner_id": "PTR-GLD-233",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 5600,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.144Z"
+    "created_at": "2026-10-11T15:56:48.054Z"
   },
   {
-    "transaction_id": "7b5826d2-7985-413d-8186-90502277e51b",
-    "idempotency_key": "SUB-2026-MY-0021:COMMIT_TO_APPROVE:run_20261011_64a5ca22",
+    "transaction_id": "b4c80491-f825-456c-ba8d-1d5e05c1f56e",
+    "idempotency_key": "SUB-2026-MY-0021:COMMIT_TO_APPROVE:run_20261011_886c0941",
     "submission_id": "SUB-2026-MY-0021",
     "partner_id": "PTR-UNA-901",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 9400,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.182Z"
+    "created_at": "2026-10-11T15:56:48.098Z"
   },
   {
-    "transaction_id": "bc9b1ab6-b5dd-4902-93a7-ff11faf98f22",
-    "idempotency_key": "SUB-2026-MY-0022:COMMIT_TO_APPROVE:run_20261011_905349cc",
+    "transaction_id": "7a52b7c2-32c1-462c-a38a-23c4bc4d0e51",
+    "idempotency_key": "SUB-2026-MY-0022:COMMIT_TO_APPROVE:run_20261011_84f9d7ae",
     "submission_id": "SUB-2026-MY-0022",
     "partner_id": "PTR-GLD-882",
     "transaction_type": "COMMIT_TO_APPROVE",
     "amount": 9200,
     "rule_version": "v2026.3.0",
-    "created_at": "2026-10-11T15:40:30.206Z"
+    "created_at": "2026-10-11T15:56:48.134Z"
   }
 ]

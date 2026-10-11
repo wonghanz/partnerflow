@@ -1,7 +1,7 @@
 [
   {
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -10,7 +10,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-08-20",
     "submitted_at": "2026-07-30T09:12:00Z",
-    "updated_at": "2026-10-11T15:40:29.861Z",
+    "updated_at": "2026-10-11T15:56:47.646Z",
     "amount": 10000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -228,37 +228,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.836Z"
+        "at": "2026-10-11T15:56:47.614Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.837Z"
+        "at": "2026-10-11T15:56:47.615Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.838Z"
+        "at": "2026-10-11T15:56:47.617Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.851Z"
+        "at": "2026-10-11T15:56:47.632Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.855Z"
+        "at": "2026-10-11T15:56:47.639Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:29.856Z"
+        "at": "2026-10-11T15:56:47.641Z"
       },
       {
         "from": "PENDING_HUMAN_REVIEW",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.860Z"
+        "at": "2026-10-11T15:56:47.645Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -394,7 +394,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "88955aee-8e11-4029-bb9c-c21edff4a4a7",
+      "tx_id": "71363467-ef4d-40ea-ab9d-e53452a00a24",
       "new_available": 290000,
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
@@ -403,20 +403,20 @@
         "committed_amount": 860000,
         "approved_amount": 150000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.853Z"
+        "updated_at": "2026-10-11T15:56:47.636Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:29.856Z"
+      "triaged_at": "2026-10-11T15:56:47.641Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0001 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.858Z",
+      "generated_at": "2026-10-11T15:56:47.643Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -515,11 +515,11 @@
     "reduction_amount": 0,
     "decision_reason": "All configured gates passed on the planned budget lines and the vendor quotation; pre-approval granted at the full requested ceiling for Q3 KL Launch.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.860Z"
+    "decided_at": "2026-10-11T15:56:47.645Z"
   },
   {
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -528,7 +528,7 @@
     "activity_type": "Pop-up Launch Event",
     "activity_date": "2026-02-18",
     "submitted_at": "2026-01-28T08:05:00Z",
-    "updated_at": "2026-10-11T15:40:29.879Z",
+    "updated_at": "2026-10-11T15:56:47.665Z",
     "amount": 8000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -640,37 +640,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.868Z"
+        "at": "2026-10-11T15:56:47.650Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.869Z"
+        "at": "2026-10-11T15:56:47.651Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.870Z"
+        "at": "2026-10-11T15:56:47.655Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.871Z"
+        "at": "2026-10-11T15:56:47.657Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.874Z"
+        "at": "2026-10-11T15:56:47.661Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_INFO_REQUEST",
-        "at": "2026-10-11T15:40:29.876Z"
+        "at": "2026-10-11T15:56:47.662Z"
       },
       {
         "from": "PENDING_INFO_REQUEST",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.878Z"
+        "at": "2026-10-11T15:56:47.664Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -807,7 +807,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "f193d2ff-f707-4069-89d5-c969f3a8a41c",
+      "tx_id": "10b8a591-254c-4eef-979f-c0f500ed06cb",
       "new_available": 282000,
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
@@ -816,7 +816,7 @@
         "committed_amount": 868000,
         "approved_amount": 150000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.873Z"
+        "updated_at": "2026-10-11T15:56:47.659Z"
       }
     },
     "exception_result": {
@@ -871,13 +871,13 @@
           "evidence_refs": []
         }
       ],
-      "triaged_at": "2026-10-11T15:40:29.876Z"
+      "triaged_at": "2026-10-11T15:56:47.662Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0002 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.878Z",
+      "generated_at": "2026-10-11T15:56:47.664Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -990,11 +990,11 @@
     "reduction_amount": 0,
     "decision_reason": "Pre-approval granted at RM 8,000.00 under the ceiling in force at submission time; the record's rule version anchor must not be rewritten retroactively.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.878Z"
+    "decided_at": "2026-10-11T15:56:47.664Z"
   },
   {
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-GLD-745",
     "partner_name": "Marina Bay Marketing Pte Ltd",
@@ -1003,7 +1003,7 @@
     "activity_type": "Digital Advertising Campaign",
     "activity_date": "2026-12-03",
     "submitted_at": "2026-10-08T02:40:00Z",
-    "updated_at": "2026-10-11T15:40:29.894Z",
+    "updated_at": "2026-10-11T15:56:47.683Z",
     "amount": 55000,
     "currency": "SGD",
     "invoice_numbers": [
@@ -1115,37 +1115,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.885Z"
+        "at": "2026-10-11T15:56:47.672Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.886Z"
+        "at": "2026-10-11T15:56:47.673Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.887Z"
+        "at": "2026-10-11T15:56:47.675Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.889Z"
+        "at": "2026-10-11T15:56:47.676Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.891Z"
+        "at": "2026-10-11T15:56:47.678Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_INFO_REQUEST",
-        "at": "2026-10-11T15:40:29.892Z"
+        "at": "2026-10-11T15:56:47.679Z"
       },
       {
         "from": "PENDING_INFO_REQUEST",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.893Z"
+        "at": "2026-10-11T15:56:47.682Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -1282,7 +1282,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "76f4b3cd-d102-4d36-aec0-fce626729a0e",
+      "tx_id": "1f8a99d1-7066-45aa-8211-afd81b8fe0eb",
       "new_available": 75000,
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
@@ -1291,7 +1291,7 @@
         "committed_amount": 435000,
         "approved_amount": 70000,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:29.890Z"
+        "updated_at": "2026-10-11T15:56:47.677Z"
       }
     },
     "exception_result": {
@@ -1346,13 +1346,13 @@
           "evidence_refs": []
         }
       ],
-      "triaged_at": "2026-10-11T15:40:29.892Z"
+      "triaged_at": "2026-10-11T15:56:47.679Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0003 (Marina Bay Marketing Pte Ltd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.893Z",
+      "generated_at": "2026-10-11T15:56:47.682Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -1465,11 +1465,11 @@
     "reduction_amount": 0,
     "decision_reason": "Approved on the media owner quotation; outstanding execution evidence stays tracked as an information request and does not change the approved ceiling.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.893Z"
+    "decided_at": "2026-10-11T15:56:47.682Z"
   },
   {
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-GLD-233",
     "partner_name": "Pulau Pinang Retail Group Sdn Bhd",
@@ -1478,7 +1478,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-09-26",
     "submitted_at": "2026-09-05T01:25:00Z",
-    "updated_at": "2026-10-11T15:40:29.908Z",
+    "updated_at": "2026-10-11T15:56:47.699Z",
     "amount": 6000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -1590,37 +1590,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.899Z"
+        "at": "2026-10-11T15:56:47.690Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.900Z"
+        "at": "2026-10-11T15:56:47.691Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.901Z"
+        "at": "2026-10-11T15:56:47.693Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.902Z"
+        "at": "2026-10-11T15:56:47.694Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.905Z"
+        "at": "2026-10-11T15:56:47.697Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_INFO_REQUEST",
-        "at": "2026-10-11T15:40:29.905Z"
+        "at": "2026-10-11T15:56:47.698Z"
       },
       {
         "from": "PENDING_INFO_REQUEST",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.907Z"
+        "at": "2026-10-11T15:56:47.699Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -1757,7 +1757,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "387d2957-1889-4fd6-9599-a95757f7f639",
+      "tx_id": "a9a9d82d-e7f8-4aa4-aeef-61f38b22529b",
       "new_available": 144000,
       "ledger_row": {
         "partner_id": "PTR-GLD-233",
@@ -1766,7 +1766,7 @@
         "committed_amount": 606000,
         "approved_amount": 110000,
         "paid_amount": 400000,
-        "updated_at": "2026-10-11T15:40:29.903Z"
+        "updated_at": "2026-10-11T15:56:47.695Z"
       }
     },
     "exception_result": {
@@ -1821,13 +1821,13 @@
           "evidence_refs": []
         }
       ],
-      "triaged_at": "2026-10-11T15:40:29.905Z"
+      "triaged_at": "2026-10-11T15:56:47.698Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0004 (Pulau Pinang Retail Group Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.907Z",
+      "generated_at": "2026-10-11T15:56:47.699Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -1940,11 +1940,11 @@
     "reduction_amount": 0,
     "decision_reason": "Approved at RM 6,000.00 against the organiser quotation; this ceiling is the linkage base for the partner's fair claims.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.907Z"
+    "decided_at": "2026-10-11T15:56:47.699Z"
   },
   {
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-GLD-233",
     "partner_name": "Pulau Pinang Retail Group Sdn Bhd",
@@ -1953,7 +1953,7 @@
     "activity_type": "Roadshow",
     "activity_date": "2026-12-10",
     "submitted_at": "2026-10-09T03:30:00Z",
-    "updated_at": "2026-10-11T15:40:29.921Z",
+    "updated_at": "2026-10-11T15:56:47.714Z",
     "amount": 880000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -2065,27 +2065,27 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.912Z"
+        "at": "2026-10-11T15:56:47.708Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.914Z"
+        "at": "2026-10-11T15:56:47.709Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.917Z"
+        "at": "2026-10-11T15:56:47.711Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "POLICY_BLOCKED",
-        "at": "2026-10-11T15:40:29.919Z"
+        "at": "2026-10-11T15:56:47.713Z"
       },
       {
         "from": "POLICY_BLOCKED",
         "to": "REJECTED",
-        "at": "2026-10-11T15:40:29.920Z"
+        "at": "2026-10-11T15:56:47.714Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -2227,7 +2227,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0005 (Pulau Pinang Retail Group Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.920Z",
+      "generated_at": "2026-10-11T15:56:47.714Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -2358,11 +2358,11 @@
     },
     "decision_reason": "The aggregated annual request exceeds PTR-GLD-233 remaining FY2026 availability. Director denies the lump-sum request; partner to re-submit per-event pre-approvals.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.920Z"
+    "decided_at": "2026-10-11T15:56:47.714Z"
   },
   {
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-ELT-055",
     "partner_name": "Cakra Prima Nusantara PT",
@@ -2371,7 +2371,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-11-27",
     "submitted_at": "2026-10-05T04:20:00Z",
-    "updated_at": "2026-10-11T15:40:29.937Z",
+    "updated_at": "2026-10-11T15:56:47.738Z",
     "amount": 30000,
     "currency": "USD",
     "invoice_numbers": [
@@ -2483,37 +2483,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.925Z"
+        "at": "2026-10-11T15:56:47.720Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.926Z"
+        "at": "2026-10-11T15:56:47.722Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.928Z"
+        "at": "2026-10-11T15:56:47.723Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.928Z"
+        "at": "2026-10-11T15:56:47.726Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.932Z"
+        "at": "2026-10-11T15:56:47.730Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:29.934Z"
+        "at": "2026-10-11T15:56:47.732Z"
       },
       {
         "from": "PENDING_HUMAN_REVIEW",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.937Z"
+        "at": "2026-10-11T15:56:47.736Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -2644,7 +2644,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "452d3c59-012f-4ac9-a23c-9afb0ca965a1",
+      "tx_id": "972878d0-ae9e-4263-91ac-4b52feb348f6",
       "new_available": 160000,
       "ledger_row": {
         "partner_id": "PTR-ELT-055",
@@ -2653,20 +2653,20 @@
         "committed_amount": 730000,
         "approved_amount": 100000,
         "paid_amount": 550000,
-        "updated_at": "2026-10-11T15:40:29.930Z"
+        "updated_at": "2026-10-11T15:56:47.728Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:29.934Z"
+      "triaged_at": "2026-10-11T15:56:47.731Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0006 (Cakra Prima Nusantara PT)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.935Z",
+      "generated_at": "2026-10-11T15:56:47.733Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -2765,11 +2765,11 @@
     "reduction_amount": 0,
     "decision_reason": "Policy owner adjudicates the Elite single-event limit manually for this submission (USD 30,000.00): the tier carries no published cap and the system must not invent one.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.937Z"
+    "decided_at": "2026-10-11T15:56:47.736Z"
   },
   {
     "submission_id": "SUB-2026-MY-0007",
-    "run_id": "run_20261011_d98c2293",
+    "run_id": "run_20261011_44831be7",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-REG-770",
     "partner_name": "Nusantara Ads Indonesia PT",
@@ -2778,7 +2778,7 @@
     "activity_type": "Digital Advertising Campaign",
     "activity_date": "2026-11-14",
     "submitted_at": "2026-10-06T07:55:00Z",
-    "updated_at": "2026-10-11T15:40:29.945Z",
+    "updated_at": "2026-10-11T15:56:47.751Z",
     "amount": 42000000,
     "currency": "IDR",
     "invoice_numbers": [
@@ -2890,22 +2890,22 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.942Z"
+        "at": "2026-10-11T15:56:47.744Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.942Z"
+        "at": "2026-10-11T15:56:47.745Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.943Z"
+        "at": "2026-10-11T15:56:47.747Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "POLICY_BLOCKED",
-        "at": "2026-10-11T15:40:29.944Z"
+        "at": "2026-10-11T15:56:47.749Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -3041,7 +3041,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0007 (Nusantara Ads Indonesia PT)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.945Z",
+      "generated_at": "2026-10-11T15:56:47.751Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -3160,7 +3160,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "submission_type": "PRE_APPROVAL",
     "partner_id": "PTR-UNA-901",
     "partner_name": "Kelang Digital Trading Sdn Bhd",
@@ -3169,7 +3169,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-09-28",
     "submitted_at": "2026-09-10T06:00:00Z",
-    "updated_at": "2026-10-11T15:40:29.960Z",
+    "updated_at": "2026-10-11T15:56:47.775Z",
     "amount": 12000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -3281,37 +3281,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.952Z"
+        "at": "2026-10-11T15:56:47.759Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.952Z"
+        "at": "2026-10-11T15:56:47.760Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.953Z"
+        "at": "2026-10-11T15:56:47.761Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.954Z"
+        "at": "2026-10-11T15:56:47.763Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.956Z"
+        "at": "2026-10-11T15:56:47.766Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:29.957Z"
+        "at": "2026-10-11T15:56:47.768Z"
       },
       {
         "from": "PENDING_HUMAN_REVIEW",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.960Z"
+        "at": "2026-10-11T15:56:47.773Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -3442,7 +3442,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "e6c278c0-0a2e-4aa6-875a-0321316db1ca",
+      "tx_id": "8af1dfb8-29ef-4627-abd3-03b8270344ff",
       "new_available": 48000,
       "ledger_row": {
         "partner_id": "PTR-UNA-901",
@@ -3451,20 +3451,20 @@
         "committed_amount": 102000,
         "approved_amount": 30000,
         "paid_amount": 100000,
-        "updated_at": "2026-10-11T15:40:29.955Z"
+        "updated_at": "2026-10-11T15:56:47.765Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:29.957Z"
+      "triaged_at": "2026-10-11T15:56:47.768Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0008 (Kelang Digital Trading Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.958Z",
+      "generated_at": "2026-10-11T15:56:47.770Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -3563,11 +3563,11 @@
     "reduction_amount": 0,
     "decision_reason": "Policy owner adjudicates RM 12,000.00 manually for the Unassigned cold-start partner; no default limit is assumed by the system.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.959Z"
+    "decided_at": "2026-10-11T15:56:47.773Z"
   },
   {
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -3576,7 +3576,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-08-22",
     "submitted_at": "2026-09-14T03:20:00Z",
-    "updated_at": "2026-10-11T15:40:29.976Z",
+    "updated_at": "2026-10-11T15:56:47.795Z",
     "amount": 15000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -3716,32 +3716,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.967Z"
+        "at": "2026-10-11T15:56:47.782Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.968Z"
+        "at": "2026-10-11T15:56:47.783Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.970Z"
+        "at": "2026-10-11T15:56:47.786Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.971Z"
+        "at": "2026-10-11T15:56:47.788Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.973Z"
+        "at": "2026-10-11T15:56:47.791Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:29.974Z"
+        "at": "2026-10-11T15:56:47.792Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -3912,7 +3912,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "05dc222a-a401-401d-82c6-8a2d29531369",
+      "tx_id": "04ed3cb2-945d-4656-8b14-5db6789ec99d",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -3920,20 +3920,20 @@
         "committed_amount": 853000,
         "approved_amount": 165000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.972Z"
+        "updated_at": "2026-10-11T15:56:47.790Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:29.974Z"
+      "triaged_at": "2026-10-11T15:56:47.792Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0009 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.975Z",
+      "generated_at": "2026-10-11T15:56:47.794Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -4051,7 +4051,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -4060,7 +4060,7 @@
     "activity_type": "Pop-up Launch Event",
     "activity_date": "2026-02-11",
     "submitted_at": "2026-02-25T06:40:00Z",
-    "updated_at": "2026-10-11T15:40:30.000Z",
+    "updated_at": "2026-10-11T15:56:47.816Z",
     "amount": 8000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -4200,37 +4200,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:29.984Z"
+        "at": "2026-10-11T15:56:47.801Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:29.985Z"
+        "at": "2026-10-11T15:56:47.802Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:29.987Z"
+        "at": "2026-10-11T15:56:47.805Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:29.989Z"
+        "at": "2026-10-11T15:56:47.807Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:29.992Z"
+        "at": "2026-10-11T15:56:47.810Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:29.993Z"
+        "at": "2026-10-11T15:56:47.811Z"
       },
       {
         "from": "PENDING_HUMAN_REVIEW",
         "to": "APPROVED",
-        "at": "2026-10-11T15:40:29.998Z"
+        "at": "2026-10-11T15:56:47.815Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -4401,19 +4401,19 @@
     },
     "budget_result": {
       "status": "ALREADY_PROCESSED",
-      "tx_id": "13a4c974-c8a1-4461-aea2-20a67911c8df"
+      "tx_id": "d9e0aff8-3ac6-4e98-9e3d-e981dfe44645"
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:29.993Z"
+      "triaged_at": "2026-10-11T15:56:47.811Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0010 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:29.995Z",
+      "generated_at": "2026-10-11T15:56:47.813Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -4514,11 +4514,11 @@
     "reduction_amount": 0,
     "decision_reason": "Human approver confirms the legacy-era claim: RM 8,000.00 sits at the ceiling in force at submission time and is also within the current Gold cap, so the anchor is preserved without re-adjudicating history.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:29.997Z"
+    "decided_at": "2026-10-11T15:56:47.814Z"
   },
   {
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-745",
     "partner_name": "Marina Bay Marketing Pte Ltd",
@@ -4527,7 +4527,7 @@
     "activity_type": "Digital Advertising Campaign",
     "activity_date": "2026-09-18",
     "submitted_at": "2026-10-07T02:15:00Z",
-    "updated_at": "2026-10-11T15:40:30.019Z",
+    "updated_at": "2026-10-11T15:56:47.835Z",
     "amount": 9600,
     "currency": "SGD",
     "invoice_numbers": [
@@ -4667,32 +4667,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.006Z"
+        "at": "2026-10-11T15:56:47.824Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.007Z"
+        "at": "2026-10-11T15:56:47.825Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.009Z"
+        "at": "2026-10-11T15:56:47.827Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.010Z"
+        "at": "2026-10-11T15:56:47.828Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.013Z"
+        "at": "2026-10-11T15:56:47.830Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:30.015Z"
+        "at": "2026-10-11T15:56:47.832Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -4863,7 +4863,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "96adbe5b-5542-4073-b63a-773007134a03",
+      "tx_id": "2ee158d8-c5a8-4ccd-b65a-1d2f0028e89a",
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
         "fiscal_year": 2026,
@@ -4871,20 +4871,20 @@
         "committed_amount": 425400,
         "approved_amount": 79600,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:30.011Z"
+        "updated_at": "2026-10-11T15:56:47.829Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:30.015Z"
+      "triaged_at": "2026-10-11T15:56:47.832Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0011 (Marina Bay Marketing Pte Ltd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.017Z",
+      "generated_at": "2026-10-11T15:56:47.833Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -4984,7 +4984,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -4993,7 +4993,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-06-30",
     "submitted_at": "2026-08-11T09:05:00Z",
-    "updated_at": "2026-10-11T15:40:30.042Z",
+    "updated_at": "2026-10-11T15:56:47.858Z",
     "amount": 5400,
     "currency": "MYR",
     "invoice_numbers": [
@@ -5133,37 +5133,37 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.025Z"
+        "at": "2026-10-11T15:56:47.843Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.026Z"
+        "at": "2026-10-11T15:56:47.844Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.028Z"
+        "at": "2026-10-11T15:56:47.845Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.030Z"
+        "at": "2026-10-11T15:56:47.846Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.034Z"
+        "at": "2026-10-11T15:56:47.849Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:30.036Z"
+        "at": "2026-10-11T15:56:47.850Z"
       },
       {
         "from": "PENDING_HUMAN_REVIEW",
         "to": "REJECTED",
-        "at": "2026-10-11T15:40:30.041Z"
+        "at": "2026-10-11T15:56:47.857Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -5344,7 +5344,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "a3dccc3d-4053-4d1c-a652-5f9c55606407",
+      "tx_id": "7ba58903-6374-4d3d-93b8-81d8b2b4479e",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -5352,20 +5352,20 @@
         "committed_amount": 839600,
         "approved_amount": 178400,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:30.033Z"
+        "updated_at": "2026-10-11T15:56:47.848Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:30.036Z"
+      "triaged_at": "2026-10-11T15:56:47.850Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0012 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.037Z",
+      "generated_at": "2026-10-11T15:56:47.853Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -5464,11 +5464,11 @@
     "owner": "Awaiting operations first review",
     "decision_reason": "Reject: INV-MTS-2026-0771 was already reimbursed on SUB-2026-MY-0009 and the claim arrived 42 days after the activity date, beyond the 30-day window; no second payment on the same invoice.",
     "decided_by": "alyssa.woe@company.com",
-    "decided_at": "2026-10-11T15:40:30.038Z"
+    "decided_at": "2026-10-11T15:56:47.855Z"
   },
   {
     "submission_id": "SUB-2026-MY-0013",
-    "run_id": "run_20261011_cf934745",
+    "run_id": "run_20261011_40ddcc98",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-745",
     "partner_name": "Marina Bay Marketing Pte Ltd",
@@ -5477,7 +5477,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-09-05",
     "submitted_at": "2026-09-29T01:48:00Z",
-    "updated_at": "2026-10-11T15:40:30.049Z",
+    "updated_at": "2026-10-11T15:56:47.867Z",
     "amount": 3800,
     "currency": "SGD",
     "invoice_numbers": [
@@ -5565,7 +5565,7 @@
       {
         "from": "SUBMITTED",
         "to": "NEEDS_INTAKE_CORRECTION",
-        "at": "2026-10-11T15:40:30.048Z"
+        "at": "2026-10-11T15:56:47.866Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -5582,7 +5582,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0013 (Marina Bay Marketing Pte Ltd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.049Z",
+      "generated_at": "2026-10-11T15:56:47.867Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -5672,7 +5672,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0014",
-    "run_id": "run_20261011_95444fe6",
+    "run_id": "run_20261011_d8c58661",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -5681,7 +5681,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-06-30",
     "submitted_at": "2026-08-13T04:10:00Z",
-    "updated_at": "2026-10-11T15:40:30.060Z",
+    "updated_at": "2026-10-11T15:56:47.883Z",
     "amount": 5400,
     "currency": "MYR",
     "invoice_numbers": [
@@ -5821,22 +5821,22 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.056Z"
+        "at": "2026-10-11T15:56:47.876Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.057Z"
+        "at": "2026-10-11T15:56:47.877Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.059Z"
+        "at": "2026-10-11T15:56:47.879Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "NEEDS_HUMAN_CONFIRMATION",
-        "at": "2026-10-11T15:40:30.059Z"
+        "at": "2026-10-11T15:56:47.881Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -6027,7 +6027,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0014 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.061Z",
+      "generated_at": "2026-10-11T15:56:47.883Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -6124,7 +6124,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-745",
     "partner_name": "Marina Bay Marketing Pte Ltd",
@@ -6133,7 +6133,7 @@
     "activity_type": "Digital Advertising Campaign",
     "activity_date": "2026-08-27",
     "submitted_at": "2026-09-15T07:30:00Z",
-    "updated_at": "2026-10-11T15:40:30.077Z",
+    "updated_at": "2026-10-11T15:56:47.903Z",
     "amount": 4200,
     "currency": "SGD",
     "invoice_numbers": [
@@ -6247,32 +6247,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.068Z"
+        "at": "2026-10-11T15:56:47.892Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.069Z"
+        "at": "2026-10-11T15:56:47.893Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.070Z"
+        "at": "2026-10-11T15:56:47.895Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.071Z"
+        "at": "2026-10-11T15:56:47.896Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.074Z"
+        "at": "2026-10-11T15:56:47.899Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_INFO_REQUEST",
-        "at": "2026-10-11T15:40:30.075Z"
+        "at": "2026-10-11T15:56:47.900Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -6444,7 +6444,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "2aba7123-def3-405b-bb23-7037b574ff54",
+      "tx_id": "56e27ce2-32b1-419d-9e87-16d5ee2cc766",
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
         "fiscal_year": 2026,
@@ -6452,7 +6452,7 @@
         "committed_amount": 421200,
         "approved_amount": 83800,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:30.072Z"
+        "updated_at": "2026-10-11T15:56:47.897Z"
       }
     },
     "exception_result": {
@@ -6504,13 +6504,13 @@
           "evidence_refs": []
         }
       ],
-      "triaged_at": "2026-10-11T15:40:30.075Z"
+      "triaged_at": "2026-10-11T15:56:47.900Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0015 (Marina Bay Marketing Pte Ltd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.077Z",
+      "generated_at": "2026-10-11T15:56:47.903Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -6624,7 +6624,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -6633,7 +6633,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-07-24",
     "submitted_at": "2026-08-14T05:55:00Z",
-    "updated_at": "2026-10-11T15:40:30.094Z",
+    "updated_at": "2026-10-11T15:56:47.962Z",
     "amount": 6300,
     "currency": "MYR",
     "invoice_numbers": [
@@ -6774,32 +6774,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.086Z"
+        "at": "2026-10-11T15:56:47.910Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.087Z"
+        "at": "2026-10-11T15:56:47.911Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.088Z"
+        "at": "2026-10-11T15:56:47.914Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.089Z"
+        "at": "2026-10-11T15:56:47.916Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.092Z"
+        "at": "2026-10-11T15:56:47.928Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "SECURITY_QUARANTINE",
-        "at": "2026-10-11T15:40:30.093Z"
+        "at": "2026-10-11T15:56:47.929Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -6970,7 +6970,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "98834b04-fc46-4ff3-afa4-c8f7ef69d042",
+      "tx_id": "56994403-c640-4959-a0f9-c76b4954dde4",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -6978,14 +6978,14 @@
         "committed_amount": 827900,
         "approved_amount": 184700,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:30.090Z"
+        "updated_at": "2026-10-11T15:56:47.917Z"
       }
     },
     "exception_result": {
       "exception_type": "SECURITY",
       "security_findings": [
         {
-          "finding_id": "SEC-INJ-642B",
+          "finding_id": "SEC-INJ-9A06",
           "threat_type": "PROMPT_INJECTION_ATTEMPT",
           "status": "confirmed",
           "trust_boundary_crossed": "External_Upload -> LLM_Context",
@@ -6999,7 +6999,7 @@
           "falsification": "Independent validator agent attempted to falsify; the string is imperative and targets system state, not a product name."
         },
         {
-          "finding_id": "SEC-INJ-020F",
+          "finding_id": "SEC-INJ-7EC4",
           "threat_type": "PROMPT_INJECTION_ATTEMPT",
           "status": "confirmed",
           "trust_boundary_crossed": "External_Upload -> LLM_Context",
@@ -7013,7 +7013,7 @@
           "falsification": "Independent validator agent attempted to falsify; the string is imperative and targets system state, not a product name."
         },
         {
-          "finding_id": "SEC-INJ-C0BF",
+          "finding_id": "SEC-INJ-D467",
           "threat_type": "PROMPT_INJECTION_ATTEMPT",
           "status": "confirmed",
           "trust_boundary_crossed": "External_Upload -> LLM_Context",
@@ -7027,7 +7027,7 @@
           "falsification": "Independent validator agent attempted to falsify; the string is imperative and targets system state, not a product name."
         },
         {
-          "finding_id": "SEC-INJ-B37E",
+          "finding_id": "SEC-INJ-1D3B",
           "threat_type": "PROMPT_INJECTION_ATTEMPT",
           "status": "confirmed",
           "trust_boundary_crossed": "External_Upload -> LLM_Context",
@@ -7041,7 +7041,7 @@
           "falsification": "Independent validator agent attempted to falsify; the string is imperative and targets system state, not a product name."
         },
         {
-          "finding_id": "SEC-INJ-721B",
+          "finding_id": "SEC-INJ-8FA5",
           "threat_type": "PROMPT_INJECTION_ATTEMPT",
           "status": "confirmed",
           "trust_boundary_crossed": "External_Upload -> LLM_Context",
@@ -7056,7 +7056,7 @@
         }
       ],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:30.093Z"
+      "triaged_at": "2026-10-11T15:56:47.929Z"
     },
     "ageing_days": 58,
     "sla_breached": false,
@@ -7065,7 +7065,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0016 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.094Z",
+      "generated_at": "2026-10-11T15:56:47.966Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -7115,7 +7115,7 @@
           "heading": "3. Outstanding Issues & Evidence",
           "items": [
             {
-              "title": "Security finding SEC-INJ-642B (PROMPT_INJECTION_ATTEMPT)",
+              "title": "Security finding SEC-INJ-9A06 (PROMPT_INJECTION_ATTEMPT)",
               "body": "Low risk of execution due to Pydantic gating, but malicious intent detected. Action taken: QUARANTINE_SUBMISSION. Status: confirmed.",
               "evidence": [
                 "attachment text / metadata"
@@ -7125,7 +7125,7 @@
               ]
             },
             {
-              "title": "Security finding SEC-INJ-020F (PROMPT_INJECTION_ATTEMPT)",
+              "title": "Security finding SEC-INJ-7EC4 (PROMPT_INJECTION_ATTEMPT)",
               "body": "Low risk of execution due to Pydantic gating, but malicious intent detected. Action taken: QUARANTINE_SUBMISSION. Status: confirmed.",
               "evidence": [
                 "attachment text / metadata"
@@ -7135,7 +7135,7 @@
               ]
             },
             {
-              "title": "Security finding SEC-INJ-C0BF (PROMPT_INJECTION_ATTEMPT)",
+              "title": "Security finding SEC-INJ-D467 (PROMPT_INJECTION_ATTEMPT)",
               "body": "Low risk of execution due to Pydantic gating, but malicious intent detected. Action taken: QUARANTINE_SUBMISSION. Status: confirmed.",
               "evidence": [
                 "attachment text / metadata"
@@ -7145,7 +7145,7 @@
               ]
             },
             {
-              "title": "Security finding SEC-INJ-B37E (PROMPT_INJECTION_ATTEMPT)",
+              "title": "Security finding SEC-INJ-1D3B (PROMPT_INJECTION_ATTEMPT)",
               "body": "Low risk of execution due to Pydantic gating, but malicious intent detected. Action taken: QUARANTINE_SUBMISSION. Status: confirmed.",
               "evidence": [
                 "attachment text / metadata"
@@ -7155,7 +7155,7 @@
               ]
             },
             {
-              "title": "Security finding SEC-INJ-721B (PROMPT_INJECTION_ATTEMPT)",
+              "title": "Security finding SEC-INJ-8FA5 (PROMPT_INJECTION_ATTEMPT)",
               "body": "Low risk of execution due to Pydantic gating, but malicious intent detected. Action taken: QUARANTINE_SUBMISSION. Status: confirmed.",
               "evidence": [
                 "attachment text / metadata"
@@ -7213,7 +7213,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-745",
     "partner_name": "Marina Bay Marketing Pte Ltd",
@@ -7222,7 +7222,7 @@
     "activity_type": "Joint Marketing Event",
     "activity_date": "2026-07-09",
     "submitted_at": "2026-07-30T08:20:00Z",
-    "updated_at": "2026-10-11T15:40:30.110Z",
+    "updated_at": "2026-10-11T15:56:48.012Z",
     "amount": 6400,
     "currency": "SGD",
     "invoice_numbers": [
@@ -7337,32 +7337,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.102Z"
+        "at": "2026-10-11T15:56:47.993Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.103Z"
+        "at": "2026-10-11T15:56:47.994Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.104Z"
+        "at": "2026-10-11T15:56:47.998Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.105Z"
+        "at": "2026-10-11T15:56:48.003Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.108Z"
+        "at": "2026-10-11T15:56:48.008Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "SECURITY_QUARANTINE",
-        "at": "2026-10-11T15:40:30.109Z"
+        "at": "2026-10-11T15:56:48.010Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -7534,7 +7534,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "1db17b77-1154-4c31-91d0-e1d8a4dae155",
+      "tx_id": "c90c6a71-4601-439c-9bf2-29dcadfd40e0",
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
         "fiscal_year": 2026,
@@ -7542,14 +7542,14 @@
         "committed_amount": 414800,
         "approved_amount": 90200,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:30.107Z"
+        "updated_at": "2026-10-11T15:56:48.006Z"
       }
     },
     "exception_result": {
       "exception_type": "SECURITY",
       "security_findings": [
         {
-          "finding_id": "SEC-MACRO-C48B",
+          "finding_id": "SEC-MACRO-E05A",
           "threat_type": "MACRO_ENABLED_ATTACHMENT",
           "status": "needs_validation",
           "trust_boundary_crossed": "External_Upload -> Parser_Host",
@@ -7609,7 +7609,7 @@
           "evidence_refs": []
         }
       ],
-      "triaged_at": "2026-10-11T15:40:30.109Z"
+      "triaged_at": "2026-10-11T15:56:48.010Z"
     },
     "ageing_days": 73,
     "sla_breached": false,
@@ -7618,7 +7618,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0017 (Marina Bay Marketing Pte Ltd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.110Z",
+      "generated_at": "2026-10-11T15:56:48.012Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -7676,7 +7676,7 @@
               ]
             },
             {
-              "title": "Security finding SEC-MACRO-C48B (MACRO_ENABLED_ATTACHMENT)",
+              "title": "Security finding SEC-MACRO-E05A (MACRO_ENABLED_ATTACHMENT)",
               "body": "Macro-enabled container may carry executable payload; host execution is forbidden. Action taken: SANDBOX_STATIC_REJECT. Status: needs_validation.",
               "evidence": [
                 "filename extension"
@@ -7739,7 +7739,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-233",
     "partner_name": "Pulau Pinang Retail Group Sdn Bhd",
@@ -7748,7 +7748,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-09-26",
     "submitted_at": "2026-10-09T02:05:00Z",
-    "updated_at": "2026-10-11T15:40:30.128Z",
+    "updated_at": "2026-10-11T15:56:48.034Z",
     "amount": 10000,
     "currency": "MYR",
     "invoice_numbers": [
@@ -7918,32 +7918,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.119Z"
+        "at": "2026-10-11T15:56:48.023Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.120Z"
+        "at": "2026-10-11T15:56:48.024Z"
       },
       {
         "from": "VALIDATING",
         "to": "NEEDS_CLARIFICATION",
-        "at": "2026-10-11T15:40:30.121Z"
+        "at": "2026-10-11T15:56:48.026Z"
       },
       {
         "from": "NEEDS_CLARIFICATION",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.124Z"
+        "at": "2026-10-11T15:56:48.029Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.124Z"
+        "at": "2026-10-11T15:56:48.030Z"
       },
       {
         "from": "VALIDATING",
         "to": "NEEDS_CLARIFICATION",
-        "at": "2026-10-11T15:40:30.126Z"
+        "at": "2026-10-11T15:56:48.031Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -8012,7 +8012,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0018 (Pulau Pinang Retail Group Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.123Z",
+      "generated_at": "2026-10-11T15:56:48.028Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -8121,7 +8121,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-233",
     "partner_name": "Pulau Pinang Retail Group Sdn Bhd",
@@ -8130,7 +8130,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-09-27",
     "submitted_at": "2026-10-08T06:15:00Z",
-    "updated_at": "2026-10-11T15:40:30.151Z",
+    "updated_at": "2026-10-11T15:56:48.062Z",
     "amount": 5600,
     "currency": "MYR",
     "invoice_numbers": [
@@ -8270,32 +8270,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.136Z"
+        "at": "2026-10-11T15:56:48.045Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.138Z"
+        "at": "2026-10-11T15:56:48.046Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.141Z"
+        "at": "2026-10-11T15:56:48.048Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.142Z"
+        "at": "2026-10-11T15:56:48.049Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.145Z"
+        "at": "2026-10-11T15:56:48.055Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:30.146Z"
+        "at": "2026-10-11T15:56:48.057Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -8466,7 +8466,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "c4af036f-14c6-4776-b3d5-823c9d7deb40",
+      "tx_id": "1d0278d6-1771-450c-982f-ffd864b04dc6",
       "ledger_row": {
         "partner_id": "PTR-GLD-233",
         "fiscal_year": 2026,
@@ -8474,20 +8474,20 @@
         "committed_amount": 600400,
         "approved_amount": 115600,
         "paid_amount": 400000,
-        "updated_at": "2026-10-11T15:40:30.143Z"
+        "updated_at": "2026-10-11T15:56:48.053Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:30.146Z"
+      "triaged_at": "2026-10-11T15:56:48.057Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0019 (Pulau Pinang Retail Group Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.148Z",
+      "generated_at": "2026-10-11T15:56:48.060Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -8587,7 +8587,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0020",
-    "run_id": "run_20261011_5291145a",
+    "run_id": "run_20261011_cff1e848",
     "submission_type": "CLAIM",
     "partner_id": "PTR-SLV-611",
     "partner_name": "Bandar Media Sdn Bhd",
@@ -8596,7 +8596,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-07-14",
     "submitted_at": "2026-08-28T03:05:00Z",
-    "updated_at": "2026-10-11T15:40:30.163Z",
+    "updated_at": "2026-10-11T15:56:48.076Z",
     "amount": 5200,
     "currency": "MYR",
     "invoice_numbers": [
@@ -8710,17 +8710,17 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.159Z"
+        "at": "2026-10-11T15:56:48.072Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.160Z"
+        "at": "2026-10-11T15:56:48.074Z"
       },
       {
         "from": "VALIDATING",
         "to": "POLICY_BLOCKED",
-        "at": "2026-10-11T15:40:30.162Z"
+        "at": "2026-10-11T15:56:48.075Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -8776,7 +8776,7 @@
       "subject": "Partner Claim Review — SUB-2026-MY-0020 (Bandar Media Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.163Z",
+      "generated_at": "2026-10-11T15:56:48.076Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -8866,7 +8866,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "submission_type": "CLAIM",
     "partner_id": "PTR-UNA-901",
     "partner_name": "Kelang Digital Trading Sdn Bhd",
@@ -8875,7 +8875,7 @@
     "activity_type": "Trade Exhibition Booth",
     "activity_date": "2026-09-29",
     "submitted_at": "2026-10-09T08:45:00Z",
-    "updated_at": "2026-10-11T15:40:30.189Z",
+    "updated_at": "2026-10-11T15:56:48.108Z",
     "amount": 9400,
     "currency": "MYR",
     "invoice_numbers": [
@@ -9015,32 +9015,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.173Z"
+        "at": "2026-10-11T15:56:48.087Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.174Z"
+        "at": "2026-10-11T15:56:48.089Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.176Z"
+        "at": "2026-10-11T15:56:48.092Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.179Z"
+        "at": "2026-10-11T15:56:48.095Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.183Z"
+        "at": "2026-10-11T15:56:48.099Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:30.185Z"
+        "at": "2026-10-11T15:56:48.101Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -9211,7 +9211,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "7b5826d2-7985-413d-8186-90502277e51b",
+      "tx_id": "b4c80491-f825-456c-ba8d-1d5e05c1f56e",
       "ledger_row": {
         "partner_id": "PTR-UNA-901",
         "fiscal_year": 2026,
@@ -9219,20 +9219,20 @@
         "committed_amount": 92600,
         "approved_amount": 39400,
         "paid_amount": 100000,
-        "updated_at": "2026-10-11T15:40:30.182Z"
+        "updated_at": "2026-10-11T15:56:48.098Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:30.185Z"
+      "triaged_at": "2026-10-11T15:56:48.101Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0021 (Kelang Digital Trading Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.187Z",
+      "generated_at": "2026-10-11T15:56:48.105Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",
@@ -9332,7 +9332,7 @@
   },
   {
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "submission_type": "CLAIM",
     "partner_id": "PTR-GLD-882",
     "partner_name": "MegaTech Solutions (M) Sdn Bhd",
@@ -9341,7 +9341,7 @@
     "activity_type": "Pop-up Launch Event",
     "activity_date": "2026-08-21",
     "submitted_at": "2026-09-10T10:05:00Z",
-    "updated_at": "2026-10-11T15:40:30.211Z",
+    "updated_at": "2026-10-11T15:56:48.144Z",
     "amount": 9200,
     "currency": "MYR",
     "invoice_numbers": [
@@ -9481,32 +9481,32 @@
       {
         "from": "SUBMITTED",
         "to": "INTAKE_EXTRACTED",
-        "at": "2026-10-11T15:40:30.198Z"
+        "at": "2026-10-11T15:56:48.123Z"
       },
       {
         "from": "INTAKE_EXTRACTED",
         "to": "VALIDATING",
-        "at": "2026-10-11T15:40:30.200Z"
+        "at": "2026-10-11T15:56:48.125Z"
       },
       {
         "from": "VALIDATING",
         "to": "RULES_EVALUATING",
-        "at": "2026-10-11T15:40:30.202Z"
+        "at": "2026-10-11T15:56:48.127Z"
       },
       {
         "from": "RULES_EVALUATING",
         "to": "BUDGET_RESERVING",
-        "at": "2026-10-11T15:40:30.203Z"
+        "at": "2026-10-11T15:56:48.130Z"
       },
       {
         "from": "BUDGET_RESERVING",
         "to": "EXCEPTION_TRIAGE",
-        "at": "2026-10-11T15:40:30.207Z"
+        "at": "2026-10-11T15:56:48.136Z"
       },
       {
         "from": "EXCEPTION_TRIAGE",
         "to": "PENDING_HUMAN_REVIEW",
-        "at": "2026-10-11T15:40:30.209Z"
+        "at": "2026-10-11T15:56:48.138Z"
       }
     ],
     "amount_source": "partner_declared",
@@ -9677,7 +9677,7 @@
     },
     "budget_result": {
       "status": "SUCCESS",
-      "tx_id": "bc9b1ab6-b5dd-4902-93a7-ff11faf98f22",
+      "tx_id": "7a52b7c2-32c1-462c-a38a-23c4bc4d0e51",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -9685,20 +9685,20 @@
         "committed_amount": 818700,
         "approved_amount": 193900,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:30.206Z"
+        "updated_at": "2026-10-11T15:56:48.133Z"
       }
     },
     "exception_result": {
       "exception_type": "NONE",
       "security_findings": [],
       "business_items": [],
-      "triaged_at": "2026-10-11T15:40:30.209Z"
+      "triaged_at": "2026-10-11T15:56:48.138Z"
     },
     "review_memo": {
       "subject": "Partner Claim Review — SUB-2026-MY-0022 (MegaTech Solutions (M) Sdn Bhd)",
       "status": "DRAFT_PENDING_REVIEW",
       "generated_by": "agent_human_review",
-      "generated_at": "2026-10-11T15:40:30.210Z",
+      "generated_at": "2026-10-11T15:56:48.141Z",
       "sections": {
         "summary": {
           "heading": "1. Submission Summary",

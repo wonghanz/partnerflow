@@ -11,7 +11,7 @@
     "start": "node server/index.js",
     "seed": "node server/seed-submissions.js",
     "sql": "node server/run-sql.js",
-    "test": "node test-rules.js",
+    "test": "node tests/rules.test.js",
     "css-gaps": "node _tools/css-gaps.js",
     "lint-views": "node _tools/lint-modules.js public/js/app.js public/js/views/*.js"
   }

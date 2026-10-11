@@ -1,9 +1,9 @@
 [
   {
-    "event_id": "EVT-20261011-00001-6786",
-    "created_at": "2026-10-11T15:40:29.829Z",
+    "event_id": "EVT-20261011-00001-c609",
+    "created_at": "2026-10-11T15:56:47.609Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -27,10 +27,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00002-49f9",
-    "created_at": "2026-10-11T15:40:29.836Z",
+    "event_id": "EVT-20261011-00002-aecc",
+    "created_at": "2026-10-11T15:56:47.614Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -104,10 +104,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00003-76c8",
-    "created_at": "2026-10-11T15:40:29.837Z",
+    "event_id": "EVT-20261011-00003-23e4",
+    "created_at": "2026-10-11T15:56:47.616Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -119,10 +119,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00004-1a79",
-    "created_at": "2026-10-11T15:40:29.839Z",
+    "event_id": "EVT-20261011-00004-295b",
+    "created_at": "2026-10-11T15:56:47.618Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -157,10 +157,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00005-a315",
-    "created_at": "2026-10-11T15:40:29.852Z",
+    "event_id": "EVT-20261011-00005-c78f",
+    "created_at": "2026-10-11T15:56:47.634Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -234,10 +234,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00006-728c",
-    "created_at": "2026-10-11T15:40:29.855Z",
+    "event_id": "EVT-20261011-00006-70f8",
+    "created_at": "2026-10-11T15:56:47.640Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -247,7 +247,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "88955aee-8e11-4029-bb9c-c21edff4a4a7",
+      "tx_id": "71363467-ef4d-40ea-ab9d-e53452a00a24",
       "new_available": 290000,
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
@@ -256,16 +256,16 @@
         "committed_amount": 860000,
         "approved_amount": 150000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.853Z"
+        "updated_at": "2026-10-11T15:56:47.636Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00007-6912",
-    "created_at": "2026-10-11T15:40:29.857Z",
+    "event_id": "EVT-20261011-00007-d930",
+    "created_at": "2026-10-11T15:56:47.642Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -330,10 +330,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00008-9841",
-    "created_at": "2026-10-11T15:40:29.858Z",
+    "event_id": "EVT-20261011-00008-57f4",
+    "created_at": "2026-10-11T15:56:47.644Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -398,10 +398,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00009-2bea",
-    "created_at": "2026-10-11T15:40:29.860Z",
+    "event_id": "EVT-20261011-00009-6d16",
+    "created_at": "2026-10-11T15:56:47.645Z",
     "submission_id": "SUB-2026-MY-0001",
-    "run_id": "run_20261011_868c1874",
+    "run_id": "run_20261011_cce40fbd",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -469,10 +469,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00010-c726",
-    "created_at": "2026-10-11T15:40:29.863Z",
+    "event_id": "EVT-20261011-00010-8dfa",
+    "created_at": "2026-10-11T15:56:47.647Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -492,10 +492,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00011-3632",
-    "created_at": "2026-10-11T15:40:29.868Z",
+    "event_id": "EVT-20261011-00011-0f5d",
+    "created_at": "2026-10-11T15:56:47.650Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -537,10 +537,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00012-0867",
-    "created_at": "2026-10-11T15:40:29.870Z",
+    "event_id": "EVT-20261011-00012-c456",
+    "created_at": "2026-10-11T15:56:47.653Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -552,10 +552,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00013-593b",
-    "created_at": "2026-10-11T15:40:29.870Z",
+    "event_id": "EVT-20261011-00013-06bc",
+    "created_at": "2026-10-11T15:56:47.656Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -590,10 +590,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00014-0c8c",
-    "created_at": "2026-10-11T15:40:29.871Z",
+    "event_id": "EVT-20261011-00014-e929",
+    "created_at": "2026-10-11T15:56:47.658Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -639,10 +639,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00015-bae7",
-    "created_at": "2026-10-11T15:40:29.875Z",
+    "event_id": "EVT-20261011-00015-c88d",
+    "created_at": "2026-10-11T15:56:47.661Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -652,7 +652,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "f193d2ff-f707-4069-89d5-c969f3a8a41c",
+      "tx_id": "10b8a591-254c-4eef-979f-c0f500ed06cb",
       "new_available": 282000,
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
@@ -661,16 +661,16 @@
         "committed_amount": 868000,
         "approved_amount": 150000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.873Z"
+        "updated_at": "2026-10-11T15:56:47.659Z"
       }
     },
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00016-0a85",
-    "created_at": "2026-10-11T15:40:29.877Z",
+    "event_id": "EVT-20261011-00016-01f0",
+    "created_at": "2026-10-11T15:56:47.663Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -718,10 +718,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00017-debb",
-    "created_at": "2026-10-11T15:40:29.879Z",
+    "event_id": "EVT-20261011-00017-bbd5",
+    "created_at": "2026-10-11T15:56:47.664Z",
     "submission_id": "SUB-2026-MY-0002",
-    "run_id": "run_20261011_e1eaf222",
+    "run_id": "run_20261011_9072d41d",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_INFO_REQUEST",
@@ -761,10 +761,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00018-92ab",
-    "created_at": "2026-10-11T15:40:29.882Z",
+    "event_id": "EVT-20261011-00018-835f",
+    "created_at": "2026-10-11T15:56:47.667Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "ap@marinabaymarketing.sg",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -784,10 +784,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00019-5cc3",
-    "created_at": "2026-10-11T15:40:29.885Z",
+    "event_id": "EVT-20261011-00019-ffd3",
+    "created_at": "2026-10-11T15:56:47.672Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -829,10 +829,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00020-8d10",
-    "created_at": "2026-10-11T15:40:29.886Z",
+    "event_id": "EVT-20261011-00020-1ada",
+    "created_at": "2026-10-11T15:56:47.674Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -844,10 +844,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00021-b6bc",
-    "created_at": "2026-10-11T15:40:29.888Z",
+    "event_id": "EVT-20261011-00021-6047",
+    "created_at": "2026-10-11T15:56:47.675Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -882,10 +882,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00022-76be",
-    "created_at": "2026-10-11T15:40:29.889Z",
+    "event_id": "EVT-20261011-00022-7a45",
+    "created_at": "2026-10-11T15:56:47.676Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -931,10 +931,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00023-8103",
-    "created_at": "2026-10-11T15:40:29.891Z",
+    "event_id": "EVT-20261011-00023-c1c6",
+    "created_at": "2026-10-11T15:56:47.678Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -944,7 +944,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "76f4b3cd-d102-4d36-aec0-fce626729a0e",
+      "tx_id": "1f8a99d1-7066-45aa-8211-afd81b8fe0eb",
       "new_available": 75000,
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
@@ -953,16 +953,16 @@
         "committed_amount": 435000,
         "approved_amount": 70000,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:29.890Z"
+        "updated_at": "2026-10-11T15:56:47.677Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00024-28f3",
-    "created_at": "2026-10-11T15:40:29.892Z",
+    "event_id": "EVT-20261011-00024-42bc",
+    "created_at": "2026-10-11T15:56:47.680Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -1010,10 +1010,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00025-c2d7",
-    "created_at": "2026-10-11T15:40:29.893Z",
+    "event_id": "EVT-20261011-00025-d427",
+    "created_at": "2026-10-11T15:56:47.683Z",
     "submission_id": "SUB-2026-MY-0003",
-    "run_id": "run_20261011_253db520",
+    "run_id": "run_20261011_7c8020f6",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_INFO_REQUEST",
@@ -1053,10 +1053,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00026-bd20",
-    "created_at": "2026-10-11T15:40:29.896Z",
+    "event_id": "EVT-20261011-00026-1ee0",
+    "created_at": "2026-10-11T15:56:47.687Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "finance@ppretailgroup.com.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -1076,10 +1076,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00027-0a4e",
-    "created_at": "2026-10-11T15:40:29.899Z",
+    "event_id": "EVT-20261011-00027-c411",
+    "created_at": "2026-10-11T15:56:47.690Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -1121,10 +1121,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00028-a0e4",
-    "created_at": "2026-10-11T15:40:29.900Z",
+    "event_id": "EVT-20261011-00028-0bc7",
+    "created_at": "2026-10-11T15:56:47.692Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -1136,10 +1136,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00029-bb6d",
-    "created_at": "2026-10-11T15:40:29.901Z",
+    "event_id": "EVT-20261011-00029-50ea",
+    "created_at": "2026-10-11T15:56:47.693Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -1174,10 +1174,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00030-30a1",
-    "created_at": "2026-10-11T15:40:29.902Z",
+    "event_id": "EVT-20261011-00030-363e",
+    "created_at": "2026-10-11T15:56:47.694Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -1223,10 +1223,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00031-5603",
-    "created_at": "2026-10-11T15:40:29.905Z",
+    "event_id": "EVT-20261011-00031-4550",
+    "created_at": "2026-10-11T15:56:47.697Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -1236,7 +1236,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "387d2957-1889-4fd6-9599-a95757f7f639",
+      "tx_id": "a9a9d82d-e7f8-4aa4-aeef-61f38b22529b",
       "new_available": 144000,
       "ledger_row": {
         "partner_id": "PTR-GLD-233",
@@ -1245,16 +1245,16 @@
         "committed_amount": 606000,
         "approved_amount": 110000,
         "paid_amount": 400000,
-        "updated_at": "2026-10-11T15:40:29.903Z"
+        "updated_at": "2026-10-11T15:56:47.695Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00032-ad1d",
-    "created_at": "2026-10-11T15:40:29.906Z",
+    "event_id": "EVT-20261011-00032-9173",
+    "created_at": "2026-10-11T15:56:47.698Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -1302,10 +1302,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00033-58ef",
-    "created_at": "2026-10-11T15:40:29.907Z",
+    "event_id": "EVT-20261011-00033-0f4a",
+    "created_at": "2026-10-11T15:56:47.699Z",
     "submission_id": "SUB-2026-MY-0004",
-    "run_id": "run_20261011_c6734b08",
+    "run_id": "run_20261011_7691b3c4",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_INFO_REQUEST",
@@ -1345,10 +1345,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00034-a036",
-    "created_at": "2026-10-11T15:40:29.910Z",
+    "event_id": "EVT-20261011-00034-cd66",
+    "created_at": "2026-10-11T15:56:47.702Z",
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "actor": "finance@ppretailgroup.com.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -1368,10 +1368,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00035-417b",
-    "created_at": "2026-10-11T15:40:29.913Z",
+    "event_id": "EVT-20261011-00035-2555",
+    "created_at": "2026-10-11T15:56:47.708Z",
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -1413,10 +1413,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00036-218f",
-    "created_at": "2026-10-11T15:40:29.915Z",
+    "event_id": "EVT-20261011-00036-ad67",
+    "created_at": "2026-10-11T15:56:47.710Z",
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -1428,10 +1428,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00037-a52c",
-    "created_at": "2026-10-11T15:40:29.918Z",
+    "event_id": "EVT-20261011-00037-b547",
+    "created_at": "2026-10-11T15:56:47.712Z",
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -1466,10 +1466,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00038-35e7",
-    "created_at": "2026-10-11T15:40:29.919Z",
+    "event_id": "EVT-20261011-00038-0028",
+    "created_at": "2026-10-11T15:56:47.713Z",
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -1506,10 +1506,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00039-2482",
-    "created_at": "2026-10-11T15:40:29.920Z",
+    "event_id": "EVT-20261011-00039-74e3",
+    "created_at": "2026-10-11T15:56:47.714Z",
     "submission_id": "SUB-2026-MY-0005",
-    "run_id": "run_20261011_a4a3e560",
+    "run_id": "run_20261011_c8d011c4",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "POLICY_BLOCKED",
@@ -1546,10 +1546,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00040-ed40",
-    "created_at": "2026-10-11T15:40:29.923Z",
+    "event_id": "EVT-20261011-00040-1c0d",
+    "created_at": "2026-10-11T15:56:47.717Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "partnership@cakraprima.co.id",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -1569,10 +1569,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00041-2fba",
-    "created_at": "2026-10-11T15:40:29.925Z",
+    "event_id": "EVT-20261011-00041-990e",
+    "created_at": "2026-10-11T15:56:47.720Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -1614,10 +1614,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00042-7fb5",
-    "created_at": "2026-10-11T15:40:29.927Z",
+    "event_id": "EVT-20261011-00042-97a0",
+    "created_at": "2026-10-11T15:56:47.722Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -1629,10 +1629,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00043-68d8",
-    "created_at": "2026-10-11T15:40:29.928Z",
+    "event_id": "EVT-20261011-00043-2592",
+    "created_at": "2026-10-11T15:56:47.724Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -1667,10 +1667,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00044-3dbb",
-    "created_at": "2026-10-11T15:40:29.928Z",
+    "event_id": "EVT-20261011-00044-4585",
+    "created_at": "2026-10-11T15:56:47.727Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -1716,10 +1716,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00045-d0de",
-    "created_at": "2026-10-11T15:40:29.932Z",
+    "event_id": "EVT-20261011-00045-55a2",
+    "created_at": "2026-10-11T15:56:47.731Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -1729,7 +1729,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "452d3c59-012f-4ac9-a23c-9afb0ca965a1",
+      "tx_id": "972878d0-ae9e-4263-91ac-4b52feb348f6",
       "new_available": 160000,
       "ledger_row": {
         "partner_id": "PTR-ELT-055",
@@ -1738,16 +1738,16 @@
         "committed_amount": 730000,
         "approved_amount": 100000,
         "paid_amount": 550000,
-        "updated_at": "2026-10-11T15:40:29.930Z"
+        "updated_at": "2026-10-11T15:56:47.728Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00046-288c",
-    "created_at": "2026-10-11T15:40:29.934Z",
+    "event_id": "EVT-20261011-00046-8c50",
+    "created_at": "2026-10-11T15:56:47.732Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -1784,10 +1784,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00047-1d78",
-    "created_at": "2026-10-11T15:40:29.936Z",
+    "event_id": "EVT-20261011-00047-6378",
+    "created_at": "2026-10-11T15:56:47.734Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -1824,10 +1824,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00048-c820",
-    "created_at": "2026-10-11T15:40:29.937Z",
+    "event_id": "EVT-20261011-00048-f181",
+    "created_at": "2026-10-11T15:56:47.737Z",
     "submission_id": "SUB-2026-MY-0006",
-    "run_id": "run_20261011_36001ea4",
+    "run_id": "run_20261011_3ba3769c",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -1867,10 +1867,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00049-8e3a",
-    "created_at": "2026-10-11T15:40:29.940Z",
+    "event_id": "EVT-20261011-00049-86d6",
+    "created_at": "2026-10-11T15:56:47.741Z",
     "submission_id": "SUB-2026-MY-0007",
-    "run_id": "run_20261011_d98c2293",
+    "run_id": "run_20261011_44831be7",
     "actor": "ops@nusantaraads.id",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -1890,10 +1890,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00050-7384",
-    "created_at": "2026-10-11T15:40:29.942Z",
+    "event_id": "EVT-20261011-00050-982a",
+    "created_at": "2026-10-11T15:56:47.744Z",
     "submission_id": "SUB-2026-MY-0007",
-    "run_id": "run_20261011_d98c2293",
+    "run_id": "run_20261011_44831be7",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -1935,10 +1935,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00051-7e15",
-    "created_at": "2026-10-11T15:40:29.943Z",
+    "event_id": "EVT-20261011-00051-36d7",
+    "created_at": "2026-10-11T15:56:47.746Z",
     "submission_id": "SUB-2026-MY-0007",
-    "run_id": "run_20261011_d98c2293",
+    "run_id": "run_20261011_44831be7",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -1950,10 +1950,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00052-1792",
-    "created_at": "2026-10-11T15:40:29.943Z",
+    "event_id": "EVT-20261011-00052-c2ad",
+    "created_at": "2026-10-11T15:56:47.748Z",
     "submission_id": "SUB-2026-MY-0007",
-    "run_id": "run_20261011_d98c2293",
+    "run_id": "run_20261011_44831be7",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -1988,10 +1988,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00053-68a9",
-    "created_at": "2026-10-11T15:40:29.944Z",
+    "event_id": "EVT-20261011-00053-2d55",
+    "created_at": "2026-10-11T15:56:47.750Z",
     "submission_id": "SUB-2026-MY-0007",
-    "run_id": "run_20261011_d98c2293",
+    "run_id": "run_20261011_44831be7",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -2028,10 +2028,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00054-c940",
-    "created_at": "2026-10-11T15:40:29.949Z",
+    "event_id": "EVT-20261011-00054-e107",
+    "created_at": "2026-10-11T15:56:47.756Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "hello@kelangdigital.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -2051,10 +2051,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00055-6e11",
-    "created_at": "2026-10-11T15:40:29.952Z",
+    "event_id": "EVT-20261011-00055-5a61",
+    "created_at": "2026-10-11T15:56:47.759Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -2096,10 +2096,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00056-8942",
-    "created_at": "2026-10-11T15:40:29.952Z",
+    "event_id": "EVT-20261011-00056-0f91",
+    "created_at": "2026-10-11T15:56:47.760Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -2111,10 +2111,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00057-f56d",
-    "created_at": "2026-10-11T15:40:29.953Z",
+    "event_id": "EVT-20261011-00057-b127",
+    "created_at": "2026-10-11T15:56:47.762Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -2149,10 +2149,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00058-1423",
-    "created_at": "2026-10-11T15:40:29.954Z",
+    "event_id": "EVT-20261011-00058-6d8e",
+    "created_at": "2026-10-11T15:56:47.763Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -2198,10 +2198,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00059-6d1c",
-    "created_at": "2026-10-11T15:40:29.956Z",
+    "event_id": "EVT-20261011-00059-70c2",
+    "created_at": "2026-10-11T15:56:47.766Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -2211,7 +2211,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "e6c278c0-0a2e-4aa6-875a-0321316db1ca",
+      "tx_id": "8af1dfb8-29ef-4627-abd3-03b8270344ff",
       "new_available": 48000,
       "ledger_row": {
         "partner_id": "PTR-UNA-901",
@@ -2220,16 +2220,16 @@
         "committed_amount": 102000,
         "approved_amount": 30000,
         "paid_amount": 100000,
-        "updated_at": "2026-10-11T15:40:29.955Z"
+        "updated_at": "2026-10-11T15:56:47.765Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00060-5328",
-    "created_at": "2026-10-11T15:40:29.958Z",
+    "event_id": "EVT-20261011-00060-6de6",
+    "created_at": "2026-10-11T15:56:47.768Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -2266,10 +2266,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00061-5f9b",
-    "created_at": "2026-10-11T15:40:29.959Z",
+    "event_id": "EVT-20261011-00061-623b",
+    "created_at": "2026-10-11T15:56:47.771Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -2306,10 +2306,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00062-10a9",
-    "created_at": "2026-10-11T15:40:29.960Z",
+    "event_id": "EVT-20261011-00062-446b",
+    "created_at": "2026-10-11T15:56:47.774Z",
     "submission_id": "SUB-2026-MY-0008",
-    "run_id": "run_20261011_0314fa42",
+    "run_id": "run_20261011_c8f2079d",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -2349,10 +2349,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00063-cf90",
-    "created_at": "2026-10-11T15:40:29.963Z",
+    "event_id": "EVT-20261011-00063-6f65",
+    "created_at": "2026-10-11T15:56:47.778Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -2373,10 +2373,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00064-159e",
-    "created_at": "2026-10-11T15:40:29.967Z",
+    "event_id": "EVT-20261011-00064-c0da",
+    "created_at": "2026-10-11T15:56:47.782Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -2426,10 +2426,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00065-26fb",
-    "created_at": "2026-10-11T15:40:29.969Z",
+    "event_id": "EVT-20261011-00065-67a6",
+    "created_at": "2026-10-11T15:56:47.784Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -2441,10 +2441,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00066-6bab",
-    "created_at": "2026-10-11T15:40:29.970Z",
+    "event_id": "EVT-20261011-00066-9c22",
+    "created_at": "2026-10-11T15:56:47.787Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -2479,10 +2479,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00067-0fc3",
-    "created_at": "2026-10-11T15:40:29.971Z",
+    "event_id": "EVT-20261011-00067-047e",
+    "created_at": "2026-10-11T15:56:47.788Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -2535,10 +2535,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00068-5c07",
-    "created_at": "2026-10-11T15:40:29.973Z",
+    "event_id": "EVT-20261011-00068-37c0",
+    "created_at": "2026-10-11T15:56:47.791Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -2548,7 +2548,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "05dc222a-a401-401d-82c6-8a2d29531369",
+      "tx_id": "04ed3cb2-945d-4656-8b14-5db6789ec99d",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -2556,16 +2556,16 @@
         "committed_amount": 853000,
         "approved_amount": 165000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.972Z"
+        "updated_at": "2026-10-11T15:56:47.790Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00069-38f7",
-    "created_at": "2026-10-11T15:40:29.974Z",
+    "event_id": "EVT-20261011-00069-9a80",
+    "created_at": "2026-10-11T15:56:47.793Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -2609,10 +2609,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00070-82c8",
-    "created_at": "2026-10-11T15:40:29.975Z",
+    "event_id": "EVT-20261011-00070-984c",
+    "created_at": "2026-10-11T15:56:47.794Z",
     "submission_id": "SUB-2026-MY-0009",
-    "run_id": "run_20261011_62c99cea",
+    "run_id": "run_20261011_50beab69",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -2656,10 +2656,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00071-b228",
-    "created_at": "2026-10-11T15:40:29.980Z",
+    "event_id": "EVT-20261011-00071-d138",
+    "created_at": "2026-10-11T15:56:47.798Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -2680,10 +2680,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00072-ce93",
-    "created_at": "2026-10-11T15:40:29.984Z",
+    "event_id": "EVT-20261011-00072-6144",
+    "created_at": "2026-10-11T15:56:47.801Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -2733,10 +2733,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00073-b818",
-    "created_at": "2026-10-11T15:40:29.986Z",
+    "event_id": "EVT-20261011-00073-a935",
+    "created_at": "2026-10-11T15:56:47.804Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -2748,10 +2748,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00074-eb6a",
-    "created_at": "2026-10-11T15:40:29.988Z",
+    "event_id": "EVT-20261011-00074-6759",
+    "created_at": "2026-10-11T15:56:47.806Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -2786,10 +2786,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00075-807a",
-    "created_at": "2026-10-11T15:40:29.989Z",
+    "event_id": "EVT-20261011-00075-b541",
+    "created_at": "2026-10-11T15:56:47.807Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -2842,10 +2842,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00076-6b7f",
-    "created_at": "2026-10-11T15:40:29.992Z",
+    "event_id": "EVT-20261011-00076-b843",
+    "created_at": "2026-10-11T15:56:47.810Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -2855,7 +2855,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "13a4c974-c8a1-4461-aea2-20a67911c8df",
+      "tx_id": "d9e0aff8-3ac6-4e98-9e3d-e981dfe44645",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -2863,16 +2863,16 @@
         "committed_amount": 845000,
         "approved_amount": 173000,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:29.991Z"
+        "updated_at": "2026-10-11T15:56:47.808Z"
       }
     },
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00077-f09d",
-    "created_at": "2026-10-11T15:40:29.994Z",
+    "event_id": "EVT-20261011-00077-4ded",
+    "created_at": "2026-10-11T15:56:47.812Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -2916,10 +2916,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00078-6109",
-    "created_at": "2026-10-11T15:40:29.996Z",
+    "event_id": "EVT-20261011-00078-4632",
+    "created_at": "2026-10-11T15:56:47.813Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -2963,10 +2963,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00079-8565",
-    "created_at": "2026-10-11T15:40:29.999Z",
+    "event_id": "EVT-20261011-00079-dd19",
+    "created_at": "2026-10-11T15:56:47.815Z",
     "submission_id": "SUB-2026-MY-0010",
-    "run_id": "run_20261011_8be21f58",
+    "run_id": "run_20261011_ce466427",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -3013,10 +3013,10 @@
     "rule_version": "SOP_2025_V2"
   },
   {
-    "event_id": "EVT-20261011-00080-0980",
-    "created_at": "2026-10-11T15:40:30.003Z",
+    "event_id": "EVT-20261011-00080-d3d4",
+    "created_at": "2026-10-11T15:56:47.820Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "ap@marinabaymarketing.sg",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -3037,10 +3037,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00081-9445",
-    "created_at": "2026-10-11T15:40:30.006Z",
+    "event_id": "EVT-20261011-00081-ec35",
+    "created_at": "2026-10-11T15:56:47.824Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -3090,10 +3090,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00082-9bc9",
-    "created_at": "2026-10-11T15:40:30.008Z",
+    "event_id": "EVT-20261011-00082-171f",
+    "created_at": "2026-10-11T15:56:47.826Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -3105,10 +3105,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00083-baac",
-    "created_at": "2026-10-11T15:40:30.009Z",
+    "event_id": "EVT-20261011-00083-c2f6",
+    "created_at": "2026-10-11T15:56:47.827Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -3143,10 +3143,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00084-7f04",
-    "created_at": "2026-10-11T15:40:30.011Z",
+    "event_id": "EVT-20261011-00084-a72c",
+    "created_at": "2026-10-11T15:56:47.828Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -3199,10 +3199,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00085-8906",
-    "created_at": "2026-10-11T15:40:30.013Z",
+    "event_id": "EVT-20261011-00085-7718",
+    "created_at": "2026-10-11T15:56:47.831Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -3212,7 +3212,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "96adbe5b-5542-4073-b63a-773007134a03",
+      "tx_id": "2ee158d8-c5a8-4ccd-b65a-1d2f0028e89a",
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
         "fiscal_year": 2026,
@@ -3220,16 +3220,16 @@
         "committed_amount": 425400,
         "approved_amount": 79600,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:30.011Z"
+        "updated_at": "2026-10-11T15:56:47.829Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00086-15a7",
-    "created_at": "2026-10-11T15:40:30.016Z",
+    "event_id": "EVT-20261011-00086-6066",
+    "created_at": "2026-10-11T15:56:47.833Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -3273,10 +3273,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00087-8ec6",
-    "created_at": "2026-10-11T15:40:30.018Z",
+    "event_id": "EVT-20261011-00087-c73f",
+    "created_at": "2026-10-11T15:56:47.834Z",
     "submission_id": "SUB-2026-MY-0011",
-    "run_id": "run_20261011_72d6782a",
+    "run_id": "run_20261011_50ec65e8",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -3320,10 +3320,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00088-9e24",
-    "created_at": "2026-10-11T15:40:30.022Z",
+    "event_id": "EVT-20261011-00088-0f2b",
+    "created_at": "2026-10-11T15:56:47.839Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -3344,10 +3344,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00089-f743",
-    "created_at": "2026-10-11T15:40:30.025Z",
+    "event_id": "EVT-20261011-00089-039b",
+    "created_at": "2026-10-11T15:56:47.843Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -3397,10 +3397,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00090-d92b",
-    "created_at": "2026-10-11T15:40:30.027Z",
+    "event_id": "EVT-20261011-00090-8b04",
+    "created_at": "2026-10-11T15:56:47.844Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -3412,10 +3412,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00091-7fbd",
-    "created_at": "2026-10-11T15:40:30.029Z",
+    "event_id": "EVT-20261011-00091-72cf",
+    "created_at": "2026-10-11T15:56:47.845Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -3450,10 +3450,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00092-d759",
-    "created_at": "2026-10-11T15:40:30.032Z",
+    "event_id": "EVT-20261011-00092-ed8f",
+    "created_at": "2026-10-11T15:56:47.846Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -3506,10 +3506,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00093-b256",
-    "created_at": "2026-10-11T15:40:30.035Z",
+    "event_id": "EVT-20261011-00093-6512",
+    "created_at": "2026-10-11T15:56:47.850Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -3519,7 +3519,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "a3dccc3d-4053-4d1c-a652-5f9c55606407",
+      "tx_id": "7ba58903-6374-4d3d-93b8-81d8b2b4479e",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -3527,16 +3527,16 @@
         "committed_amount": 839600,
         "approved_amount": 178400,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:30.033Z"
+        "updated_at": "2026-10-11T15:56:47.848Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00094-33b4",
-    "created_at": "2026-10-11T15:40:30.036Z",
+    "event_id": "EVT-20261011-00094-a304",
+    "created_at": "2026-10-11T15:56:47.851Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -3580,10 +3580,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00095-f6ec",
-    "created_at": "2026-10-11T15:40:30.037Z",
+    "event_id": "EVT-20261011-00095-5271",
+    "created_at": "2026-10-11T15:56:47.854Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -3627,10 +3627,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00096-3fb2",
-    "created_at": "2026-10-11T15:40:30.041Z",
+    "event_id": "EVT-20261011-00096-a476",
+    "created_at": "2026-10-11T15:56:47.858Z",
     "submission_id": "SUB-2026-MY-0012",
-    "run_id": "run_20261011_29796420",
+    "run_id": "run_20261011_61671880",
     "actor": "alyssa.woe@company.com",
     "actor_type": "HUMAN_APPROVER",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -3674,10 +3674,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00097-810b",
-    "created_at": "2026-10-11T15:40:30.045Z",
+    "event_id": "EVT-20261011-00097-77db",
+    "created_at": "2026-10-11T15:56:47.862Z",
     "submission_id": "SUB-2026-MY-0013",
-    "run_id": "run_20261011_cf934745",
+    "run_id": "run_20261011_40ddcc98",
     "actor": "ap@marinabaymarketing.sg",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -3696,10 +3696,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00098-5a7b",
-    "created_at": "2026-10-11T15:40:30.048Z",
+    "event_id": "EVT-20261011-00098-c7be",
+    "created_at": "2026-10-11T15:56:47.866Z",
     "submission_id": "SUB-2026-MY-0013",
-    "run_id": "run_20261011_cf934745",
+    "run_id": "run_20261011_40ddcc98",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -3729,10 +3729,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00099-c9eb",
-    "created_at": "2026-10-11T15:40:30.053Z",
+    "event_id": "EVT-20261011-00099-b3b4",
+    "created_at": "2026-10-11T15:56:47.873Z",
     "submission_id": "SUB-2026-MY-0014",
-    "run_id": "run_20261011_95444fe6",
+    "run_id": "run_20261011_d8c58661",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -3753,10 +3753,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00100-e7a4",
-    "created_at": "2026-10-11T15:40:30.056Z",
+    "event_id": "EVT-20261011-00100-ac33",
+    "created_at": "2026-10-11T15:56:47.876Z",
     "submission_id": "SUB-2026-MY-0014",
-    "run_id": "run_20261011_95444fe6",
+    "run_id": "run_20261011_d8c58661",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -3806,10 +3806,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00101-700b",
-    "created_at": "2026-10-11T15:40:30.058Z",
+    "event_id": "EVT-20261011-00101-6c01",
+    "created_at": "2026-10-11T15:56:47.878Z",
     "submission_id": "SUB-2026-MY-0014",
-    "run_id": "run_20261011_95444fe6",
+    "run_id": "run_20261011_d8c58661",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -3821,10 +3821,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00102-06f2",
-    "created_at": "2026-10-11T15:40:30.059Z",
+    "event_id": "EVT-20261011-00102-c605",
+    "created_at": "2026-10-11T15:56:47.879Z",
     "submission_id": "SUB-2026-MY-0014",
-    "run_id": "run_20261011_95444fe6",
+    "run_id": "run_20261011_d8c58661",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -3859,10 +3859,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00103-140f",
-    "created_at": "2026-10-11T15:40:30.060Z",
+    "event_id": "EVT-20261011-00103-275b",
+    "created_at": "2026-10-11T15:56:47.881Z",
     "submission_id": "SUB-2026-MY-0014",
-    "run_id": "run_20261011_95444fe6",
+    "run_id": "run_20261011_d8c58661",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -3906,10 +3906,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00104-8e1b",
-    "created_at": "2026-10-11T15:40:30.065Z",
+    "event_id": "EVT-20261011-00104-da53",
+    "created_at": "2026-10-11T15:56:47.888Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "ap@marinabaymarketing.sg",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -3929,10 +3929,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00105-e1f6",
-    "created_at": "2026-10-11T15:40:30.068Z",
+    "event_id": "EVT-20261011-00105-b1d0",
+    "created_at": "2026-10-11T15:56:47.892Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -3974,10 +3974,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00106-b7b8",
-    "created_at": "2026-10-11T15:40:30.069Z",
+    "event_id": "EVT-20261011-00106-7d14",
+    "created_at": "2026-10-11T15:56:47.894Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -3989,10 +3989,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00107-f2d0",
-    "created_at": "2026-10-11T15:40:30.070Z",
+    "event_id": "EVT-20261011-00107-3d75",
+    "created_at": "2026-10-11T15:56:47.895Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -4027,10 +4027,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00108-15f2",
-    "created_at": "2026-10-11T15:40:30.071Z",
+    "event_id": "EVT-20261011-00108-e445",
+    "created_at": "2026-10-11T15:56:47.896Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -4076,10 +4076,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00109-cfb0",
-    "created_at": "2026-10-11T15:40:30.074Z",
+    "event_id": "EVT-20261011-00109-968d",
+    "created_at": "2026-10-11T15:56:47.899Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -4089,7 +4089,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "2aba7123-def3-405b-bb23-7037b574ff54",
+      "tx_id": "56e27ce2-32b1-419d-9e87-16d5ee2cc766",
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
         "fiscal_year": 2026,
@@ -4097,16 +4097,16 @@
         "committed_amount": 421200,
         "approved_amount": 83800,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:30.072Z"
+        "updated_at": "2026-10-11T15:56:47.897Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00110-36a9",
-    "created_at": "2026-10-11T15:40:30.076Z",
+    "event_id": "EVT-20261011-00110-0838",
+    "created_at": "2026-10-11T15:56:47.901Z",
     "submission_id": "SUB-2026-MY-0015",
-    "run_id": "run_20261011_7ab61a57",
+    "run_id": "run_20261011_3d9422b2",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -4151,10 +4151,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00111-8d7a",
-    "created_at": "2026-10-11T15:40:30.082Z",
+    "event_id": "EVT-20261011-00111-0285",
+    "created_at": "2026-10-11T15:56:47.908Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -4175,10 +4175,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00112-fe32",
-    "created_at": "2026-10-11T15:40:30.086Z",
+    "event_id": "EVT-20261011-00112-e855",
+    "created_at": "2026-10-11T15:56:47.910Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -4228,10 +4228,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00113-1a91",
-    "created_at": "2026-10-11T15:40:30.087Z",
+    "event_id": "EVT-20261011-00113-ec9c",
+    "created_at": "2026-10-11T15:56:47.913Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -4243,10 +4243,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00114-fc83",
-    "created_at": "2026-10-11T15:40:30.088Z",
+    "event_id": "EVT-20261011-00114-f4d7",
+    "created_at": "2026-10-11T15:56:47.914Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -4281,10 +4281,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00115-2583",
-    "created_at": "2026-10-11T15:40:30.089Z",
+    "event_id": "EVT-20261011-00115-e4dc",
+    "created_at": "2026-10-11T15:56:47.916Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -4337,10 +4337,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00116-9efe",
-    "created_at": "2026-10-11T15:40:30.092Z",
+    "event_id": "EVT-20261011-00116-0bf8",
+    "created_at": "2026-10-11T15:56:47.928Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -4350,7 +4350,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "98834b04-fc46-4ff3-afa4-c8f7ef69d042",
+      "tx_id": "56994403-c640-4959-a0f9-c76b4954dde4",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -4358,16 +4358,16 @@
         "committed_amount": 827900,
         "approved_amount": 184700,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:30.090Z"
+        "updated_at": "2026-10-11T15:56:47.917Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00117-e5f0",
-    "created_at": "2026-10-11T15:40:30.093Z",
+    "event_id": "EVT-20261011-00117-3fe1",
+    "created_at": "2026-10-11T15:56:47.931Z",
     "submission_id": "SUB-2026-MY-0016",
-    "run_id": "run_20261011_01604b86",
+    "run_id": "run_20261011_01087248",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -4377,20 +4377,20 @@
     "evidence_refs": [],
     "details": {
       "findings": [
-        "SEC-INJ-642B",
-        "SEC-INJ-020F",
-        "SEC-INJ-C0BF",
-        "SEC-INJ-B37E",
-        "SEC-INJ-721B"
+        "SEC-INJ-9A06",
+        "SEC-INJ-7EC4",
+        "SEC-INJ-D467",
+        "SEC-INJ-1D3B",
+        "SEC-INJ-8FA5"
       ]
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00118-df36",
-    "created_at": "2026-10-11T15:40:30.098Z",
+    "event_id": "EVT-20261011-00118-223f",
+    "created_at": "2026-10-11T15:56:47.987Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "ap@marinabaymarketing.sg",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -4410,10 +4410,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00119-df44",
-    "created_at": "2026-10-11T15:40:30.102Z",
+    "event_id": "EVT-20261011-00119-7e36",
+    "created_at": "2026-10-11T15:56:47.993Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -4455,10 +4455,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00120-b3e6",
-    "created_at": "2026-10-11T15:40:30.103Z",
+    "event_id": "EVT-20261011-00120-f328",
+    "created_at": "2026-10-11T15:56:47.996Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -4470,10 +4470,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00121-ee7c",
-    "created_at": "2026-10-11T15:40:30.104Z",
+    "event_id": "EVT-20261011-00121-7e14",
+    "created_at": "2026-10-11T15:56:48.000Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -4508,10 +4508,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00122-a86e",
-    "created_at": "2026-10-11T15:40:30.106Z",
+    "event_id": "EVT-20261011-00122-0eb9",
+    "created_at": "2026-10-11T15:56:48.004Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -4557,10 +4557,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00123-c1c8",
-    "created_at": "2026-10-11T15:40:30.108Z",
+    "event_id": "EVT-20261011-00123-8de7",
+    "created_at": "2026-10-11T15:56:48.009Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -4570,7 +4570,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "1db17b77-1154-4c31-91d0-e1d8a4dae155",
+      "tx_id": "c90c6a71-4601-439c-9bf2-29dcadfd40e0",
       "ledger_row": {
         "partner_id": "PTR-GLD-745",
         "fiscal_year": 2026,
@@ -4578,16 +4578,16 @@
         "committed_amount": 414800,
         "approved_amount": 90200,
         "paid_amount": 350000,
-        "updated_at": "2026-10-11T15:40:30.107Z"
+        "updated_at": "2026-10-11T15:56:48.006Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00124-c974",
-    "created_at": "2026-10-11T15:40:30.109Z",
+    "event_id": "EVT-20261011-00124-f962",
+    "created_at": "2026-10-11T15:56:48.011Z",
     "submission_id": "SUB-2026-MY-0017",
-    "run_id": "run_20261011_301180e8",
+    "run_id": "run_20261011_4f2b0d6c",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -4597,16 +4597,16 @@
     "evidence_refs": [],
     "details": {
       "findings": [
-        "SEC-MACRO-C48B"
+        "SEC-MACRO-E05A"
       ]
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00125-a43f",
-    "created_at": "2026-10-11T15:40:30.115Z",
+    "event_id": "EVT-20261011-00125-453a",
+    "created_at": "2026-10-11T15:56:48.017Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "finance@ppretailgroup.com.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -4628,10 +4628,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00126-f5a8",
-    "created_at": "2026-10-11T15:40:30.119Z",
+    "event_id": "EVT-20261011-00126-c862",
+    "created_at": "2026-10-11T15:56:48.023Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -4688,10 +4688,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00127-c4bc",
-    "created_at": "2026-10-11T15:40:30.120Z",
+    "event_id": "EVT-20261011-00127-0e33",
+    "created_at": "2026-10-11T15:56:48.025Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -4703,10 +4703,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00128-42c8",
-    "created_at": "2026-10-11T15:40:30.122Z",
+    "event_id": "EVT-20261011-00128-a0fe",
+    "created_at": "2026-10-11T15:56:48.027Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -4758,10 +4758,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00129-551e",
-    "created_at": "2026-10-11T15:40:30.124Z",
+    "event_id": "EVT-20261011-00129-08c5",
+    "created_at": "2026-10-11T15:56:48.029Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "NEEDS_CLARIFICATION",
@@ -4818,10 +4818,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00130-73a3",
-    "created_at": "2026-10-11T15:40:30.125Z",
+    "event_id": "EVT-20261011-00130-90fd",
+    "created_at": "2026-10-11T15:56:48.030Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -4833,10 +4833,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00131-2bad",
-    "created_at": "2026-10-11T15:40:30.127Z",
+    "event_id": "EVT-20261011-00131-2576",
+    "created_at": "2026-10-11T15:56:48.032Z",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -4888,10 +4888,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00132-e397",
-    "created_at": "2026-10-11T15:40:30.132Z",
+    "event_id": "EVT-20261011-00132-22e3",
+    "created_at": "2026-10-11T15:56:48.040Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "finance@ppretailgroup.com.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -4912,10 +4912,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00133-0dfa",
-    "created_at": "2026-10-11T15:40:30.136Z",
+    "event_id": "EVT-20261011-00133-3631",
+    "created_at": "2026-10-11T15:56:48.045Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -4965,10 +4965,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00134-0324",
-    "created_at": "2026-10-11T15:40:30.139Z",
+    "event_id": "EVT-20261011-00134-ef5c",
+    "created_at": "2026-10-11T15:56:48.046Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -4980,10 +4980,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00135-7ed1",
-    "created_at": "2026-10-11T15:40:30.141Z",
+    "event_id": "EVT-20261011-00135-501a",
+    "created_at": "2026-10-11T15:56:48.048Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -5018,10 +5018,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00136-b236",
-    "created_at": "2026-10-11T15:40:30.142Z",
+    "event_id": "EVT-20261011-00136-548d",
+    "created_at": "2026-10-11T15:56:48.049Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -5074,10 +5074,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00137-0f58",
-    "created_at": "2026-10-11T15:40:30.145Z",
+    "event_id": "EVT-20261011-00137-6216",
+    "created_at": "2026-10-11T15:56:48.056Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -5087,7 +5087,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "c4af036f-14c6-4776-b3d5-823c9d7deb40",
+      "tx_id": "1d0278d6-1771-450c-982f-ffd864b04dc6",
       "ledger_row": {
         "partner_id": "PTR-GLD-233",
         "fiscal_year": 2026,
@@ -5095,16 +5095,16 @@
         "committed_amount": 600400,
         "approved_amount": 115600,
         "paid_amount": 400000,
-        "updated_at": "2026-10-11T15:40:30.143Z"
+        "updated_at": "2026-10-11T15:56:48.053Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00138-5214",
-    "created_at": "2026-10-11T15:40:30.147Z",
+    "event_id": "EVT-20261011-00138-fd26",
+    "created_at": "2026-10-11T15:56:48.058Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -5148,10 +5148,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00139-6cbe",
-    "created_at": "2026-10-11T15:40:30.149Z",
+    "event_id": "EVT-20261011-00139-c137",
+    "created_at": "2026-10-11T15:56:48.060Z",
     "submission_id": "SUB-2026-MY-0019",
-    "run_id": "run_20261011_8675f59f",
+    "run_id": "run_20261011_1ac14632",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -5195,10 +5195,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00140-f19b",
-    "created_at": "2026-10-11T15:40:30.155Z",
+    "event_id": "EVT-20261011-00140-6ce3",
+    "created_at": "2026-10-11T15:56:48.067Z",
     "submission_id": "SUB-2026-MY-0020",
-    "run_id": "run_20261011_5291145a",
+    "run_id": "run_20261011_cff1e848",
     "actor": "admin@bandarmedia.com.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -5218,10 +5218,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00141-774c",
-    "created_at": "2026-10-11T15:40:30.159Z",
+    "event_id": "EVT-20261011-00141-77d6",
+    "created_at": "2026-10-11T15:56:48.073Z",
     "submission_id": "SUB-2026-MY-0020",
-    "run_id": "run_20261011_5291145a",
+    "run_id": "run_20261011_cff1e848",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -5263,10 +5263,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00142-c792",
-    "created_at": "2026-10-11T15:40:30.161Z",
+    "event_id": "EVT-20261011-00142-1897",
+    "created_at": "2026-10-11T15:56:48.074Z",
     "submission_id": "SUB-2026-MY-0020",
-    "run_id": "run_20261011_5291145a",
+    "run_id": "run_20261011_cff1e848",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -5278,10 +5278,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00143-edba",
-    "created_at": "2026-10-11T15:40:30.162Z",
+    "event_id": "EVT-20261011-00143-5356",
+    "created_at": "2026-10-11T15:56:48.075Z",
     "submission_id": "SUB-2026-MY-0020",
-    "run_id": "run_20261011_5291145a",
+    "run_id": "run_20261011_cff1e848",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -5321,10 +5321,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00144-5579",
-    "created_at": "2026-10-11T15:40:30.169Z",
+    "event_id": "EVT-20261011-00144-f96f",
+    "created_at": "2026-10-11T15:56:48.081Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "hello@kelangdigital.my",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -5345,10 +5345,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00145-890e",
-    "created_at": "2026-10-11T15:40:30.173Z",
+    "event_id": "EVT-20261011-00145-015b",
+    "created_at": "2026-10-11T15:56:48.087Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -5398,10 +5398,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00146-dc14",
-    "created_at": "2026-10-11T15:40:30.175Z",
+    "event_id": "EVT-20261011-00146-2950",
+    "created_at": "2026-10-11T15:56:48.090Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -5413,10 +5413,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00147-4af7",
-    "created_at": "2026-10-11T15:40:30.177Z",
+    "event_id": "EVT-20261011-00147-6f52",
+    "created_at": "2026-10-11T15:56:48.093Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -5451,10 +5451,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00148-de5a",
-    "created_at": "2026-10-11T15:40:30.179Z",
+    "event_id": "EVT-20261011-00148-e893",
+    "created_at": "2026-10-11T15:56:48.096Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -5507,10 +5507,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00149-051d",
-    "created_at": "2026-10-11T15:40:30.184Z",
+    "event_id": "EVT-20261011-00149-f0bf",
+    "created_at": "2026-10-11T15:56:48.099Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -5520,7 +5520,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "7b5826d2-7985-413d-8186-90502277e51b",
+      "tx_id": "b4c80491-f825-456c-ba8d-1d5e05c1f56e",
       "ledger_row": {
         "partner_id": "PTR-UNA-901",
         "fiscal_year": 2026,
@@ -5528,16 +5528,16 @@
         "committed_amount": 92600,
         "approved_amount": 39400,
         "paid_amount": 100000,
-        "updated_at": "2026-10-11T15:40:30.182Z"
+        "updated_at": "2026-10-11T15:56:48.098Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00150-3108",
-    "created_at": "2026-10-11T15:40:30.186Z",
+    "event_id": "EVT-20261011-00150-be06",
+    "created_at": "2026-10-11T15:56:48.103Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -5581,10 +5581,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00151-6ff4",
-    "created_at": "2026-10-11T15:40:30.188Z",
+    "event_id": "EVT-20261011-00151-3db2",
+    "created_at": "2026-10-11T15:56:48.106Z",
     "submission_id": "SUB-2026-MY-0021",
-    "run_id": "run_20261011_64a5ca22",
+    "run_id": "run_20261011_886c0941",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",
@@ -5628,10 +5628,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00152-41f0",
-    "created_at": "2026-10-11T15:40:30.194Z",
+    "event_id": "EVT-20261011-00152-de29",
+    "created_at": "2026-10-11T15:56:48.116Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "alyssa.woe@megatech.com",
     "actor_type": "EXTERNAL_PARTNER",
     "previous_state": null,
@@ -5652,10 +5652,10 @@
     }
   },
   {
-    "event_id": "EVT-20261011-00153-6248",
-    "created_at": "2026-10-11T15:40:30.199Z",
+    "event_id": "EVT-20261011-00153-8e8f",
+    "created_at": "2026-10-11T15:56:48.123Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_intake",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "SUBMITTED",
@@ -5705,10 +5705,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00154-c2c0",
-    "created_at": "2026-10-11T15:40:30.201Z",
+    "event_id": "EVT-20261011-00154-e60a",
+    "created_at": "2026-10-11T15:56:48.126Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "INTAKE_EXTRACTED",
@@ -5720,10 +5720,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00155-9f1e",
-    "created_at": "2026-10-11T15:40:30.202Z",
+    "event_id": "EVT-20261011-00155-868c",
+    "created_at": "2026-10-11T15:56:48.128Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_validation",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "VALIDATING",
@@ -5758,10 +5758,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00156-6d8b",
-    "created_at": "2026-10-11T15:40:30.204Z",
+    "event_id": "EVT-20261011-00156-7d05",
+    "created_at": "2026-10-11T15:56:48.131Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_rules_engine",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "RULES_EVALUATING",
@@ -5814,10 +5814,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00157-6897",
-    "created_at": "2026-10-11T15:40:30.208Z",
+    "event_id": "EVT-20261011-00157-21a5",
+    "created_at": "2026-10-11T15:56:48.137Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_budget",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "BUDGET_RESERVING",
@@ -5827,7 +5827,7 @@
     "evidence_refs": [],
     "details": {
       "status": "SUCCESS",
-      "tx_id": "bc9b1ab6-b5dd-4902-93a7-ff11faf98f22",
+      "tx_id": "7a52b7c2-32c1-462c-a38a-23c4bc4d0e51",
       "ledger_row": {
         "partner_id": "PTR-GLD-882",
         "fiscal_year": 2026,
@@ -5835,16 +5835,16 @@
         "committed_amount": 818700,
         "approved_amount": 193900,
         "paid_amount": 700000,
-        "updated_at": "2026-10-11T15:40:30.206Z"
+        "updated_at": "2026-10-11T15:56:48.133Z"
       }
     },
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00158-602b",
-    "created_at": "2026-10-11T15:40:30.209Z",
+    "event_id": "EVT-20261011-00158-024e",
+    "created_at": "2026-10-11T15:56:48.140Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_exception",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "EXCEPTION_TRIAGE",
@@ -5888,10 +5888,10 @@
     "rule_version": "v2026.3.0"
   },
   {
-    "event_id": "EVT-20261011-00159-434a",
-    "created_at": "2026-10-11T15:40:30.210Z",
+    "event_id": "EVT-20261011-00159-cd86",
+    "created_at": "2026-10-11T15:56:48.142Z",
     "submission_id": "SUB-2026-MY-0022",
-    "run_id": "run_20261011_905349cc",
+    "run_id": "run_20261011_84f9d7ae",
     "actor": "agent_human_review",
     "actor_type": "SYSTEM_AGENT",
     "previous_state": "PENDING_HUMAN_REVIEW",

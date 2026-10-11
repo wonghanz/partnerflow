@@ -16,7 +16,7 @@
       "committed_amount": 818700,
       "approved_amount": 193900,
       "paid_amount": 700000,
-      "updated_at": "2026-10-11T15:40:30.206Z"
+      "updated_at": "2026-10-11T15:56:48.133Z"
     },
     {
       "partner_id": "PTR-ELT-101",
@@ -34,7 +34,7 @@
       "committed_amount": 730000,
       "approved_amount": 100000,
       "paid_amount": 550000,
-      "updated_at": "2026-10-11T15:40:29.930Z"
+      "updated_at": "2026-10-11T15:56:47.728Z"
     },
     {
       "partner_id": "PTR-GLD-233",
@@ -43,7 +43,7 @@
       "committed_amount": 600400,
       "approved_amount": 115600,
       "paid_amount": 400000,
-      "updated_at": "2026-10-11T15:40:30.143Z"
+      "updated_at": "2026-10-11T15:56:48.053Z"
     },
     {
       "partner_id": "PTR-GLD-745",
@@ -52,7 +52,7 @@
       "committed_amount": 414800,
       "approved_amount": 90200,
       "paid_amount": 350000,
-      "updated_at": "2026-10-11T15:40:30.107Z"
+      "updated_at": "2026-10-11T15:56:48.006Z"
     },
     {
       "partner_id": "PTR-SLV-456",
@@ -97,7 +97,7 @@
       "committed_amount": 92600,
       "approved_amount": 39400,
       "paid_amount": 100000,
-      "updated_at": "2026-10-11T15:40:30.182Z"
+      "updated_at": "2026-10-11T15:56:48.098Z"
     }
   ],
   "invariant": "Available = Allocated - (Committed + Approved + Paid); must be >= 0",

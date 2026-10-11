@@ -28,9 +28,4 @@ desktop.ini
 *.swo
 
 # Local scratchpad and temporary extraction directories
-scratch/diag_table_test/
-scratch/diag_text_zh/
-scratch/test_try/
-scratch/test_try2/
-scratch/unzipped_cmo/
-scratch/valid_docx_test/
+scratch/

@@ -1,13 +1,13 @@
 [
   {
-    "clarification_id": "CLR-CLR-Q1-mv3zpcff",
+    "clarification_id": "CLR-CLR-Q1-mv40aazg",
     "submission_id": "SUB-2026-MY-0018",
-    "run_id": "run_20261011_522741bd",
+    "run_id": "run_20261011_946d9c3c",
     "question_id": "CLR-Q1",
     "question": "Detected 2 uploaded invoices totalling RM 15,000.00 while the claim total declares RM 10,000.00. Clarify: (1) is one invoice a deposit voucher for another, or (2) was an invoice voided and reissued?",
     "answer": "Answered by Programme Operations Administrator: INV-PPR-2026-1201 (RM 10,000.00) is the final invoice; INV-PPR-2026-1188 is a deposit voucher that was voided and re-issued and must not be claimed. Partner to re-upload the declaration with the voided voucher removed.",
     "answered_by": "marcus.tan@umochi.com",
-    "answered_at": "2026-10-11T15:40:30.123Z",
+    "answered_at": "2026-10-11T15:56:48.028Z",
     "status": "RESOLVED",
     "provenance": "seed_corpus"
   }

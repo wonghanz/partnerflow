@@ -7,7 +7,7 @@
 [![Zero External Dependencies](https://img.shields.io/badge/Dependencies-0%20(Pure%20Node%20Builtin)-blue?logo=javascript)](https://nodejs.org/)
 [![Architecture](https://img.shields.io/badge/Architecture-7--Agent%20Pipeline-72CDFF)](docs/00-architecture-and-pipeline.md)
 [![Budget Ledger](https://img.shields.io/badge/Ledger-4--State%20Conserved-BFFFCC)](docs/04-agent-budget-claim-verification.md)
-[![Tests](https://img.shields.io/badge/Tests-Passing-success)](test-rules.js)
+[![Tests](https://img.shields.io/badge/Tests-Passing-success)](tests/rules.test.js)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
 ---
@@ -153,7 +153,7 @@ Open your web browser and navigate to:
 Run the deterministic policy test suite covering edge cases (caps, ratio limits, missing documents, suspended partners, budget exhaustion):
 
 ```bash
-node test-rules.js
+node tests/rules.test.js
 ```
 
 Run internal code verification utilities:
@@ -170,11 +170,15 @@ node server/run-sql.js "SELECT submission_id, partner_name, state, amount FROM s
 ## 📂 Project Directory Structure
 
 ```text
-├── docs/                   # Full system specifications (00-architecture through 11-cross-check)
+├── assets/                 # Brand assets & logos
+├── client-documents/       # Real-world client forms, guidelines & approval authority matrices
 ├── company-brain/          # Hierarchical Corporate Brain (policies, glossary, SOPs, cases)
-├── client-documents/       # Sample client forms, guidelines & approval authority matrices
-├── test-upload-samples/    # Realistic test document samples for intake simulation
-├── uploads/                # Synthetic PDF assets attached to intake submissions
+├── demo/                   # Live presentation scripts, demo playbooks & test upload PDFs
+├── docs/                   # System specifications, architecture blueprints, data contracts & video script
+├── public/                 # Vanilla ES-Module Single Page Application (SPA)
+│   ├── index.html          # Clean entrypoint with executive UI styling
+│   ├── css/                # Enterprise styling & design tokens
+│   └── js/                 # Reactive frontend views (Brain, Budget, Submissions, Audit)
 ├── server/
 │   ├── index.js            # Native HTTP server & REST route handler
 │   ├── seed-submissions.js # Deterministic corpus & ledger builder
@@ -188,13 +192,14 @@ node server/run-sql.js "SELECT submission_id, partner_name, state, amount FROM s
 │   │   ├── rag.js          # Grounded corporate brain retrieval engine
 │   │   └── rules.js        # Pure deterministic policy rules evaluation
 │   └── data/               # Persistent JSON files & SQLite database
-├── public/                 # Vanilla ES-Module Single Page Application (SPA)
-│   ├── index.html          # Clean entrypoint with executive UI styling
-│   ├── css/                # Enterprise styling & design tokens
-│   └── js/                 # Reactive frontend views (Brain, Budget, Submissions, Audit)
-├── test-rules.js           # Comprehensive rules engine test suite
+├── skills/                 # Agent intelligence skills (grill-me, security-audit, etc.)
+├── tests/
+│   └── rules.test.js       # Comprehensive deterministic rules engine test suite
+├── uploads/                # Synthetic PDF assets attached to intake submissions
+├── _tools/                 # Internal linting and CSS gap analysis utilities
+├── .gitignore              # Git ignore configuration
 ├── package.json            # Node project configuration (Zero dependencies)
-└── video.md                # Presentation pitch script & visual storyboard
+└── README.md               # Project documentation & setup instructions
 ```
 
 ---

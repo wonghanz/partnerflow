@@ -50,7 +50,7 @@ function die(code, message) {
 
 for (const f of FOUNDATION) {
   if (!fs.existsSync(path.join(DATA_DIR, f))) {
-    die('DATA_NOT_READY', `server/data/${f} is missing. The foundation corpus must be authored from the documentation first (see DATA-CONTRACT.md).`);
+    die('DATA_NOT_READY', `server/data/${f} is missing. The foundation corpus must be authored from the documentation first (see docs/DATA-CONTRACT.md).`);
   }
 }
 if (!fs.existsSync(SEED_FILE)) {

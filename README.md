@@ -103,8 +103,8 @@ Watch the comprehensive technical architecture and live walkthrough of **Partner
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/wonghanz/umochi-squad-partnerflow.git
-cd umochi-squad-partnerflow
+git clone https://github.com/wonghanz/partnerflow.git
+cd partnerflow
 ```
 
 ### 2. (Optional) Configure AI Provider
